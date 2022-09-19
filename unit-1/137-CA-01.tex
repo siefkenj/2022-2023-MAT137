@@ -439,61 +439,27 @@ Negate the following statement without using any negative words (``no", ``not", 
 	\end{quote}
 \end{frame}
 
-%-----------------------------
+
+
 \begin{frame}
-\frametitle{Symmetric difference}
+\frametitle{MAT137 Lecture 5 --- Definitions}
+	{\bf Warmup:}
 
-Given two sets $A$ and $B$, we define
-\begin{itemize}
-	\item  $A \setminus B = \{  x \in A \; : \; x \notin B \}$
-	\item $A \triangle B = (A \setminus B) \cup (B \setminus A)$
-\end{itemize}
+	The law says ``{\bf if you check out a library book, you must return it}''.
+	\begin{itemize}
+		\item I did not check out any library books.
+		\item I did not return any library books.
+	\end{itemize}
+	Did I violate the law?
 
-\vfill
-
-Let
-\begin{itemize}
-	\item  $C_1 = \{ \mbox{  students under 18 } \}$
-	\item  $C_2 = \{ \mbox{ students born in Ontario } \}$
-\end{itemize}
-
-\vfill
-
-What is the set $C_1 \triangle C_2$?
-
-\vfill
+	\vfill
+	{\bf Before next class:}
+		\begin{itemize} \normalsize
+			\item {\bf Watch videos 1.14, 1.15 }
+		\end{itemize}
+	\vfill
 
 \end{frame}
-%-----------------------------
-\begin{frame}
-\frametitle{Symmetric difference - 2}
-
-Given two sets $A$ and $B$, we define
-\begin{itemize}
-	\item  $A \setminus B = \{  x \in A \; : \; x \notin B \}$
-	\item $A \triangle B = (A \setminus B) \cup (B \setminus A)$
-\end{itemize}
-
-\vfill
-
-Is the following equality
-$$
-	(A \triangle B) \triangle C \; = \; A \triangle (B \triangle C)
-$$
-true for all sets $A$, $B$, and $C$?
-
-\vfill
-
-\end{frame}
-%------------------------------
-
-\begin{frame}[t]
-\frametitle{Even numbers}
-
-Write a description of the set $E$ of even integers using set-building notation.
-
-\end{frame}
-
 
 %----------------------------
 \begin{frame}
@@ -512,38 +478,7 @@ True or False?
 \end{enumerate}
 
 \end{frame}
-%-----------------------------
-\begin{frame}
-\frametitle{Indecisive function}
 
-Construct a function $f$ that satisfies all of the following properties at once:
-	\begin{itemize}
-		\item  The domain of $f$ is $\R$.
-		\item  \DS{\forall x \in \R, \exists y \in \R} such that
-			$$  x<y \mbox{ and } f(x) < f(y) $$
-		\item  \DS{\forall x \in \R, \exists y \in \R} such that
-			$$  x<y \mbox{ and } f(x) > f(y) $$
-	\end{itemize}
-
-\end{frame}
-%-----------------------------
-
-\begin{frame}
-\frametitle{Graphs}
-
-Draw the graph of a function $f$ with domain $\mathbb{R}$ that satisfies:
-	\begin{equation*}
-		\mbox{If } 2<x<4 \mbox{ then } 1<f(x)<2.  	
-	\end{equation*}
-\vfill
-
-Draw the graph of a function $g$ with domain $\mathbb{R}$ that satisfies:
-	\begin{equation*}
-		2<x<4 \mbox{ if and only if } 1 < g(x) < 2.
-	\end{equation*}
-\vfill
-
-\end{frame}
 
 %------------------------------
 
@@ -560,13 +495,14 @@ $f$ is \emph{one-to-one} means that ...
 		\item ... must produce different outputs ($\rojo{f(x)}$). 
 	\end{itemize}
 
-\pause \vfill
+\vfill
 	
 \begin{block}{}
 	Write a formal definition of ``one-to-one".
 \end{block}
 
 \end{frame}
+
 
 %-----------------------------
 \begin{frame}
@@ -603,6 +539,7 @@ Let $f$ be a function with domain $D$.  \\
 	\end{enumerate}
 
 \end{frame}
+
 %-----------------------------
 \begin{frame}
 \frametitle{Proving a function is one-to-one}
@@ -621,8 +558,8 @@ We say $f$ is one-to-one when
 
 Suppose I give you a specific function $f$ and I ask you to prove it is one-to-one.  \pause
 	\begin{itemize} 
-		\item  Write the structure of your proof (how do you begin? what do you assume? what do you conclude?) if you use the first definition.
-		\item Write the structure of your proof if you use the second definition.
+		\item {\bf For the first definition}, write the structure of your proof (How do you begin? What do you assume? What do you conclude?).
+		\item {\bf For the second definition}, write the structure of your proof if you use the second definition.
 	\end{itemize}
 	
 \vfill	  \p
@@ -664,152 +601,19 @@ Suppose I give you a specific function $f$ and I ask you to prove it is not one-
 
 \end{frame}
 
-%-----------------------------
 
 \begin{frame}
-\frametitle{Proving a theorem}
+	\frametitle{MAT137 Lecture 6 --- Proofs \& Induction}
 
-\begin{block}{Theorem}
-	Let $f$ be a function with domain $D$.
-		\begin{itemize}
-			\item  IF $f$ is increasing on \DS{D}
-			\item  THEN $f$ is one-to-one on \DS{D}
+	\vfill
+	{\bf Before next class:}
+		\begin{itemize} \normalsize
+			\item {\bf Watch videos 2.4 }
 		\end{itemize}
-\end{block}
-
-\vfill  \p
-
-\begin{enumerate}
-	\item  Remind yourself of the precise definition of ``increasing" and ``one-to-one". \p
-	\item  To prove the theorem, what will you assume?  what do you want to show? \p
-	\item   Look at the part you want to show.  Based on the definition, what is the structure of the proof? \p
-	\item   Complete the proof. 
-\end{enumerate}
+	\vfill
 
 \end{frame}
 
-%-----------------------------
-
-\begin{frame}
-\frametitle{DISproving a theorem}
-
-\begin{block}{ FALSE Theorem}
-	Let $f$ be a function with domain $D$.
-		\begin{itemize}
-			\item  IF $f$ is one-to-one on \DS{D}
-			\item  THEN $f$ is increasing on \DS{D}
-		\end{itemize}
-\end{block}
-
-\vfill  \p
-
-\begin{enumerate}
-	\item  This theorem is false.  What do you need to do to prove it is false? \p
-	\item  Prove the theorem is false.
-\end{enumerate}
-
-\end{frame}
-
-%-----------------------------
-\begin{frame}
-\frametitle{What is wrong with this proof? (1)}
-
-\begin{block}{Theorem}
-The sum of two odd numbers is even.
-\end{block}
-
-\p \vfill
-
-\begin{proof}
-3 is odd.  \\
-5 is odd. \\
-$3+5 = 8$ is even.
-\end{proof}
-
-\vfill
-
-\end{frame}
-%-----------------------------
-\begin{frame}
-\frametitle{What is wrong with this proof? (2)}
-
-
-\begin{block}{Theorem}
-The sum of two odd numbers is even.
-\end{block}
-
-\p \vfill
-
-\begin{proof}
-The sum of two odd numbers is always even.  \\
-even + even = even \\
-even + odd = odd \\
-odd + even = odd \\
-odd + odd = even.
-\end{proof}
-
-\vfill
-
-\end{frame}
-%-----------------------------
-\begin{frame}
-\frametitle{Definition of odd and even}
-
-Write a definition of ``odd integer" and ``even integer".
-
-\p \vfill
-
-\begin{block}{Definition}
-  Let $x \in \Z$.  We say that $x$ is odd when ...
-	\begin{enumerate}
-		\item  $x = 2a+1$ ?
-		\item  \DS{\forall a \in \Z, x = 2a+ 1 }?
-		\item  \DS{\exists a \in \Z \mbox{ s.t. } x = 2a+ 1 }?
-	\end{enumerate}
-\end{block}
-
-	
-\vfill
-	
-\end{frame}
-
-%-----------------------------
-\begin{frame}
-\frametitle{What is wrong with this proof? (3)}
-
-\begin{block}{Theorem}
-The sum of two odd numbers is always even.
-\end{block}
-
-
-\pause
-
-\begin{proof}
-\DS{x= 2a + 1} odd 
-
-\DS{y = 2b + 1} odd 
-
-\DS{ x+ y = 2n}  even 
-
-\DS{2a + 1 + 2b + 1 = 2n} 
-
-\DS{2a + 2b + 2 = 2n}
-
-\DS{a + b + 1 = n}
-\end{proof}
-\end{frame}
-
-%-----------------------------
-
-
-\begin{frame}
-\frametitle{Write a correct proof!}
-
-\begin{block}{Theorem}
-The sum of two odd numbers is always even.
-\end{block}
-
-\end{frame}
 
 %------------------------------
 \begin{frame}
@@ -819,9 +623,9 @@ Let $S_n$ be a statement depending on a positive integer $n$.
 
 \vfill  
 
-In each of the following cases, which statements are guaranteed to be true?
+What conclusions can you draw in each of the following cases?
 
-\vfill   \p
+\vfill 
 
 \begin{multicols}{2}
 \begin{enumerate}
@@ -852,6 +656,7 @@ In each of the following cases, which statements are guaranteed to be true?
 
 \end{frame}
 
+
 %-----------------------------
 \begin{frame}
 \frametitle{Variations on induction 2}
@@ -865,26 +670,6 @@ So far we have proven
 	\begin{itemize}
 		\item  $S_1$ 
 		\item  \DS{\forall n \geq 1, \; S_n \implies S_{n+3}.}
-	\end{itemize}	
-
-\vfill	
-
-What else do we need to do?
-
-\end{frame}
-
-%-----------------------------
-\begin{frame}
-\frametitle{Variations on induction 3}
-
-We want to prove  
-	$$\forall n \in \Z, \; S_n $$
-	
-\vfill
-
-So far we have proven
-	\begin{itemize}
-		\item  $S_1$
 	\end{itemize}	
 
 \vfill	
@@ -934,7 +719,7 @@ For every $N \geq 1$, let
 	\end{tabular}
 	\end{center}
 
-\vfill \p
+\vfill 
 
 What did we actually prove in the previous page?
 
@@ -945,6 +730,266 @@ What did we actually prove in the previous page?
 
 \vfill 
 \end{frame}
+
+%-----------------------------
+\begin{frame}
+\frametitle{What is wrong with this proof? (1)}
+
+\begin{block}{Theorem}
+The sum of two odd numbers is even.
+\end{block}
+ 
+	\vfill
+
+\begin{proof}
+3 is odd.  \\
+5 is odd. \\
+$3+5 = 8$ is even.
+\end{proof}
+
+\vfill
+
+\end{frame}
+%-----------------------------
+\begin{frame}
+\frametitle{What is wrong with this proof? (2)}
+
+
+\begin{block}{Theorem}
+The sum of two odd numbers is even.
+\end{block}
+
+ \vfill
+
+\begin{proof}
+The sum of two odd numbers is always even.  \\
+even + even = even \\
+even + odd = odd \\
+odd + even = odd \\
+odd + odd = even.
+\end{proof}
+
+\vfill
+
+\end{frame}
+%-----------------------------
+%\begin{frame}
+%\frametitle{Symmetric difference}
+%
+%Given two sets $A$ and $B$, we define
+%\begin{itemize}
+%	\item  $A \setminus B = \{  x \in A \; : \; x \notin B \}$
+%	\item $A \triangle B = (A \setminus B) \cup (B \setminus A)$
+%\end{itemize}
+%
+%\vfill
+%
+%Let
+%\begin{itemize}
+%	\item  $C_1 = \{ \mbox{  students under 18 } \}$
+%	\item  $C_2 = \{ \mbox{ students born in Ontario } \}$
+%\end{itemize}
+%
+%\vfill
+%
+%What is the set $C_1 \triangle C_2$?
+%
+%\vfill
+%
+%\end{frame}
+%%-----------------------------
+%\begin{frame}
+%\frametitle{Symmetric difference - 2}
+%
+%Given two sets $A$ and $B$, we define
+%\begin{itemize}
+%	\item  $A \setminus B = \{  x \in A \; : \; x \notin B \}$
+%	\item $A \triangle B = (A \setminus B) \cup (B \setminus A)$
+%\end{itemize}
+%
+%\vfill
+%
+%Is the following equality
+%$$
+%	(A \triangle B) \triangle C \; = \; A \triangle (B \triangle C)
+%$$
+%true for all sets $A$, $B$, and $C$?
+%
+%\vfill
+%
+%\end{frame}
+%------------------------------
+
+%\begin{frame}[t]
+%\frametitle{Even numbers}
+%
+%Write a description of the set $E$ of even integers using set-building notation.
+%
+%\end{frame}
+%
+%
+%%-----------------------------
+%\begin{frame}
+%\frametitle{Indecisive function}
+%
+%Construct a function $f$ that satisfies all of the following properties at once:
+%	\begin{itemize}
+%		\item  The domain of $f$ is $\R$.
+%		\item  \DS{\forall x \in \R, \exists y \in \R} such that
+%			$$  x<y \mbox{ and } f(x) < f(y) $$
+%		\item  \DS{\forall x \in \R, \exists y \in \R} such that
+%			$$  x<y \mbox{ and } f(x) > f(y) $$
+%	\end{itemize}
+%
+%\end{frame}
+%%-----------------------------
+%
+%\begin{frame}
+%\frametitle{Graphs}
+%
+%Draw the graph of a function $f$ with domain $\mathbb{R}$ that satisfies:
+%	\begin{equation*}
+%		\mbox{If } 2<x<4 \mbox{ then } 1<f(x)<2.  	
+%	\end{equation*}
+%\vfill
+%
+%Draw the graph of a function $g$ with domain $\mathbb{R}$ that satisfies:
+%	\begin{equation*}
+%		2<x<4 \mbox{ if and only if } 1 < g(x) < 2.
+%	\end{equation*}
+%\vfill
+%
+%\end{frame}
+%
+%
+%%-----------------------------
+%
+%\begin{frame}
+%\frametitle{Proving a theorem}
+%
+%\begin{block}{Theorem}
+%	Let $f$ be a function with domain $D$.
+%		\begin{itemize}
+%			\item  IF $f$ is increasing on \DS{D}
+%			\item  THEN $f$ is one-to-one on \DS{D}
+%		\end{itemize}
+%\end{block}
+%
+%\vfill  \p
+%
+%\begin{enumerate}
+%	\item  Remind yourself of the precise definition of ``increasing" and ``one-to-one". \p
+%	\item  To prove the theorem, what will you assume?  what do you want to show? \p
+%	\item   Look at the part you want to show.  Based on the definition, what is the structure of the proof? \p
+%	\item   Complete the proof. 
+%\end{enumerate}
+%
+%\end{frame}
+%
+%%-----------------------------
+%
+%\begin{frame}
+%\frametitle{DISproving a theorem}
+%
+%\begin{block}{ FALSE Theorem}
+%	Let $f$ be a function with domain $D$.
+%		\begin{itemize}
+%			\item  IF $f$ is one-to-one on \DS{D}
+%			\item  THEN $f$ is increasing on \DS{D}
+%		\end{itemize}
+%\end{block}
+%
+%\vfill  \p
+%
+%\begin{enumerate}
+%	\item  This theorem is false.  What do you need to do to prove it is false? \p
+%	\item  Prove the theorem is false.
+%\end{enumerate}
+%
+%\end{frame}
+%
+%%-----------------------------
+%\begin{frame}
+%\frametitle{Definition of odd and even}
+%
+%Write a definition of ``odd integer" and ``even integer".
+%
+%\p \vfill
+%
+%\begin{block}{Definition}
+%  Let $x \in \Z$.  We say that $x$ is odd when ...
+%	\begin{enumerate}
+%		\item  $x = 2a+1$ ?
+%		\item  \DS{\forall a \in \Z, x = 2a+ 1 }?
+%		\item  \DS{\exists a \in \Z \mbox{ s.t. } x = 2a+ 1 }?
+%	\end{enumerate}
+%\end{block}
+%
+%	
+%\vfill
+%	
+%\end{frame}
+%
+%%-----------------------------
+%\begin{frame}
+%\frametitle{What is wrong with this proof? (3)}
+%
+%\begin{block}{Theorem}
+%The sum of two odd numbers is always even.
+%\end{block}
+%
+%
+%\pause
+%
+%\begin{proof}
+%\DS{x= 2a + 1} odd 
+%
+%\DS{y = 2b + 1} odd 
+%
+%\DS{ x+ y = 2n}  even 
+%
+%\DS{2a + 1 + 2b + 1 = 2n} 
+%
+%\DS{2a + 2b + 2 = 2n}
+%
+%\DS{a + b + 1 = n}
+%\end{proof}
+%\end{frame}
+%
+%%-----------------------------
+%
+%
+%\begin{frame}
+%\frametitle{Write a correct proof!}
+%
+%\begin{block}{Theorem}
+%The sum of two odd numbers is always even.
+%\end{block}
+%
+%\end{frame}
+%
+%
+%
+%%-----------------------------
+%\begin{frame}
+%\frametitle{Variations on induction 3}
+%
+%We want to prove  
+%	$$\forall n \in \Z, \; S_n $$
+%	
+%\vfill
+%
+%So far we have proven
+%	\begin{itemize}
+%		\item  $S_1$
+%	\end{itemize}	
+%
+%\vfill	
+%
+%What else do we need to do?
+%
+%\end{frame}
+
 
 %------------------------------
 %------------------------------
