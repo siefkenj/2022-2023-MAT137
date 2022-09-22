@@ -361,9 +361,9 @@ Find the value of
 \begin{enumerate}
 	\item  \DS{\lim_{x \to 2} f(x)}
 	\item  \DS{\lim_{x \to 0} f(f(x))}
-		\p
-	\item  \DS{\lim_{x \to 2} \left[ f(x) \right]^2}
-	\item \DS{\lim_{x \to 0} f(2 \cos x)}
+	%	\p
+	%\item  \DS{\lim_{x \to 2} \left[ f(x) \right]^2}
+	%\item \DS{\lim_{x \to 0} f(2 \cos x)}
 \end{enumerate}
 \end{columns}
 
@@ -416,6 +416,112 @@ Find the value of
 \end{frame}
 
 %-----------------------------
+\begin{frame}
+\frametitle{MAT137 Lecture 9 --- Definition of Limit}
+	\vfill
+	{\bf Before next class:}
+		\begin{itemize} \normalsize
+			\item {\bf Watch videos 2.7, 2.8, 2.9 }
+		\end{itemize}
+	\vfill
+
+\end{frame}
+
+\begin{frame}[t]
+	\frametitle{$\delta$ from a graph}
+	\setsize{11}
+	\begin{center}
+	\includegraphics[scale=.3]{G3}
+	\end{center}
+	\begin{enumerate}
+	\item Find one value of $\delta>0$ s.t. \hfill \DS{0 < |x-2| < \delta \implies |f(x) - 2| < 0.5}
+	\item Find \emph{all} values of $\delta>0$ s.t. \hfill \DS{0 < |x-2| < \delta \implies |f(x) - 2| < 0.5}
+	\end{enumerate}
+
+
+
+\end{frame}
+%-----------------------
+
+\begin{frame}
+\frametitle{Warm-up}
+
+Write down the formal definition of 
+	$$
+		\lim_{x \to a} f(x) = L.
+	$$
+\end{frame}
+
+%-----------------------------
+
+%-----------------------------
+\begin{frame}
+\frametitle{Side limits}
+
+\begin{block}{Recall}
+Let $L, a \in \mathbb{R}$. \\
+Let $f$ be a function defined at least on an interval around $a$, except possibly at $a$. \\
+	$$
+		\lim_{x \to a} f(x) = L
+	$$
+means 
+	$$
+		\forall \varepsilon >0, \exists \delta >0 \mbox{ s.t. } \quad 0<|x-a|<\delta \implies |f(x)-L| < \varepsilon.
+	$$
+\end{block}
+
+\vfill
+
+Write, instead, the formal definition of 
+	$$
+		\lim_{x \to a^+} f(x) = L, \quad \mbox{ and } \quad \lim_{x \to a^-} f(x) = L.
+	$$
+
+
+\end{frame}
+%-----------------------
+
+
+\begin{frame}
+\frametitle{Infinite limits}
+
+\begin{block}{Definition}
+Let $a \in \mathbb{R}$. \\
+Let $f$ be a function defined at least on an interval around $a$, except possibly at $a$. \\
+Write a formal definition for
+	$$
+		\lim_{x \to a} f(x) = \infty.
+	$$
+\end{block}
+
+\end{frame}
+%-----------------------
+\begin{frame}[t]
+\frametitle{Infinite limits - 2}
+
+Which one(s) is the definition of \DS{\lim_{x \to a} f(x) = \infty } ?
+\vfill
+\small
+\begin{enumerate}
+	\item \DS{\forall M \in \R, \, \exists \delta > 0 \; \mbox{ s.t. } 0 < |x-a|<\delta \; \implies \; f(x) > M}
+	\vfill
+	\item \DS{\forall M \in \Z, \, \exists \delta > 0 \; \mbox{ s.t. } 0 < |x-a|<\delta \; \implies \; f(x) > M}
+	\vfill
+	\item \DS{\forall M > 0, \, \exists \delta > 0 \; \mbox{ s.t. } 0 < |x-a|<\delta \; \implies \; f(x) > M}
+	\vfill
+	\item \DS{\forall M > 5, \, \exists \delta > 0 \; \mbox{ s.t. } 0 < |x-a|<\delta \; \implies \; f(x) > M}
+	\vfill
+%	\item \DS{\forall M \in \R, \, \exists \delta > 0 \; \mbox{ s.t. } |x-a|<\delta \; \implies \; f(x) \geq M}
+%	\vfill
+\end{enumerate}
+
+\end{frame}
+%-----------------------------
+
+
+
+
+
 
 \begin{frame}
 \frametitle{Limit at a point}
@@ -481,91 +587,6 @@ Consider the function
 \end{itemize}
 
 \end{frame}
-%-----------------------------
-\begin{frame}[t]
-\frametitle{$\delta$ from a graph}
-\setsize{11}
-\begin{center}
-\includegraphics[scale=.3]{G3}
-\end{center}
-\begin{enumerate}
-\item Find one value of $\delta>0$ s.t. \hfill \DS{0 < |x-2| < \delta \implies |f(x) - 2| < 0.5}
-\item Find \emph{all} values of $\delta>0$ s.t. \hfill \DS{0 < |x-2| < \delta \implies |f(x) - 2| < 0.5}
-\end{enumerate}
-
-
-
-\end{frame}
-%-----------------------
-\begin{frame}
-\frametitle{Warm-up}
-
-Write down the formal definition of 
-	$$
-		\lim_{x \to a} f(x) = L.
-	$$
-\end{frame}
-
-%-----------------------------
-\begin{frame}
-\frametitle{Side limits}
-
-\begin{block}{Recall}
-Let $L, a \in \mathbb{R}$. \\
-Let $f$ be a function defined at least on an interval around $a$, except possibly at $a$. \\
-	$$
-		\lim_{x \to a} f(x) = L
-	$$
-means 
-	$$
-		\forall \varepsilon >0, \exists \delta >0 \mbox{ s.t. } \quad 0<|x-a|<\delta \implies |f(x)-L| < \varepsilon.
-	$$
-\end{block}
-
-\vfill
-
-Write, instead, the formal definition of 
-	$$
-		\lim_{x \to a^+} f(x) = L, \quad \mbox{ and } \quad \lim_{x \to a^-} f(x) = L.
-	$$
-
-
-\end{frame}
-%-----------------------
-\begin{frame}
-\frametitle{Infinite limits}
-
-\begin{block}{Definition}
-Let $a \in \mathbb{R}$. \\
-Let $f$ be a function defined at least on an interval around $a$, except possibly at $a$. \\
-Write a formal definition for
-	$$
-		\lim_{x \to a} f(x) = \infty.
-	$$
-\end{block}
-
-\end{frame}
-%-----------------------
-\begin{frame}[t]
-\frametitle{Infinite limits - 2}
-
-Which one(s) is the definition of \DS{\lim_{x \to a} f(x) = \infty } ?
-\vfill
-\begin{enumerate}
-	\item \DS{\forall M \in \R, \, \exists \delta > 0 \; \mbox{ s.t. } 0 < |x-a|<\delta \; \implies \; f(x) > M}
-	\vfill
-	\item \DS{\forall M \in \Z, \, \exists \delta > 0 \; \mbox{ s.t. } 0 < |x-a|<\delta \; \implies \; f(x) > M}
-	\vfill
-	\item \DS{\forall M > 0, \, \exists \delta > 0 \; \mbox{ s.t. } 0 < |x-a|<\delta \; \implies \; f(x) > M}
-	\vfill
-	\item \DS{\forall M > 5, \, \exists \delta > 0 \; \mbox{ s.t. } 0 < |x-a|<\delta \; \implies \; f(x) > M}
-	\vfill
-%	\item \DS{\forall M \in \R, \, \exists \delta > 0 \; \mbox{ s.t. } |x-a|<\delta \; \implies \; f(x) \geq M}
-%	\vfill
-\end{enumerate}
-
-\end{frame}
-%-----------------------------
 \begin{frame}[t]
 \frametitle{Related implications}
 
