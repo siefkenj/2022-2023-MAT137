@@ -84,7 +84,32 @@
 
 \begin{frame}
 \frametitle{MAT137 Lecture 7 --- Absolute Values}
+	{\bf Warmup:}
+\vfill
 
+	You want to show ``$\exists n\in \mathbb N\text{ s.t. }n^2=4$''. Which proofs below
+	are correct/incorrect?
+	\begin{multicols}{2}
+
+		\begin{enumerate}
+		
+
+			\item Let $n=2$. Then, $n\in \mathbb N$ and $n^2=4$.
+
+
+			\item 		Let $n\in \mathbb N$. Take $n=2$. Then $n^2=4$.
+
+		\columnbreak
+
+	\item 		Let $n\in\mathbb N$. Assume $n=2$. Then $n^2=4$.
+
+
+		
+	\item	Take $n=4$. Then $n\in \mathbb N$ and $n^2=4$.
+
+		\end{enumerate}
+
+	\end{multicols}
 
 	\vfill
 	{\bf Before next class:}
@@ -94,6 +119,125 @@
 	\vfill
 
 \end{frame}
+
+
+%------------------------------
+\begin{frame}
+\frametitle{Variations on induction}
+
+Let $S_n$ be a statement depending on a positive integer $n$.
+
+\vfill  
+
+	What conclusions can you draw in each of the following cases? (I.e., for which $n$ do you
+	know that $S_n$ is true?)
+
+\vfill 
+
+\begin{multicols}{2}
+\begin{enumerate}
+\item  We have proven:
+	\begin{itemize}
+		\item   $S_3$ 
+		\item  \DS{\forall n \geq 1, \; S_{n}  \implies S_{n+1} }
+	\end{itemize}	
+\item  We have proven:
+	\begin{itemize}
+		\item  $S_1$ 
+		\item  \DS{\forall n \geq 3, \; S_{n} \implies S_{n+1} }
+	\end{itemize}	
+\item  We have proven:
+	\begin{itemize}
+		\item  $S_1$ 
+		\item  \DS{\forall n \geq 1, \; S_{n} \implies S_{n+3} }
+	\end{itemize}	
+\item  We have proven:
+	\begin{itemize}
+		\item  $S_1$ 
+		\item  \DS{\forall n \geq 1, \; S_{n+1}  \implies S_{n} }
+	\end{itemize}	
+\end{enumerate}	
+\end{multicols}
+
+\vfill
+
+\end{frame}
+
+
+%-----------------------------
+\begin{frame}
+\frametitle{Variations on induction 2}
+
+We want to prove  
+	$$\forall n \geq 1, \; S_n $$
+	
+\vfill
+
+So far we have proven
+	\begin{itemize}
+		\item  $S_1$ 
+		\item  \DS{\forall n \geq 1, \; S_n \implies S_{n+3}.}
+	\end{itemize}	
+
+\vfill	
+
+What else do we need to do?
+
+\end{frame}
+
+%----------------------------
+\begin{frame}
+\frametitle{What is wrong with this proof by induction?}
+\smallerfont
+
+\vspace{-1.5mm}
+\begin{theorem}
+$\forall N \geq 1$, every set of $N$ students in MAT137 will get the same grade.
+\end{theorem} \p
+\vspace{-1mm}
+
+\begin{proof}
+\begin{itemize} 
+	\item  {\bf Base case.}  It is clearly true for $N=1$.
+	\item  {\bf Induction step.}  \\
+		Assume it is true for $N$.  I'll show it is true for $N+1$. \\
+		Take a set of $N+1$ students.  By induction hypothesis:
+			\begin{itemize}
+				\item  The first $N$ students get the same grade.
+				\item  The last $N$ students get the same grade.
+			\end{itemize}
+			$$
+				\mathrlap{\overbrace{\phantom{\bullet \quad \bullet \quad \cdots \quad \bullet \quad \bullet }}^{\text{Same grade}}}
+				\bullet \quad \underbrace{\bullet \quad \bullet \quad \cdots \quad \bullet \quad \bullet}_{\text{Same grade}}
+			$$
+		Hence the $N+1$ students all get the same grade.
+\end{itemize}
+\end{proof}
+
+\end{frame}
+%----------------------------
+\begin{frame}
+\frametitle{What is wrong with this proof by induction?}
+
+For every $N \geq 1$, let
+	\begin{center}
+	\begin{tabular}{rcc}
+		\DS{S_N} =  & ``every set of $N$ students in MAT137 \\ & will get the same grade"
+	\end{tabular}
+	\end{center}
+
+\vfill 
+
+What did we actually prove in the previous page?
+
+	\begin{itemize}
+		\item  $S_1$ \, ?
+		\item  \DS{\forall N \geq 1}, \, \DS{S_N \implies S_{N+1}} \, ?
+	\end{itemize}
+
+\vfill 
+\end{frame}
+
 
 %-----------------------------
 \begin{frame}
@@ -188,6 +332,20 @@ Find \emph{all} positive values of $X$, $Y$, and $Z$ which make the following im
 \vfill
 
 \end{frame}
+
+
+\begin{frame}
+\frametitle{MAT137 Lecture 8 --- Limits}
+	\vfill
+	{\bf Before next class:}
+		\begin{itemize} \normalsize
+			\item {\bf Watch videos 2.5, 2.6 }
+		\end{itemize}
+	\vfill
+
+\end{frame}
+
+
 %-----------------------------
 \begin{frame}
 \frametitle{Limits from a graph}
