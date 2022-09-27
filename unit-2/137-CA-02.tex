@@ -518,18 +518,21 @@ Write a formal definition for
 \begin{frame}[t]
 \frametitle{Infinite limits 2}
 
-Which one(s) is the definition of \DS{\lim_{x \to a} f(x) = \infty } ?
+Which statements are equivalent to the definition of \DS{\lim_{x \to a} f(x) = \infty } ?
 \vfill
 \small
 \begin{enumerate}
+	\item \DS{\forall \varepsilon>0, \, \exists \delta > 0 \; \mbox{ s.t. } 0 < |x-a|<\delta \; \implies \; |f(x)-\infty| < \varepsilon}
+	\vfill
 	\item \DS{\forall M \in \R, \, \exists \delta > 0 \; \mbox{ s.t. } 0 < |x-a|<\delta \; \implies \; f(x) > M}
 	\vfill
-	\item \DS{\forall M \in \Z, \, \exists \delta > 0 \; \mbox{ s.t. } 0 < |x-a|<\delta \; \implies \; f(x) > M}
+	\item \DS{\forall \delta>0, \, \exists M > 0 \; \mbox{ s.t. } 0 < |x-a|<\delta \; \implies \; f(x) > M}
 	\vfill
 	\item \DS{\forall M > 0, \, \exists \delta > 0 \; \mbox{ s.t. } 0 < |x-a|<\delta \; \implies \; f(x) > M}
 	\vfill
 	\item \DS{\forall M > 5, \, \exists \delta > 0 \; \mbox{ s.t. } 0 < |x-a|<\delta \; \implies \; f(x) > M}
 	\vfill
+	\item \DS{\forall \varepsilon > 0, \, \exists \delta > 0 \; \mbox{ s.t. } 0 < |x-a|<\delta \; \implies \; f(x) > \varepsilon}
 %	\item \DS{\forall M \in \R, \, \exists \delta > 0 \; \mbox{ s.t. } |x-a|<\delta \; \implies \; f(x) \geq M}
 %	\vfill
 \end{enumerate}
@@ -537,21 +540,13 @@ Which one(s) is the definition of \DS{\lim_{x \to a} f(x) = \infty } ?
 \end{frame}
 %-----------------------------
 
-
-
-
-
-
 \begin{frame}
-\frametitle{Limit at a point}
-
-If a function $f$ is not defined at $x=a$, then
-\begin{enumerate}
-\item $\displaystyle{\lim_{x\rightarrow a} f(x)}$ cannot exist
-\item $\displaystyle{\lim_{x\rightarrow a} f(x)}$ could be $0$
-\item $\displaystyle{\lim_{x\rightarrow a} f(x)}$ must approach $\infty$
-\item none of the above.
-\end{enumerate} 
+\frametitle{MAT137 Lecture 10 --- Proofs of limits}
+	{\bf Before next class:}
+		\begin{itemize} \normalsize
+			\item {\bf Watch videos 2.10, 2.11 }
+		\end{itemize}
+	\vfill
 
 \end{frame}
 
@@ -572,9 +567,204 @@ $\displaystyle{f\left(\frac{1}{10^n}\right)}=0$. \\
 
 \item Can you conclude that \DS{\lim_{x \rightarrow 0}
 f(x)=0}?
+%\vfill \p
+%\item \DS{f(x)=\sin\left(\frac{2\pi}{x}\right)}
 \end{itemize}
 
 \end{frame}
+
+\begin{frame}
+\frametitle{Proving a Limit}
+
+	Let $f:\mathbb R\to\mathbb R$ be defined by $f(x)=2x$. We want to prove
+	\[
+		\lim_{x\to 3} f(x)=6.
+	\]
+
+	\vfill
+	Find all values of $X,Y,Z,W$ that make the following statements true
+	\begin{enumerate}
+		\item $|t-3|<X\implies |f(t)-6|<1$
+		\item $|t-3|<Y\implies |f(t)-6|<1/10$
+		\item $|t-3|<Z\implies |f(t)-6|<1/100$
+			\vfill
+		\p
+	\item $|t-3|<W\implies |f(t)-6|<\varepsilon$
+
+		(assuming $\varepsilon>0$ is fixed)
+	\end{enumerate} 
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Proving a Limit 2}
+
+	Let $f:\mathbb R\to\mathbb R$ be defined by $f(x)=2x$. We want to prove
+	\[
+		\lim_{x\to 3} f(x)=6.
+	\]
+
+	\vfill
+	Write out
+	\begin{itemize}
+		\item The definition of \DS{\lim_{x\to 3}f(x)=6}
+		\item The structure of a proof that \DS{\lim_{x\to 3}f(x)=6}
+		\vfill\p
+		\item Prove that \DS{\lim_{x\to 3}f(x)=6}
+	\end{itemize}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Disproving a Limit}
+
+	Let $f:\mathbb R\to\mathbb R$ be defined by $f(x)=2x$. We want to prove
+	\[
+		\lim_{x\to 3} f(x)\neq 7.
+	\]
+
+	\vfill
+	Write out
+	\begin{itemize}
+		\item The definition of \DS{\lim_{x\to 3}f(x)\neq 7}
+		\item The structure of a proof that \DS{\lim_{x\to 3}f(x)\neq 7}
+		\vfill\p
+		\item Prove that \DS{\lim_{x\to 3}f(x)\neq 7}
+	\end{itemize}
+
+\end{frame}
+
+%------------------------------
+
+\begin{frame}
+\frametitle{What is wrong with this ``proof"?}
+\smallerfont
+\vspace{-2mm}
+\begin{block}{}%$\varepsilon-\delta$ Proofs}
+Prove that 
+$$
+\lim_{x\to 3} (5x+1) = 16
+$$
+\end{block}
+
+\begin{block}{``Proof:"}
+	Let $\e>0$.
+
+	WTS $\forall \e>0$, $\exists\delta>0$ s.t. 
+		$$  0<|x-3|<\delta \implies |(5x+1) - (16)|<\e$$
+\vspace{-3mm}
+	\begin{align*}
+		|(5x+1) - (16)|<\varepsilon &\iff |5x+15|<\e \\
+		&\iff 5|x+3|<\e \implies\delta=\frac{\e}{3}
+	\end{align*}
+\hfill $\square$
+\end{block}
+
+\end{frame}
+
+
+\begin{frame}
+\frametitle{MAT137 Lecture 11 --- Limit Laws}
+	{\bf Before next class:}
+		\begin{itemize} \normalsize
+			\item {\bf Watch videos 2.12, 2.13 }
+		\end{itemize}
+	\vfill
+
+\end{frame}
+
+
+
+\begin{frame}
+\frametitle{MAT137 Lecture 12 --- Squeeze theorem}
+	{\bf Before next class:}
+		\begin{itemize} \normalsize
+			\item {\bf Watch videos 2.14, 2.15 }
+		\end{itemize}
+	\vfill
+
+\end{frame}
+
+
+\begin{frame}
+\frametitle{MAT137 Lecture 13 --- Continuity}
+	{\bf Before next class:}
+		\begin{itemize} \normalsize
+			\item {\bf Watch videos 2.16, 2.17, 2.18 }
+		\end{itemize}
+	\vfill
+
+\end{frame}
+
+
+\begin{frame}
+\frametitle{MAT137 Lecture 14 --- Continuity 2}
+	{\bf Before next class:}
+		\begin{itemize} \normalsize
+			\item {\bf Watch videos 2.19, 2.20 }
+		\end{itemize}
+	\vfill
+
+\end{frame}
+
+
+\begin{frame}
+\frametitle{MAT137 Lecture 15 --- Computations}
+	{\bf Before next class:}
+		\begin{itemize} \normalsize
+			\item {\bf Watch videos 2.21, 2.22 }
+		\end{itemize}
+	\vfill
+
+\end{frame}
+
+
+\begin{frame}
+\frametitle{MAT137 Lecture 16 --- IVT and EVT}
+	{\bf Before next class:}
+		\begin{itemize} \normalsize
+			\item {\bf Watch videos 3.1, 3.2, 3.3 }
+		\end{itemize}
+	\vfill
+
+\end{frame}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\begin{frame}
+\frametitle{Limit at a point}
+
+If a function $f$ is not defined at $x=a$, then
+\begin{enumerate}
+\item $\displaystyle{\lim_{x\rightarrow a} f(x)}$ cannot exist
+\item $\displaystyle{\lim_{x\rightarrow a} f(x)}$ could be $0$
+\item $\displaystyle{\lim_{x\rightarrow a} f(x)}$ must approach $\infty$
+\item none of the above.
+\end{enumerate} 
+
+\end{frame}
+
+
 
 
 %-----------------------------
@@ -711,33 +901,6 @@ Write down the formal definition of the following statements:
 
 \end{frame}
 
-%------------------------------
-
-\begin{frame}
-\frametitle{What is wrong with this ``proof"?}
-\smallerfont
-\vspace{-2mm}
-\begin{block}{}%$\varepsilon-\delta$ Proofs}
-Prove that 
-$$
-\lim_{x\to 3} (5x+1) = 16
-$$
-\end{block}
-
-\begin{block}{``Proof:"}
-	Let $\e>0$.
-
-	WTS $\forall \e>0$, $\exists\delta>0$ s.t. 
-		$$  0<|x-3|<\delta \implies |(5x+1) - (16)|<\e$$
-\vspace{-3mm}
-	\begin{align*}
-		|(5x+1) - (16)|<\varepsilon &\iff |5x+15|<\e \\
-		&\iff 5|x+3|<\e \implies\delta=\frac{\e}{3}
-	\end{align*}
-\hfill $\square$
-\end{block}
-
-\end{frame}
 
 
 %-----------------------
