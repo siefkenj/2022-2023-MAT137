@@ -542,6 +542,15 @@ Which statements are equivalent to the definition of \DS{\lim_{x \to a} f(x) = \
 
 \begin{frame}
 \frametitle{MAT137 Lecture 10 --- Proofs of limits}
+	{\bf Warmup:}
+
+	\begin{itemize}
+		\item Write the moral definition of $\displaystyle		\lim_{x\to a}f(x)=\infty $
+		\item Write the formal definition of $\displaystyle		\lim_{x\to a}f(x)=\infty $
+	\end{itemize}
+
+
+	\vfill
 	{\bf Before next class:}
 		\begin{itemize} \normalsize
 			\item {\bf Watch videos 2.10, 2.11 }
@@ -582,14 +591,15 @@ f(x)=0}?
 	\]
 
 	\vfill
-	Find all values of $X,Y,Z,W$ that make the following statements true
+	Find all values of $X,Y,Z,W>0$ that make the following statements true
+	\bigskip
 	\begin{enumerate}
-		\item $|t-3|<X\implies |f(t)-6|<1$
-		\item $|t-3|<Y\implies |f(t)-6|<1/10$
-		\item $|t-3|<Z\implies |f(t)-6|<1/100$
+		\item $0<|t-3|<X\implies |f(t)-6|<1$
+		\item $0<|t-3|<Y\implies |f(t)-6|<1/10$
+		\item $0<|t-3|<Z\implies |f(t)-6|<1/100$
 			\vfill
 		\p
-	\item $|t-3|<W\implies |f(t)-6|<\varepsilon$
+	\item $0<|t-3|<W\implies |f(t)-6|<\varepsilon$
 
 		(assuming $\varepsilon>0$ is fixed)
 	\end{enumerate} 
@@ -673,6 +683,112 @@ $$
 
 \end{frame}
 
+%-----------------------
+\begin{frame}[t]
+\frametitle{Indeterminate form}
+
+
+Let $a \in \R$. 
+Let $f$ and $g$ be positive functions defined near $a$, except maybe at $a$. 
+
+\vfill
+
+Assume 
+	\DS{
+		\lim_{x \to a} f(x) = \lim_{x \to a} g(x) = 0
+	}.
+
+\vfill
+
+What can we conclude about  \quad
+	\DS{
+		\lim_{x \to a} \frac{f(x)}{g(x)} 
+	} ?
+
+\vfill
+
+\begin{multicols}{2}
+\begin{enumerate}
+	\item The limit is $1$.
+	\item The limit is $0$.
+	\item The limit is $\infty$.
+	\item Limit does not exist.
+	\item  We do not have enough information to decide.
+\end{enumerate}
+\end{multicols}
+
+\end{frame}
+
+%-----------------------
+\begin{frame}[t]
+\frametitle{True or False?}
+
+
+Is this claim true?
+
+\bigskip
+
+\begin{block}{Claim}
+Let $a \in \R$. \\
+Let $f$ and $g$ be functions defined near $a$. \\
+\begin{itemize}
+	\item IF \DS{\lim_{x \to a} f(x) = 0},
+	\item  THEN \DS{\lim_{x \to a} \left[ f(x) g(x) \right] = 0}.
+\end{itemize}
+\end{block}
+
+\vfill
+
+\end{frame}
+%-----------------------------
+\begin{frame}[t]
+\frametitle{A new theorem about products}
+\smallerfont
+\begin{block}{Theorem}
+Let $a \in \R$.  Let $f$ and $g$ be functions with domain $\R$, except possibly $a$. 
+ Assume
+	\begin{itemize}
+		\item  \DS{\lim_{x \to a} f(x) = 0}, and
+		\item $g$ is bounded. 
+			This means that 
+			$$\exists M >0 \mbox{ s.t. } \forall x \neq a, |g(x)| \leq M.$$
+	\end{itemize}
+THEN  \DS{\lim_{x \to a} \left[ f(x) g(x) \right] = 0}
+\end{block}
+
+ \vfill 
+\begin{enumerate}
+\p	\item  Write down the formal definition of what you want to prove.
+\p	\item  Write down what the structure of the formal proof.
+\p 	\item  Rough work.
+\p	\item  Write down a complete formal proof.
+\end{enumerate}
+\vfill
+
+\end{frame}
+%-----------------------------
+\begin{frame}[t]
+\frametitle{Critique this ``proof" -- \#1}
+\smallerfont
+\begin{itemize}
+	\item  WTS \DS{\lim_{x \to a} \left[ f(x) g(x) \right] = 0}:
+	
+		\hfill \DS{\forall \e>0, \exists \delta>0} \; s.t. \; \DS{0<|x-a|<\delta \implies \azul{|f(x) g(x)| < \e}}. 
+\vfill	
+	\item  We know \DS{\lim_{x \to a} f(x) = 0}
+	
+		\hfill \DS{\forall \e_1>0, \exists \delta_1 >0 } \; s.t. \; \DS{0<|x-a|<\delta_1 \implies \azul{|f(x)| <\e_1}}.
+\vfill
+	\item   We know \hfill \DS{\exists M>0} \; s.t. \; \DS{\forall x \neq 0, \; \; \azul{|g(x)| \leq M}}.
+\vfill
+	\item  \DS{|f(x)g(x)| = |f(x)||g(x)| < \e_1 M}
+\vfill
+	\item \DS{\e = \e_1 M \implies \e_1 = \frac{\e}{M}}
+\vfill
+	\item Take  \DS{\delta = \delta_1}
+\vfill
+\end{itemize}
+\end{frame}
 
 
 \begin{frame}
@@ -684,6 +800,170 @@ $$
 	\vfill
 
 \end{frame}
+
+%-----------------------------
+
+\begin{frame}[t]
+\frametitle{Limits involving \DS{\sin(1/x)} Part I}
+
+\begin{block}{
+		\DS{{\lim_{x\rightarrow 0}\sin (1/x)\phantom{x^2}}}}
+
+\begin{enumerate}
+\item DNE because the function values oscillate around $0$
+\item DNE because $1/0$ is undefined
+\item DNE because no matter how close $x$ gets to $0$, there are $x$'s near $0$ for which $\sin(1/x) =1$, and some for which $\sin (1/x)=-1$
+\item all of the above
+\end{enumerate}
+
+\end{block}
+
+\end{frame}
+
+%-----------------------------
+
+\begin{frame}[t]
+\frametitle{Limits involving \DS{\sin(1/x)} Part II}
+
+\begin{block}{
+$\displaystyle{\lim_{x\rightarrow 0}x^2\sin (1/x)}$ }
+\begin{enumerate}
+\item DNE because the function values oscillate around $0$
+\item DNE because $1/0$ is undefined
+\item DNE because no matter how close $x$ gets to $0$, there are $x$'s near $0$ for which $\sin(1/x) =1$, and some for which $\sin (1/x)=-1$
+\item equals 0 
+\item equals 1
+\end{enumerate}
+\end{block}
+\end{frame}
+
+%-----------------------
+\begin{frame}[t]
+\frametitle{A new squeeze}
+\smallerfont
+This is the Squeeze Theorem, as you know it:
+
+\begin{block}{The (classical) Squeeze Theorem}
+	Let $a, L \in \R$. \\
+	Let $f$, $g$, and $h$ be functions defined near $a$, except possibly at $a$.
+
+\vspace{.2cm}
+	\begin{tabular}{cl}
+		IF  & $\bullet$ {For $x$ close to $a$ but not $a$,} \;
+			 \DS{
+			 h(x) \leq g(x) \leq f(x)
+			 } 
+			 \\ \vspace{-0.2cm} \\
+		&  $\bullet$  \DS{\lim_{x \to a} f(x) = L} \quad and
+				\quad\DS{ \lim_{x \to a} h(x) = L } \\ 
+		\vspace{-.1cm} \\
+		THEN & $\bullet$ \DS{\lim_{x \to a} g(x) = L}
+	\end{tabular}
+\end{block}
+
+\pause
+Come up with a new version of the theorem about limits being infinity.    
+(The conclusion should be \DS{\lim_{x \to a} g(x) = \infty}.)
+
+\
+
+\emph{Hint:}  Draw a picture for the classical Squeeze Theorem.  Then draw a picture for the new theorem. 
+
+\end{frame}
+
+
+%-----------------------------
+\begin{frame}[t]
+\frametitle{A new theorem about products}
+\smallerfont
+\begin{block}{Theorem}
+Let $a \in \R$.  Let $f$ and $g$ be functions with domain $\R$, except possibly $a$. 
+ Assume
+	\begin{itemize}
+		\item  \DS{\lim_{x \to a} f(x) = 0}, and
+		\item $g$ is bounded. 
+			This means that 
+			$$\exists M >0 \mbox{ s.t. } \forall x \neq a, |g(x)| \leq M.$$
+	\end{itemize}
+THEN  \DS{\lim_{x \to a} \left[ f(x) g(x) \right] = 0}
+\end{block}
+
+
+\end{frame}
+%-----------------------------
+\begin{frame}[t]
+\frametitle{Critique this ``proof" -- \#1}
+\smallerfont
+\begin{itemize}
+	\item  WTS \DS{\lim_{x \to a} \left[ f(x) g(x) \right] = 0}:
+	
+		\hfill \DS{\forall \e>0, \exists \delta>0} \; s.t. \; \DS{0<|x-a|<\delta \implies \azul{|f(x) g(x)| < \e}}. 
+\vfill	
+	\item  We know \DS{\lim_{x \to a} f(x) = 0}
+	
+		\hfill \DS{\forall \e_1>0, \exists \delta_1 >0 } \; s.t. \; \DS{0<|x-a|<\delta_1 \implies \azul{|f(x)| <\e_1}}.
+\vfill
+	\item   We know \hfill \DS{\exists M>0} \; s.t. \; \DS{\forall x \neq 0, \; \; \azul{|g(x)| \leq M}}.
+\vfill
+	\item  \DS{|f(x)g(x)| = |f(x)||g(x)| < \e_1 M}
+\vfill
+	\item \DS{\e = \e_1 M \implies \e_1 = \frac{\e}{M}}
+\vfill
+	\item Take  \DS{\delta = \delta_1}
+\vfill
+\end{itemize}
+\end{frame}
+%-----------------------------
+\begin{frame}[t]
+\frametitle{Critique this ``proof" -- \#2}
+\smallerfont
+\begin{itemize}
+	\item  WTS \DS{\lim_{x \to a} \left[f(x) g(x) \right] =0}.  By definition, WTS:
+	
+		\hfill \DS{\forall \e>0, \exists \delta>0} s.t. \DS{0<|x-a|<\delta \implies |f(x) g(x)|<\e }
+\vfill
+	\item  Let $\e >0$.  
+\vfill
+	\item Use the value \DS{\frac{\e}{M}} as ``epsilon" in the definition of \DS{\lim_{x \to a} f(x) = 0}
+		
+		\hfill  \DS{\exists \delta_1 \in \R} s.t. \DS{0<|x-a|<\delta_1 \implies |f(x)| <  \frac{\e}{M} }.
+\vfill
+	\item Take \DS{\delta = \delta_1}.
+\vfill
+	\item  Let \DS{x \in \R}.  Assume \DS{0 < |x-a| <\delta}
+\vfill
+	\item  Since \DS{\exists M>0} s.t. \DS{\forall x \neq 0, |g(x)| \leq M} \\
+		\hfill \DS{|f(x) g(x)| < \frac{\e}{M} \cdot M = \e}.
+\vfill
+\end{itemize}
+
+\end{frame}
+
+%-----------------------------
+\begin{frame}[t]
+\frametitle{Critique this ``proof" -- \#3}
+\smallerfont
+\begin{itemize}
+	\item  Since $g$ is bounded, \DS{\exists M >0} \; s.t. \; \;\DS{\forall x \neq 0, \; |g(x)| \leq M}
+\vfill
+	\item  Since \DS{\lim_{x \to a} f(x)=0}, there exists \DS{\delta_1 >0} s.t. 
+	
+		if \DS{0<|x-a|<\delta_1}, \quad then \; \DS{|f(x)-0| = |f(x)| <\e_1 = \frac{\e}{M}}.
+\vfill
+	\item \ \vspace{-1cm}
+		$$ 
+			|f(x)g(x)| = |f(x)| \cdot |g(x)| \leq |f(x)| \cdot M < \e_1 \cdot M = \frac{\e}{M} \cdot M = \e
+		$$
+	\item  In summary, by setting \DS{\delta = \min\{\delta_1 \}}, we find that
+	
+	\
+	
+	if \DS{0<|x-a|<\delta}, \quad then \; \DS{|f(x) \cdot g(x)| < \e}.
+\vfill
+\end{itemize}
+\end{frame}
+
+
 
 
 \begin{frame}
@@ -995,41 +1275,6 @@ Let us fix numbers $A, \e >0$.  Find:
 
 \end{frame}
 
-%-----------------------
-\begin{frame}[t]
-\frametitle{Indeterminate form}
-
-
-Let $a \in \R$. 
-Let $f$ and $g$ be positive functions defined near $a$, except maybe at $a$. 
-
-\vfill
-
-Assume 
-	\DS{
-		\lim_{x \to a} f(x) = \lim_{x \to a} g(x) = 0
-	}.
-
-\vfill
-
-What can we conclude about  \quad
-	\DS{
-		\lim_{x \to a} \frac{f(x)}{g(x)} 
-	} ?
-
-\vfill
-
-\begin{multicols}{2}
-\begin{enumerate}
-	\item The limit is $1$.
-	\item The limit is $0$.
-	\item The limit is $\infty$.
-	\item The limit does not exist.
-	\item  We do not have enough information to decide.
-\end{enumerate}
-\end{multicols}
-
-\end{frame}
 
 %-----------------------
 \begin{frame}
@@ -1076,39 +1321,6 @@ directly from the definition of limit.  Do not use any of the limit laws.
 \begin{frame}[t]
 \frametitle{A new squeeze}
 \smallerfont
-This is the Squeeze Theorem, as you know it:
-
-\begin{block}{The (classical) Squeeze Theorem}
-	Let $a, L \in \R$. \\
-	Let $f$, $g$, and $h$ be functions defined near $a$, except possibly at $a$.
-
-\vspace{.2cm}
-	\begin{tabular}{cl}
-		IF  & $\bullet$ {For $x$ close to $a$ but not $a$,} \;
-			 \DS{
-			 h(x) \leq g(x) \leq f(x)
-			 } 
-			 \\ \vspace{-0.2cm} \\
-		&  $\bullet$  \DS{\lim_{x \to a} f(x) = L} \quad and
-				\quad\DS{ \lim_{x \to a} h(x) = L } \\ 
-		\vspace{-.1cm} \\
-		THEN & $\bullet$ \DS{\lim_{x \to a} g(x) = L}
-	\end{tabular}
-\end{block}
-
-\pause
-Come up with a new version of the theorem about limits being infinity.    
-(The conclusion should be \DS{\lim_{x \to a} g(x) = \infty}.)
-
-\
-
-\emph{Hint:}  Draw a picture for the classical Squeeze Theorem.  Then draw a picture for the new theorem. 
-
-\end{frame}
-%-----------------------
-\begin{frame}[t]
-\frametitle{A new squeeze}
-\smallerfont
 \begin{block}{The (new) Squeeze Theorem}
 	Let $a \in \R$. \\
 	Let $g$ and $h$ be functions defined near $a$, except possibly at $a$.
@@ -1139,164 +1351,9 @@ Come up with a new version of the theorem about limits being infinity.
 	\item  Write down a complete, formal proof.
 \end{enumerate}
 \end{frame}
-%-----------------------
-\begin{frame}
-\frametitle{True or False?}
-
-\vfill
-
-Is this theorem true?
-
-\vfill
-
-\begin{block}{Claim}
-Let $a \in \R$. \\
-Let $f$ and $g$ be functions defined near $a$. \\
-\begin{itemize}
-	\item IF \DS{\lim_{x \to a} f(x) = 0},
-	\item  THEN \DS{\lim_{x \to a} \left[ f(x) g(x) \right] = 0}.
-\end{itemize}
-\end{block}
-
-\vfill
-
-\end{frame}
-%-----------------------------
-\begin{frame}[t]
-\frametitle{A new theorem about products}
-\smallerfont
-\begin{block}{Theorem}
-Let $a \in \R$.  Let $f$ and $g$ be functions with domain $\R$, except possibly $a$. 
- Assume
-	\begin{itemize}
-		\item  \DS{\lim_{x \to a} f(x) = 0}, and
-		\item $g$ is bounded. 
-			This means that 
-			$$\exists M >0 \mbox{ s.t. } \forall x \neq a, |g(x)| \leq M.$$
-	\end{itemize}
-THEN  \DS{\lim_{x \to a} \left[ f(x) g(x) \right] = 0}
-\end{block}
-
- \vfill 
-\begin{enumerate}
-\p	\item  Write down the formal definition of what you want to prove.
-\p	\item  Write down what the structure of the formal proof.
-\p 	\item  Rough work.
-\p	\item  Write down a complete formal proof.
-\end{enumerate}
-\vfill
-
-\end{frame}
-%-----------------------------
-\begin{frame}[t]
-\frametitle{Critique this ``proof" -- \#1}
-\smallerfont
-\begin{itemize}
-	\item  WTS \DS{\lim_{x \to a} \left[ f(x) g(x) \right] = 0}:
-	
-		\hfill \DS{\forall \e>0, \exists \delta>0} \; s.t. \; \DS{0<|x-a|<\delta \implies \azul{|f(x) g(x)| < \e}}. 
-\vfill	
-	\item  We know \DS{\lim_{x \to a} f(x) = 0}
-	
-		\hfill \DS{\forall \e_1>0, \exists \delta_1 >0 } \; s.t. \; \DS{0<|x-a|<\delta_1 \implies \azul{|f(x)| <\e_1}}.
-\vfill
-	\item   We know \hfill \DS{\exists M>0} \; s.t. \; \DS{\forall x \neq 0, \; \; \azul{|g(x)| \leq M}}.
-\vfill
-	\item  \DS{|f(x)g(x)| = |f(x)||g(x)| < \e_1 M}
-\vfill
-	\item \DS{\e = \e_1 M \implies \e_1 = \frac{\e}{M}}
-\vfill
-	\item Take  \DS{\delta = \delta_1}
-\vfill
-\end{itemize}
-\end{frame}
-
-%-----------------------------
-\begin{frame}[t]
-\frametitle{Critique this ``proof" -- \#2}
-\smallerfont
-\begin{itemize}
-	\item  WTS \DS{\lim_{x \to a} \left[f(x) g(x) \right] =0}.  By definition, WTS:
-	
-		\hfill \DS{\forall \e>0, \exists \delta>0} s.t. \DS{0<|x-a|<\delta \implies |f(x) g(x)|<\e }
-\vfill
-	\item  Let $\e >0$.  
-\vfill
-	\item Use the value \DS{\frac{\e}{M}} as ``epsilon" in the definition of \DS{\lim_{x \to a} f(x) = 0}
-		
-		\hfill  \DS{\exists \delta_1 \in \R} s.t. \DS{0<|x-a|<\delta_1 \implies |f(x)| <  \frac{\e}{M} }.
-\vfill
-	\item Take \DS{\delta = \delta_1}.
-\vfill
-	\item  Let \DS{x \in \R}.  Assume \DS{0 < |x-a| <\delta}
-\vfill
-	\item  Since \DS{\exists M>0} s.t. \DS{\forall x \neq 0, |g(x)| \leq M} \\
-		\hfill \DS{|f(x) g(x)| < \frac{\e}{M} \cdot M = \e}.
-\vfill
-\end{itemize}
-
-\end{frame}
-
-%-----------------------------
-\begin{frame}[t]
-\frametitle{Critique this ``proof" -- \#3}
-\smallerfont
-\begin{itemize}
-	\item  Since $g$ is bounded, \DS{\exists M >0} \; s.t. \; \;\DS{\forall x \neq 0, \; |g(x)| \leq M}
-\vfill
-	\item  Since \DS{\lim_{x \to a} f(x)=0}, there exists \DS{\delta_1 >0} s.t. 
-	
-		if \DS{0<|x-a|<\delta_1}, \quad then \; \DS{|f(x)-0| = |f(x)| <\e_1 = \frac{\e}{M}}.
-\vfill
-	\item \ \vspace{-1cm}
-		$$ 
-			|f(x)g(x)| = |f(x)| \cdot |g(x)| \leq |f(x)| \cdot M < \e_1 \cdot M = \frac{\e}{M} \cdot M = \e
-		$$
-	\item  In summary, by setting \DS{\delta = \min\{\delta_1 \}}, we find that
-	
-	\
-	
-	if \DS{0<|x-a|<\delta}, \quad then \; \DS{|f(x) \cdot g(x)| < \e}.
-\vfill
-\end{itemize}
-\end{frame}
-
-%-----------------------------
-
-\begin{frame}
-\frametitle{Limits involving \DS{\sin(1/x)} Part I}
-
-\begin{block}{
-The reason that \DS{{\lim_{x\rightarrow 0}\sin (1/x)}} does not exist is:}
-
-\begin{enumerate}
-\item because the function values oscillate around $0$
-\item because $1/0$ is undefined
-\item because no matter how close $x$ gets to $0$, there are $x$'s near $0$ for which $\sin(1/x) =1$, and some for which $\sin (1/x)=-1$
-\item all of the above
-\end{enumerate}
-
-\end{block}
-
-\end{frame}
 
 
-%-----------------------------
 
-\begin{frame}
-\frametitle{Limits involving \DS{\sin(1/x)} Part II}
-
-\begin{block}{The limit 
-$\displaystyle{\lim_{x\rightarrow 0}x^2\sin (1/x)}$ }
-\begin{enumerate}
-\item does not exist because the function values oscillate around $0$
-\item does not exist because $1/0$ is undefined
-\item does not exist because no matter how close $x$ gets to $0$, there are $x$'s near $0$ for which $\sin(1/x) =1$, and some for which $\sin (1/x)=-1$
-\item equals 0 
-\item equals 1
-\end{enumerate}
-\end{block}
-\end{frame}
 
 
 %-----------------------------
