@@ -262,53 +262,6 @@ Let \DS{g(x) = \frac{1}{x^3}}.
 
 %-----------------------------
 
-\begin{frame}
-\frametitle{Estimations -- 2}
-
-
-Without using a calculator, estimate \DS{\sqrt[20]{1.01}} as well as you can.
-
-\
-
-\emph{Hint:}  You know the value of \DS{f(x) = \sqrt[20]{x}} and its derivative at one point very close to 1.01.  Use the tangent line at that point as an approximation.
- 
-\end{frame}
-%-----------------------------
-\begin{frame}[t]
-\smallerfont
-\frametitle{Estimations -- 3}
-
-%The point of this question is to make them discover L'Hopital's Rule!
-
-
-\begin{enumerate}
-\item  We know \quad
-	\DS{
-		f(0) = 2, \quad f'(0) = 3, \quad g(0) = 7, \quad g'(0) = 5.
-	}
-	
-	\vspace{.2cm}
- 	Compute \; \DS{\lim_{x \to 0} \frac{f(x)}{g(x)}}.
-
-\vfill
-
-\item  We know \quad 
-	\DS{
-		f(0) = 0, \quad f'(0) = 3, \quad g(0) = 0, \quad g'(0) = 5.
-	}
-	
-	\vspace{.2cm}
- 	\begin{itemize}
-		\item  When $x$ is close to $0$, give estimates for \DS{f(x)} and \DS{g(x)} using the tangent lines at $0$. 
-		\item Use those estimates to compute \;  \DS{\lim_{x \to 0} \frac{f(x)}{g(x)}}.
-	\end{itemize}
-	
-\end{enumerate}
- 
- \vfill
- 
-\end{frame}
-
 
 
 
@@ -544,6 +497,8 @@ Which of these implications are true?
 \begin{frame}
 	\frametitle{MAT137 Lecture 20 --- The Chain Rule}
 
+	{\bf Warmup:} Get out and review your proof of the Quotient Rule.
+
 	\vfill
 	{\bf Before next class:}
 		\begin{itemize} \normalsize
@@ -552,15 +507,65 @@ Which of these implications are true?
 \end{frame}
 
 
+\begin{frame}[t]
+\frametitle{Check your proof}
+
+\begin{enumerate}
+	\item Did you use the \emph{definition} of derivative?
+	\item  Are there words or only equations?
+	\item  Does every step follow logically?
+	\item  Did you only assume things you could assume?
+	
+	\
+	
+	\item  Did you assume at some point that a function was differentiable?  If so, did you justify it?
+
+	\item \label{qu:cont} Did you assume at some point that a function was continuous?  If so, did you justify it?
+	
+\end{enumerate}
+
+\
+
+	If you answered ``no" to (F), you probably missed something important.
+
+\end{frame}
+
+
+
 \begin{frame}
 \frametitle{Quick composition}
 
  Let $f$ and $g$ be differentiable functions and let $h=f\circ g$. \\ What is $h^{\prime}(2)$?
+
+ \vfill
+
 \begin {enumerate}
 \item $f^{\prime}(2)\circ g^{\prime}(2)$
 \item $f^{\prime}(2)g^{\prime}(2)$
 \item $f^{\prime}(g(2)) g^{\prime}(2)$
+\item $f^{\prime}(g(2))\circ g^{\prime}(2)$
 \item $f^{\prime}(g(x)) g^{\prime}(2)$
+\item $f^{\prime}\circ g^{\prime}(2)$
+\item $f^{\prime}(g^{\prime}(2))$
+\end{enumerate}
+
+%Answer: (c). Even though students may have memorized the Chain Rule formula, some may not be able to apply it to this type of problem.
+\end{frame}
+
+\begin{frame}
+\frametitle{Quick composition 2}
+
+ Let $f$ and $g$ be differentiable functions. Which statements have a mathematical meaning?
+
+	\vfill
+\begin {enumerate}
+\item $f^{\prime}(2)\circ g^{\prime}(2)$
+\item $f^{\prime}(2)g^{\prime}(2)$
+\item $f^{\prime}(g(2)) g^{\prime}(2)$
+\item $f^{\prime}(g(2))\circ g^{\prime}(2)$
+\item $f^{\prime}(g(x)) g^{\prime}(2)$
+\item $f^{\prime}\circ g^{\prime}(2)$
+\item $f^{\prime}(g^{\prime}(2))$
 \end{enumerate}
 
 %Answer: (c). Even though students may have memorized the Chain Rule formula, some may not be able to apply it to this type of problem.
@@ -611,6 +616,53 @@ Compute the derivative of
 \end{frame}
 
 
+
+\begin{frame}
+\frametitle{Estimations -- 2}
+
+
+Without using a calculator, estimate \DS{\sqrt[20]{1.01}} as well as you can.
+
+\
+
+\emph{Hint:}  You know the value of \DS{f(x) = \sqrt[20]{x}} and its derivative at one point very close to 1.01.  Use the tangent line at that point as an approximation.
+ 
+\end{frame}
+%-----------------------------
+\begin{frame}[t]
+\smallerfont
+\frametitle{Estimations -- 3}
+
+%The point of this question is to make them discover L'Hopital's Rule!
+
+
+\begin{enumerate}
+\item  We know \quad
+	\DS{
+		f(0) = 2, \quad f'(0) = 3, \quad g(0) = 7, \quad g'(0) = 5.
+	}
+	
+	\vspace{.2cm}
+ 	Compute \; \DS{\lim_{x \to 0} \frac{f(x)}{g(x)}}.
+
+\vfill
+
+\item  We know \quad 
+	\DS{
+		f(0) = 0, \quad f'(0) = 3, \quad g(0) = 0, \quad g'(0) = 5.
+	}
+	
+	\vspace{.2cm}
+ 	\begin{itemize}
+		\item  When $x$ is close to $0$, give estimates for \DS{f(x)} and \DS{g(x)} using the tangent lines at $0$. 
+		\item Use those estimates to compute \;  \DS{\lim_{x \to 0} \frac{f(x)}{g(x)}}.
+	\end{itemize}
+	
+\end{enumerate}
+ 
+ \vfill
+ 
+\end{frame}
 
 
 
