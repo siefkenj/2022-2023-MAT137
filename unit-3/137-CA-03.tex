@@ -686,316 +686,12 @@ Without using a calculator, estimate \DS{\sqrt[20]{1.01}} as well as you can.
 \end{frame}
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-%----------------------------------------------------------------------------------------
-%	DERIVATIVE AS SLOPE
-%----------------------------------------------------------------------------------------
-
-\begin{frame}[t]
-\frametitle{From the derivative to the function}
-
-\begin{enumerate}
-	\item Sketch the graph of a continuous function with domain $\R$, whose derivative has the graph below.
-	\item Sketch the graph of a non-continuous function whose derivative has the graph below.
-\end{enumerate}
-
-\begin{center}
-	\includegraphics[scale=.3]{G5}
-\end{center}
-
-\end{frame}
-
-%-----------------------------
-
-
-%-----------------------------
-%  Derivative from the definition
-%-----------------------------
-%-----------------------------
-
-%-----------------------------
-% Derivative as rate of change
-%-----------------------------
-%-----------------------------
-
-\begin{frame}
-\frametitle{Bella}
-
-The graph below describes Bella's distance from home one morning as she drives drive between her home and school.\\
-
-Describe a possible scenario for her travels that morning. \\
-Then sketch the corresponding graph of his velocity.
-
-\begin{center}
-\includegraphics[width=0.7\textwidth]{G9}
-\end{center}
-
-\end{frame}
-
-%-----------------------------
-
-\begin{frame}
-\frametitle{Edward and Jacob}
-
-Jacob walked at 5 km/h for 20 minutes and then sprinted at 15 km/h for 8 minutes.
-\begin{enumerate}
-\item How fast would Edward have to walk or run to go the same distance as Jacob did in the same time while moving at a constant speed? 
-\item Sketch a graph of Jacob's and Edward's positions over time on the same set of axes.
-\end{enumerate}
-
-\end{frame}
-
-%-----------------------------
-%  Computations
-%-----------------------------
-%-----------------------------
-%-----------------------------
-%-----------------------------
-\begin{frame}[t]
-\frametitle{A long chain}
-
-The function below has 137 square roots:
-	$$
-		f(x) = \sqrt{x+ \sqrt{x + \sqrt{x + \sqrt{x+ \ldots + \sqrt{x + \sqrt{x+1}}}}}}
-	$$
-
-Find the equation of the line tangent to the graph of $f$ at the point with $x$-coordinate $0$.
-\end{frame}
-
-%-----------------------------
-
-\begin{frame}[t]
-\frametitle{Computations: Trig derivatives}
-
-
-Compute the derivatives of the following functions:
-
-\
-\begin{enumerate}
-%	\item  \DS{f(x) = x \sin x}
-	\item  \DS{f(x) = \tan (3x^2+1)}
-
-\vfill
-	\item  \DS{f(x) = (\cos x )( \sin 2x )(\tan 3x)}
-
-\vfill
-	\item  \DS{f(x) = \cos ( \sin( \tan x))}
-\vfill
-	\item  \DS{f(x) = \cos \left( 3x + \sqrt{1 + \sin^2 x^2 } \right)}
-\vfill
-%	\item  \DS{f(x) = \frac{x + \sin x}{x + \cos x}}
-\end{enumerate}
-
-
-\end{frame}
-
-%-----------------------------
-%  Differentiation rules
-%-----------------------------
-%-----------------------------
-
-
-%-----------------------------
-%-----------------------------
-
-\begin{frame}[t]
-\frametitle{Vertical things}
-
-\begin{itemize}
-	\item Construct a function $f$ that has a \rojo{vertical asymptote} at $x=2$.
-	\item Construct a function $g$ that has a \azul{vertical tangent line} at $x=2$.
-\end{itemize}
-
-\end{frame}
-
-%-----------------------------
-
-
-%-----------------------------
-\begin{frame}[t]
-\frametitle{Absolute value and derivatives - 2}
-
-\begin{block}{True or False?}
-For all $n \in \Z$ and all $x$, $\frac{d}{dx}|x|^n=nx|x|^{n-2}$.
-
-\end{block}
-\end{frame}
-
-%-----------------------------
-
-%-----------------------------
-%  HIGHER ORDER DERIVATIVES
-%-----------------------------
-%-----------------------------
-
-%-----------------------------
-\begin{frame}
-\frametitle{Nixon}
-
-
-Richard Nixon, during the 1972 US Presidential campaign, (paraphrased):
-
-\
-\begin{quote}
-\emph{Inflation is increasing, but the rate of increase of inflation is decreasing.}
-\end{quote}
-
-\vfill
-
-Let 
-	\begin{itemize}
-		\item $C$ = cost of life
-		\item  $t$ = time
-	\end{itemize}
-What did Nixon say in terms of derivatives?
-
-\vfill
-
-\end{frame}
-%-----------------------------
-%  CHAIN RULE
-%-----------------------------
-%------------------------------
-
-\begin{frame}
-\frametitle{Chain rule from a graph}
-
-
-If $f$ and $g$ are the functions whose graphs are shown. \\
-Let $u(x)=f(g(x))$ and $v(x)=g(f(x))$. \\ \medskip
-
-Find each derivative, if it exists. \\ If it does not exist, explain why.
-
-
-\begin{enumerate}
-\item $u'(1)$
-\item $v'(1)$
-\end{enumerate}
-\vspace{-1cm}
-
-
-\begin{center}
-\includegraphics[width=0.5\textwidth]{G10}
-\end{center}
-
-\end{frame}
-
-%-----------------------------
-
-\begin{frame}[t]
-\frametitle{Balloon}
-
-I am inflating a spherical balloon.  Below is the graph of the radius $r$ (in $cm$) as a function of time $t$ (in $s$).
- At what rate is the volume of the balloon increasing at time $4s$?
-
-\begin{center}
-	\only<1>{
-		\includegraphics[scale=.35]{G6}
-		}
-	\only<2>{
-		\includegraphics[scale=.35]{G7}
-		}
-\end{center}
-
-\end{frame}
-%-----------------------------
-
-\begin{frame}[t]
-\frametitle{An alternative proof of the quotient rule}
-
-Assume we have already proven the product rule, the power rule, and the chain rule.
-
-Obtain a formula for the derivative of \DS{h(x) = \frac{f(x)}{g(x)}}.
-
-\emph{Hint:}  \DS{\frac{f(x)}{g(x)} = f(x) \cdot g(x)^{-1}}
-
-\end{frame}
-
-%-----------------------------
-
-\begin{frame}
-\frametitle{Derivatives of \DS{(f \circ g)}}
-
-Assume $f$ and $g$ are functions that have all their derivatives. 
- Find formulas for
-	\begin{enumerate}
-		\item  \DS{(f \circ g)'(x)}
-		\item  \DS{(f \circ g)''(x)}
-		\item	\DS{(f \circ g)'''(x)}
-	\end{enumerate}
-	
-	in terms of the values of $f$, $g$ and their derivatives.
-	
-	\
-	
-	\emph{Hint:}  The first one is simply the chain rule.
-	
-	\ \p
-	
-	\emph{Challenge:} Find a formula for \DS{(f \circ g)^{(n)}(x)} \\
-	(This is beyond the scope of this course).  
-\end{frame}
-
-%-----------------------------
-%  TRIG
-%-----------------------------
-%-----------------------------
-
-\begin{frame}[t]
-\frametitle{Derivative of $\cos$}
-
-
-Let \DS{g(x) = \cos x.}
-
-\
-
-Obtain and prove a formula for its derivative directly from the definition of derivative as a limit.
-
-\vfill
-
-
-{\bf Hint:}  Imitate the derivation in Video 3.12. \\  If you need a trig identity that you do not know, google it or ask another student.
-
-%{\bf Hint:}  This identity may come in handy:
-%	$$
-%		\cos (a + b) = \cos a \cos b - \sin a \sin b
-%	$$
-\end{frame}
-
-%-----------------------------
-\begin{frame}[t]
-\frametitle{Derivatives of the other trig functions}
-
-
-Use the basic differentiation rules, as well as
-	$$
-		\frac{d}{dx} \sin x = \cos x, \quad \quad \frac{d}{dx} \cos x = - \sin x,
-	$$
-to quickly obtain and prove formulas for the derivatives of $\tan$, $\cot$, $\sec$, and $\csc$.
-
-\end{frame}
-
-%-----------------------------
-
-
 \begin{frame}
 \frametitle{Product of trig functions}
 
 Let $f(x)= \sin x \cos x$.  What is its derivative $f'(x)$?
+
+\vfill
 \begin{enumerate}
 \item $1-2\sin^2(x)$
 \item $2\cos^2(x) -1$
@@ -1007,32 +703,27 @@ Let $f(x)= \sin x \cos x$.  What is its derivative $f'(x)$?
 %Answer: (d).} (a) - (c) are equivalent formulae. One can get (a) by using the product rule and $\cos^2(x)=1-\sin ^2(x)$.
 \end{frame}
 
-%-----------------------------
-
 \begin{frame}[t]
-\frametitle{A pesky function}
+\frametitle{Computations: Trig derivatives}
 
-Let \DS{h(x) = \begin{cases} x^2 \sin \dfrac{\;1\;}{x} & \mbox{ if } x \neq 0 \\ 0 & \mbox{ if } x=0 \end{cases}}.
 
-	\begin{enumerate}
-		\item  Calculate \DS{h'(x)} for any $x \neq 0$.
-		\item  \label{it:0a} Using the definition of derivative, calculate \DS{h'(0)}.
-		\item \label{it:0b}  Calculate \DS{\lim_{x \to 0} h'(x)}
-		
-		\vspace{.2cm}
-		{\smallerfont \emph{Hint:} Questions \ref{it:0a} and \ref{it:0b} have different answers.}
-		
-		\p \vspace{.2cm}
-		\item  Is $h$ continuous at $0$?
-		\item Is $h$ differentiable at $0$?
-		\item  Is $h'$ continuous at $0$?
-	\end{enumerate}
+Compute the derivatives of the following functions:
+
+\
+\begin{enumerate}
+	\item  \DS{f(x) = x \sin x}
+
+
+\vfill
+	\item  \DS{f(x) = \cos ( \sin( \tan x))}
+\vfill
+	\item  \DS{f(x) = \cos \left( 3x + \sqrt{1 + \sin^2 x^2 } \right)}
+\vfill
+%	\item  \DS{f(x) = \frac{x + \sin x}{x + \cos x}}
+\end{enumerate}
+
 
 \end{frame}
-%-----------------------------
-%  IMPLICIT DIFFERENTIATION
-%-----------------------------
-%-----------------------------
 
 \begin{frame}[t]
 \frametitle{Implicit differentiation}
@@ -1055,6 +746,314 @@ Using implicit differentiation, compute
 	\end{enumerate}
 	\end{multicols}
 \end{frame}
+
+\begin{frame}
+\frametitle{Bella}
+
+The graph below describes Bella's distance from home one morning as she drives drive between her home and school.\\
+
+Describe a possible scenario for her travels that morning. \\
+Then sketch the corresponding graph of his velocity.
+
+\begin{center}
+\includegraphics[width=0.7\textwidth]{G9}
+\end{center}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Edward and Jacob}
+
+Jacob walked at 5 km/h for 20 minutes and then sprinted at 15 km/h for 8 minutes.
+\begin{enumerate}
+\item How fast would Edward have to walk or run to go the same distance as Jacob did in the same time while moving at a constant speed? 
+\item Sketch a graph of Jacob's and Edward's positions over time on the same set of axes.
+\end{enumerate}
+
+\end{frame}
+
+\begin{frame}[t]
+\frametitle{Vertical things}
+
+\begin{itemize}
+	\item Construct a function $f$ that has a \rojo{vertical asymptote} at $x=2$.
+	\item Construct a function $g$ that has a \azul{vertical tangent line} at $x=2$.
+\end{itemize}
+
+\end{frame}
+
+
+
+
+
+
+
+
+
+
+
+%
+%
+%
+%%----------------------------------------------------------------------------------------
+%%	DERIVATIVE AS SLOPE
+%%----------------------------------------------------------------------------------------
+%
+%\begin{frame}[t]
+%\frametitle{From the derivative to the function}
+%
+%\begin{enumerate}
+%	\item Sketch the graph of a continuous function with domain $\R$, whose derivative has the graph below.
+%	\item Sketch the graph of a non-continuous function whose derivative has the graph below.
+%\end{enumerate}
+%
+%\begin{center}
+%	\includegraphics[scale=.3]{G5}
+%\end{center}
+%
+%\end{frame}
+%
+%%-----------------------------
+%
+%
+%%-----------------------------
+%%  Derivative from the definition
+%%-----------------------------
+%%-----------------------------
+%
+%%-----------------------------
+%% Derivative as rate of change
+%%-----------------------------
+%%-----------------------------
+%
+%%-----------------------------
+%
+%%-----------------------------
+%%  Computations
+%%-----------------------------
+%%-----------------------------
+%%-----------------------------
+%%-----------------------------
+%\begin{frame}[t]
+%\frametitle{A long chain}
+%
+%The function below has 137 square roots:
+%	$$
+%		f(x) = \sqrt{x+ \sqrt{x + \sqrt{x + \sqrt{x+ \ldots + \sqrt{x + \sqrt{x+1}}}}}}
+%	$$
+%
+%Find the equation of the line tangent to the graph of $f$ at the point with $x$-coordinate $0$.
+%\end{frame}
+%
+%%-----------------------------
+%
+%%-----------------------------
+%%  Differentiation rules
+%%-----------------------------
+%%-----------------------------
+%
+%
+%%-----------------------------
+%%-----------------------------
+%
+%%-----------------------------
+%
+%
+%%-----------------------------
+%\begin{frame}[t]
+%\frametitle{Absolute value and derivatives - 2}
+%
+%\begin{block}{True or False?}
+%For all $n \in \Z$ and all $x$, $\frac{d}{dx}|x|^n=nx|x|^{n-2}$.
+%
+%\end{block}
+%\end{frame}
+%
+%%-----------------------------
+%
+%%-----------------------------
+%%  HIGHER ORDER DERIVATIVES
+%%-----------------------------
+%%-----------------------------
+%
+%%-----------------------------
+%\begin{frame}
+%\frametitle{Nixon}
+%
+%
+%Richard Nixon, during the 1972 US Presidential campaign, (paraphrased):
+%
+%\
+%\begin{quote}
+%\emph{Inflation is increasing, but the rate of increase of inflation is decreasing.}
+%\end{quote}
+%
+%\vfill
+%
+%Let 
+%	\begin{itemize}
+%		\item $C$ = cost of life
+%		\item  $t$ = time
+%	\end{itemize}
+%What did Nixon say in terms of derivatives?
+%
+%\vfill
+%
+%\end{frame}
+%%-----------------------------
+%%  CHAIN RULE
+%%-----------------------------
+%%------------------------------
+%
+%\begin{frame}
+%\frametitle{Chain rule from a graph}
+%
+%
+%If $f$ and $g$ are the functions whose graphs are shown. \\
+%Let $u(x)=f(g(x))$ and $v(x)=g(f(x))$. \\ \medskip
+%
+%Find each derivative, if it exists. \\ If it does not exist, explain why.
+%
+%
+%\begin{enumerate}
+%\item $u'(1)$
+%\item $v'(1)$
+%\end{enumerate}
+%\vspace{-1cm}
+%
+%
+%\begin{center}
+%\includegraphics[width=0.5\textwidth]{G10}
+%\end{center}
+%
+%\end{frame}
+%
+%%-----------------------------
+%
+%\begin{frame}[t]
+%\frametitle{Balloon}
+%
+%I am inflating a spherical balloon.  Below is the graph of the radius $r$ (in $cm$) as a function of time $t$ (in $s$).
+% At what rate is the volume of the balloon increasing at time $4s$?
+%
+%\begin{center}
+%	\only<1>{
+%		\includegraphics[scale=.35]{G6}
+%		}
+%	\only<2>{
+%		\includegraphics[scale=.35]{G7}
+%		}
+%\end{center}
+%
+%\end{frame}
+%%-----------------------------
+%
+%\begin{frame}[t]
+%\frametitle{An alternative proof of the quotient rule}
+%
+%Assume we have already proven the product rule, the power rule, and the chain rule.
+%
+%Obtain a formula for the derivative of \DS{h(x) = \frac{f(x)}{g(x)}}.
+%
+%\emph{Hint:}  \DS{\frac{f(x)}{g(x)} = f(x) \cdot g(x)^{-1}}
+%
+%\end{frame}
+%
+%%-----------------------------
+%
+%\begin{frame}
+%\frametitle{Derivatives of \DS{(f \circ g)}}
+%
+%Assume $f$ and $g$ are functions that have all their derivatives. 
+% Find formulas for
+%	\begin{enumerate}
+%		\item  \DS{(f \circ g)'(x)}
+%		\item  \DS{(f \circ g)''(x)}
+%		\item	\DS{(f \circ g)'''(x)}
+%	\end{enumerate}
+%	
+%	in terms of the values of $f$, $g$ and their derivatives.
+%	
+%	\
+%	
+%	\emph{Hint:}  The first one is simply the chain rule.
+%	
+%	\ \p
+%	
+%	\emph{Challenge:} Find a formula for \DS{(f \circ g)^{(n)}(x)} \\
+%	(This is beyond the scope of this course).  
+%\end{frame}
+%
+%%-----------------------------
+%%  TRIG
+%%-----------------------------
+%%-----------------------------
+%
+%\begin{frame}[t]
+%\frametitle{Derivative of $\cos$}
+%
+%
+%Let \DS{g(x) = \cos x.}
+%
+%\
+%
+%Obtain and prove a formula for its derivative directly from the definition of derivative as a limit.
+%
+%\vfill
+%
+%
+%{\bf Hint:}  Imitate the derivation in Video 3.12. \\  If you need a trig identity that you do not know, google it or ask another student.
+%
+%%{\bf Hint:}  This identity may come in handy:
+%%	$$
+%%		\cos (a + b) = \cos a \cos b - \sin a \sin b
+%%	$$
+%\end{frame}
+%
+%%-----------------------------
+%\begin{frame}[t]
+%\frametitle{Derivatives of the other trig functions}
+%
+%
+%Use the basic differentiation rules, as well as
+%	$$
+%		\frac{d}{dx} \sin x = \cos x, \quad \quad \frac{d}{dx} \cos x = - \sin x,
+%	$$
+%to quickly obtain and prove formulas for the derivatives of $\tan$, $\cot$, $\sec$, and $\csc$.
+%
+%\end{frame}
+%
+%%-----------------------------
+%
+%
+%
+%%-----------------------------
+%
+%\begin{frame}[t]
+%\frametitle{A pesky function}
+%
+%Let \DS{h(x) = \begin{cases} x^2 \sin \dfrac{\;1\;}{x} & \mbox{ if } x \neq 0 \\ 0 & \mbox{ if } x=0 \end{cases}}.
+%
+%	\begin{enumerate}
+%		\item  Calculate \DS{h'(x)} for any $x \neq 0$.
+%		\item  \label{it:0a} Using the definition of derivative, calculate \DS{h'(0)}.
+%		\item \label{it:0b}  Calculate \DS{\lim_{x \to 0} h'(x)}
+%		
+%		\vspace{.2cm}
+%		{\smallerfont \emph{Hint:} Questions \ref{it:0a} and \ref{it:0b} have different answers.}
+%		
+%		\p \vspace{.2cm}
+%		\item  Is $h$ continuous at $0$?
+%		\item Is $h$ differentiable at $0$?
+%		\item  Is $h'$ continuous at $0$?
+%	\end{enumerate}
+%
+%\end{frame}
+%-----------------------------
+%  IMPLICIT DIFFERENTIATION
+%-----------------------------
+%-----------------------------
+
 
 %------------------------------
 %-----------------------------
