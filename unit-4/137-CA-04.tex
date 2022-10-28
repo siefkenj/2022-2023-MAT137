@@ -75,14 +75,22 @@
 
 \newcommand{\arcsec}{\operatorname{arcsec}}
 
+\setbeamertemplate{enumerate items}{(\Alph{enumi})}
 %===================================================
 \begin{document}
 %===================================================
 
-%----------------------------------------------------------------------------------------
-%	Functions and inverse functions
-%----------------------------------------------------------------------------------------
-%-----------------------------
+
+\begin{frame}
+	\frametitle{MAT137 Lecture 22 --- Inverse Functions}
+
+	\vfill
+	{\bf Before next class:}
+		\begin{itemize} \normalsize
+			\item {\bf Watch videos  4.3, 4.4}
+		\end{itemize}
+\end{frame}
+
 \begin{frame}[t]
 \frametitle{Worm up}
 
@@ -129,6 +137,445 @@ This defines a function $f$.
 \end{enumerate}
 
 \end{frame}
+
+\begin{frame}[t]
+\frametitle{Function, number, or nonsense?}
+
+Let $f,g$ be functions. Let $x$ be a number. Classify each
+	expression as a \textbf{function}, \textbf{number}, or \textbf{nonsense}.
+
+
+\begin{multicols}{2}
+	\begin{enumerate}
+		\item $f(x)$
+		\item $f\circ g$
+		\item $f\circ (g(x))$
+		\item $(f\circ g)(x)$
+		\item $f(x)\circ g(x)$
+		\item $f(x)g(x)$
+		\item $f(g(x))$
+		\item $f(g)$
+		\item $f(g)(x)$
+		\item $f(g(x)f(x))$
+		\item $e^x$
+		\item $\ln x$
+		\item $\ln$
+		\item $\sin \circ e^x$
+		\item $\sin \circ \ln$
+		\item $(\ln\circ \sin)(e^x)$
+		\item $e^x\circ \sin$
+		\item $\sin^2$
+	\end{enumerate}
+\end{multicols}
+
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Inverse function from a graph}
+
+\begin{columns}[c]
+
+\column{.65\textwidth}
+\includegraphics[scale=.4]{G12}
+\column{.3\textwidth}
+Calculate:
+\begin{enumerate}
+	\item  \DS{f(2)}
+	\item  \DS{f(0)}
+	\item  \DS{f^{-1}(2)}
+	\item  \DS{f^{-1}(0)}
+	\item  \DS{f^{-1}(-1)}
+\end{enumerate}
+\end{columns}
+
+\end{frame}
+
+\begin{frame}[t]
+\frametitle{Absolute value and inverses}
+
+Let
+	$$
+		h(x) = x |x| + 1
+	$$
+\begin{enumerate}
+	\item  Calculate \DS{h^{-1}(-8)}.
+\p
+	\item Sketch the graph of $h$.
+	\item  Find an equation for \DS{h^{-1}}.
+	\item Sketch the graph of \DS{h^{-1}}.
+	\item  Verify that
+		\begin{itemize} \normalsize
+			\item  for every \DS{t \in \boxed{???}}, \; \DS{h(h^{-1}(t)) = t}.
+			\item for every \DS{t \in \boxed{???}}, \; \DS{h^{-1}(h(t)) = t}.
+		\end{itemize}
+\end{enumerate}
+
+\end{frame}
+
+
+
+\begin{frame}[t]
+\frametitle{Composition and inverses}
+
+Assume for simplicity that all functions in this problem have domain $\R$.
+
+\vfill
+
+Let $f$ and $g$ be functions.  Assume they each have an inverse.
+
+\vfill
+
+Is \DS{\left( f \circ g \right)^{-1} = f^{-1} \circ g^{-1}}?
+
+\begin{itemize}
+	\item If YES, prove it. 
+	\item If NO, fix the statement.
+\end{itemize}
+
+
+\vfill  \p
+
+If you do not know how to start, experiment with the functions
+	$$
+		f(x) = x + 1, \quad \quad g(x) = 2x.
+	$$
+
+\end{frame}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\begin{frame}
+	\frametitle{MAT137 Lecture 23 --- Inverse Functions II}
+
+	\vfill
+	{\bf Before next class:}
+		\begin{itemize} \normalsize
+			\item {\bf Watch videos 4.5, 4.7, 4.8, 4.9 }
+		\end{itemize}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Fill in the Blank }
+
+Given that $f$ is an invertible function, fill in the blanks. 
+\begin{enumerate}
+\item If $f(-1) = 0$, then $f^{-1}(0) =$ ------.
+\item If $f^{-1}(2) = 1$, then $f(1)=$ ------.
+\item If $(2,3)$ is on the graph of $f$, then ------  is on the graph of $f^{-1}$.
+\item If ------ is on the graph of $f$, then $(-2,4)$ is on the graph of $f^{-1}$.
+\end{enumerate}
+
+
+\end{frame}
+
+%-----------------------------
+\begin{frame}[t]
+\frametitle{Where is the error?}
+
+	\begin{itemize}
+		\item We know that \majab{(f^{-1})' = \frac{1}{f'}}
+		\item  Let \DS{f(x) = x^2}, restricted to the domain \DS{x \in (0, \infty)}
+			$$f'(x) = 2x \quad \mbox{and} \quad \majar{f'(4) = 8}$$
+		\item  Then \DS{f^{-1}(x) = \sqrt{x}}
+			$$(f^{-1})'(x) = \frac{1}{2\sqrt{x}} \quad \mbox{ and } \quad \majar{(f^{-1})'(4) = \frac{1}{4}}$$
+		\item So \majab{(f^{-1})'(4) \neq \frac{1}{f'(4)}}
+	\end{itemize}
+
+
+\end{frame}
+
+\begin{frame}[t]
+\frametitle{Derivatives of the inverse function}
+
+
+Let $f$ be a one-to-one function. \\
+Let $a, b \in \R$ such that $b=f(a)$.
+
+\vfill
+\begin{enumerate}
+	\item Obtain a formula for \DS{ \left(f^{-1}\right)'(b) } in terms of \DS{f'(a)}.
+		\vspace{.2cm}
+		
+		{\smallerfont
+		\emph{Hint:} This was done in Video 4.4  \\
+		Take \DS{\frac{d}{dy}} of both sides of  \quad \DS{ f(f^{-1}( (y)) = y }.
+		}
+	
+	\p \vfill
+	\item  Obtain a formula for \DS{ \left(f^{-1}\right)''(b) } in terms of \DS{f'(a)} and \DS{f''(a)}.
+
+	\p \vfill	
+	\item   \emph{Challenge:}  Obtain a formula for \DS{ \left(f^{-1}\right)'''(b) } in terms of \DS{f'(a)}, \DS{f''(a)}, and \DS{f'''(a)}.
+
+\end{enumerate}
+
+
+\end{frame}
+
+\begin{frame}[t]
+\frametitle{Composition of one-to-one functions}
+
+
+Assume for simplicity that all functions in this problem have domain $\R$.  Prove the following theorem.
+
+\vfill
+
+
+\begin{block}{Theorem A}
+Let $f$ and $g$ be functions. \\
+IF $f$ and $g$ are one-to-one, \\
+THEN $f \circ g$ is one-to-one.
+\end{block}
+
+\vfill
+
+\p
+Suggestion:
+	\begin{enumerate}
+		\item Write the definition of what you want to prove.
+
+		\item  Figure out the formal structure of the proof.
+
+		\item   Complete the proof (use the hypotheses!)
+	\end{enumerate}
+
+\end{frame}
+
+
+
+
+
+
+
+
+
+
+
+
+
+\begin{frame}
+	\frametitle{MAT137 Lecture 24 --- Exponentials and Logarithms}
+
+	\vfill
+	{\bf Before next class:}
+		\begin{itemize} \normalsize
+			\item {\bf Watch videos  4.12, 4.13, 4.14}
+		\end{itemize}
+\end{frame}
+
+
+\begin{frame}[t]
+\frametitle{Computations - Exponentials and logarithms}
+
+
+
+Compute the derivative of the following functions:
+
+\begin{enumerate}
+	\item  \DS{f(x) = e^{\sin x + \cos x} \ln x}
+\vfill
+	\item  \DS{f(x) = \pi^{\tan x}}
+\vfill
+	\item  \DS{f(x) = \ln \left[ e^x + \ln  \ln  \ln x  \right]}
+\vfill
+	\item \DS{f(x) = \log_{10} \left( 2x + 3 \right)}
+\vfill
+\end{enumerate}
+
+
+\end{frame}
+
+\begin{frame}[t]
+\frametitle{Logarithm and Absolute Value}
+
+The function $F$ is defined by the equation
+	$$F(x) = \ln |x| .$$
+What is its derivative?
+\vfill
+	\begin{enumerate}
+		\item  \DS{F'(x) = \frac{1}{x}}
+\vfill
+		\item  \DS{F'(x) = \frac{1}{|x|}}
+\vfill
+		\item  $F$ is not differentiable
+\vfill
+	\end{enumerate}
+\end{frame}
+
+\begin{frame}[t]
+\frametitle{Logarithmic differentiation}
+
+\vspace{5mm} 
+	\begin{block}{}
+Calculate the derivative of 
+	$$
+		g(x)  = x^{\tan x}.
+	$$
+	\end{block}
+
+\end{frame}
+
+
+%-----------------------------
+\begin{frame}[t]
+\smallerfont
+\frametitle{More logarithmic differentiation}
+
+\begin{block}{}
+Calculate the derivative of 
+	$$
+		f(x) = \left( \sin x \right)^{\cos x} + \left( \cos x \right)^{\sin x}.
+	$$
+\end{block}
+
+
+\pause \vfill
+
+{\bf \underline{What is wrong with this answer?}}
+	\begin{align*}
+		\ln f(x)  = & (\cos x) \ln ( \sin x )+ ( \sin x ) ( \ln \cos x ) \\
+		{\color{red} \frac{d}{dx}} \left[  \ln f(x) \right]  = & {\color{red} \frac{d}{dx}} \left[ (\cos x) \ln ( \sin x ) \right] + 
+			 {\color{red} \frac{d}{dx}} \left[ ( \sin x ) ( \ln \cos x ) \right] \\
+		\frac{f'(x)}{f(x)}  = & - ( \sin x ) \ln (\sin x) + (\cos x ) \frac{\cos x}{\sin x}  \\
+				& + ( \cos x ) \ln (\cos x) + (\sin x ) \frac{- \sin x}{\cos x}
+	\end{align*}
+	$${f'(x) = f(x) \left[ - (\sin x) \ln(\sin x) + (\cos x) \ln (\cos x) + \frac{\cos^2 x}{\sin x} - \frac{\sin^2 x}{\cos x} \right]}$$
+\end{frame}
+
+
+\begin{frame}[t]
+\frametitle{Cue Boss Music}
+
+\vspace{5mm} 
+\begin{block}{}
+Calculate the derivative of 
+	$$
+		h(x) = \sqrt[3]{\frac{\left( \sin^6 x \right) \sqrt{x^7+6x+2}}{3^x \left(x^{10}+2x\right)^{10}}}
+	$$
+\end{block}
+
+
+\end{frame}
+
+
+
+
+
+
+
+
+
+
+\begin{frame}
+	\frametitle{MAT137 Lecture 25 --- Inverse Trig}
+
+	\vfill
+	{\bf Before next class:}
+		\begin{itemize} \normalsize
+			\item {\bf Watch videos  5.2, 5.3, 5.4}
+		\end{itemize}
+\end{frame}
+
+\begin{frame}[t]
+\smallerfont
+\frametitle{Definition of $\arctan$}
+
+\begin{enumerate}
+	\item  Sketch the graph of $\tan$.
+	\item  Prove that $\tan$ is not one-to-one.
+	\item  Select the largest interval containing $0$ such that the restriction of $\tan$ to it is one-to-one.
+		We define $\arctan$ as the inverse of this restriction.  \quad Let $x, y \in \R$
+%	\item 
+		$$\arctan y = x \; \quad \; \iff \; \quad ???$$
+	\item	What is the domain of \DS{\arctan}? 
+		What is the range of \DS{\arctan}?
+	
+	 Sketch the graph of $\arctan$.
+	\item Compute
+		\begin{multicols}{2}
+			\begin{enumerate}
+				\item  \DS{\arctan \left( \tan \left( 1 \right) \right) }
+				\item  \DS{\arctan \left( \tan \left( 3\right) \right) }
+				\item \DS{\arctan \left( \tan \left( \frac{\pi}{2}\right) \right) }
+				\item  \DS{\arctan \left( \tan \left( -6)\right) \right) }
+				\item \DS{\tan \left( \arctan \left( 0\right) \right) }
+				\item \DS{\tan \left( \arctan \left( 10\right) \right) }
+			\end{enumerate}		
+		\end{multicols}
+\end{enumerate}
+
+
+
+\end{frame}
+
+\begin{frame}[t]
+\frametitle{Trig-inverse-trig}
+
+\begin{block}{}
+Find simple expressions for these quantities and state the domain on which they are valid:
+	\begin{enumerate}
+	\begin{multicols}{2}
+		\item  \DS{\sin \; ( \arccos x)}
+		\item \DS{\sec \; (\arccos x)}
+		\item \DS{\sec \; ( \arctan x)}
+		\item \DS{\tan \; (\arcsec x)}
+	\end{multicols}
+	\end{enumerate}
+\vspace{-.1cm}	
+\end{block}
+
+\ \p
+
+{\smallerfont
+\emph{Hint:}  There are two standard ways to attack these problems:
+	\begin{itemize}
+		\item  Use a trig identity  \\  e.g.: a trig identity relating $\sin$ and $\cos$ for (1)
+		\item  Or draw a right triangle with side lengths $1$ and $x$ 
+			\\ e.g.: with an angle $\theta$ such that $\cos \theta = x$ for (1)
+	\end{itemize}
+If you need to take a square root, you must justify which branch ($+$ or $-$) you are choosing.
+}
+
+\end{frame}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+%----------------------------------------------------------------------------------------
+%	Functions and inverse functions
+%----------------------------------------------------------------------------------------
+%-----------------------------
+
 
 %-----------------------------
 
@@ -177,64 +624,10 @@ This defines a function $f$.
 
 %-----------------------------
 
-\begin{frame}
-\frametitle{Fill in the Blank }
-
-Given that $f$ is an invertible function, fill in the blanks. 
-\begin{enumerate}
-\item If $f(-1) = 0$, then $f^{-1}(0) =$ ------.
-\item If $f^{-1}(2) = 1$, then $f(1)=$ ------.
-\item If $(2,3)$ is on the graph of $f$, then ------  is on the graph of $f^{-1}$.
-\item If ------ is on the graph of $f$, then $(-2,4)$ is on the graph of $f^{-1}$.
-\end{enumerate}
-
-
-\end{frame}
-
 
 %-----------------------------
 
-\begin{frame}
-\frametitle{Inverse function from a graph}
-
-\begin{columns}[c]
-
-\column{.65\textwidth}
-\includegraphics[scale=.4]{G12}
-\column{.3\textwidth}
-Calculate:
-\begin{enumerate}
-	\item  \DS{f(2)}
-	\item  \DS{f(0)}
-	\item  \DS{f^{-1}(2)}
-	\item  \DS{f^{-1}(0)}
-	\item  \DS{f^{-1}(-1)}
-\end{enumerate}
-\end{columns}
-
-\end{frame}
 %-----------------------------
-\begin{frame}[t]
-\frametitle{Absolute value and inverses}
-
-Let
-	$$
-		h(x) = x |x| + 1
-	$$
-\begin{enumerate}
-	\item  Calculate \DS{h^{-1}(-8)}.
-\p
-	\item Sketch the graph of $h$.
-	\item  Find an equation for \DS{h^{-1}}.
-	\item Sketch the graph of \DS{h^{-1}}.
-	\item  Verify that
-		\begin{itemize} \normalsize
-			\item  for every \DS{t \in \boxed{???}}, \; \DS{h(h^{-1}(t)) = t}.
-			\item for every \DS{t \in \boxed{???}}, \; \DS{h^{-1}(h(t)) = t}.
-		\end{itemize}
-\end{enumerate}
-
-\end{frame}
 %-----------------------------
 \begin{frame}[t]
 \frametitle{Functions, inverses, and graphs }
@@ -269,64 +662,8 @@ Draw the graph of a function $f$ satisfying all of the following:
 
 \end{frame}
 %-----------------------------
-\begin{frame}[t]
-\frametitle{Composition and inverses}
-
-Assume for simplicity that all functions in this problem have domain $\R$.
-
-\vfill
-
-Let $f$ and $g$ be functions.  Assume they each have an inverse.
-
-\vfill
-
-Is \DS{\left( f \circ g \right)^{-1} = f^{-1} \circ g^{-1}}?
-
-\begin{itemize}
-	\item If YES, prove it. 
-	\item If NO, fix the statement.
-\end{itemize}
-
-
-\vfill  \p
-
-If you do not know how to start, experiment with the functions
-	$$
-		f(x) = x + 1, \quad \quad g(x) = 2x.
-	$$
-
-\end{frame}
-
 %-----------------------------
 
-\begin{frame}[t]
-\frametitle{Composition of one-to-one functions}
-
-
-Assume for simplicity that all functions in this problem have domain $\R$.  Prove the following theorem.
-
-\vfill
-
-
-\begin{block}{Theorem A}
-Let $f$ and $g$ be functions. \\
-IF $f$ and $g$ are one-to-one, \\
-THEN $f \circ g$ is one-to-one.
-\end{block}
-
-\vfill
-
-\p
-Suggestion:
-	\begin{enumerate}
-		\item Write the definition of what you want to prove.
-
-		\item  Figure out the formal structure of the proof.
-
-		\item   Complete the proof (use the hypotheses!)
-	\end{enumerate}
-
-\end{frame}
 %-----------------------------
 \begin{frame}[t]
 \frametitle{Composition of one-to-one functions -- 2}
@@ -398,90 +735,11 @@ $$
 \end{frame}
 
 %-----------------------------
-\begin{frame}[t]
-\frametitle{Where is the error?}
-
-	\begin{itemize}
-		\item We know that \majab{(f^{-1})' = \frac{1}{f'}}
-		\item  Let \DS{f(x) = x^2}, restricted to the domain \DS{x \in (0, \infty)}
-			$$f'(x) = 2x \quad \mbox{and} \quad \majar{f'(4) = 8}$$
-		\item  Then \DS{f^{-1}(x) = \sqrt{x}}
-			$$(f^{-1})'(x) = \frac{1}{2\sqrt{x}} \quad \mbox{ and } \quad \majar{(f^{-1})'(4) = \frac{1}{4}}$$
-		\item So \majab{(f^{-1})'(4) \neq \frac{1}{f'(4)}}
-	\end{itemize}
-
-
-\end{frame}
-%-----------------------------
-\begin{frame}[t]
-\frametitle{Derivatives of the inverse function}
-
-
-Let $f$ be a one-to-one function. \\
-Let $a, b \in \R$ such that $b=f(a)$.
-
-\vfill
-\begin{enumerate}
-	\item Obtain a formula for \DS{ \left(f^{-1}\right)'(b) } in terms of \DS{f'(a)}.
-		\vspace{.2cm}
-		
-		{\smallerfont
-		\emph{Hint:} This was done in Video 4.4  \\
-		Take \DS{\frac{d}{dy}} of both sides of  \quad \DS{ f(f^{-1}( (y)) = y }.
-		}
-	
-	\p \vfill
-	\item  Obtain a formula for \DS{ \left(f^{-1}\right)''(b) } in terms of \DS{f'(a)} and \DS{f''(a)}.
-
-	\p \vfill	
-	\item   \emph{Challenge:}  Obtain a formula for \DS{ \left(f^{-1}\right)'''(b) } in terms of \DS{f'(a)}, \DS{f''(a)}, and \DS{f'''(a)}.
-
-\end{enumerate}
-
-
-\end{frame}
-
 %----------------------------------------------------------------------------------------
 %	Exponentials and logarithms
 %----------------------------------------------------------------------------------------
 %-----------------------------
-\begin{frame}[t]
-\frametitle{Computations - Exponentials and logarithms}
-
-
-
-Compute the derivative of the following functions:
-
-\begin{enumerate}
-	\item  \DS{f(x) = e^{\sin x + \cos x} \ln x}
-\vfill
-	\item  \DS{f(x) = \pi^{\tan x}}
-\vfill
-	\item  \DS{f(x) = \ln \left[ e^x + \ln  \ln  \ln x  \right]}
-\vfill
-	\item \DS{f(x) = \log_{10} \left( 2x + 3 \right)}
-\vfill
-\end{enumerate}
-
-
-\end{frame}
 %-----------------------------
-\begin{frame}[t]
-\frametitle{Logarithm and Absolute Value}
-
-The function $F$ is defined by the equation
-	$$F(x) = \ln |x| .$$
-What is its derivative?
-\vfill
-	\begin{enumerate}
-		\item  \DS{F'(x) = \frac{1}{x}}
-\vfill
-		\item  \DS{F'(x) = \frac{1}{|x|}}
-\vfill
-		\item  $F$ is not differentiable
-\vfill
-	\end{enumerate}
-\end{frame}
 %-----------------------------
 \begin{frame}[t]
 \frametitle{A different type of logarithm}
@@ -505,59 +763,7 @@ Calculate the derivative of
 
 \end{frame}
 %-----------------------------
-\begin{frame}[t]
-\frametitle{Logarithmic differentiation}
-
-\vspace{5mm} 
-	\begin{block}{}
-Calculate the derivative of 
-	$$
-		g(x)  = x^{\tan x}.
-	$$
-	\end{block}
-
-\end{frame}
-
-
 %-----------------------------
-\begin{frame}[t]
-\smallerfont
-\frametitle{More logarithmic differentiation}
-
-\begin{block}{}
-Calculate the derivative of 
-	$$
-		f(x) = \left( \sin x \right)^{\cos x} + \left( \cos x \right)^{\sin x}.
-	$$
-\end{block}
-
-
-\pause \vfill
-
-{\bf \underline{What is wrong with this answer?}}
-	\begin{align*}
-		\ln f(x)  = & (\cos x) \ln ( \sin x )+ ( \sin x ) ( \ln \cos x ) \\
-		{\color{red} \frac{d}{dx}} \left[  \ln f(x) \right]  = & {\color{red} \frac{d}{dx}} \left[ (\cos x) \ln ( \sin x ) \right] + 
-			 {\color{red} \frac{d}{dx}} \left[ ( \sin x ) ( \ln \cos x ) \right] \\
-		\frac{f'(x)}{f(x)}  = & - ( \sin x ) \ln (\sin x) + (\cos x ) \frac{\cos x}{\sin x}  \\
-				& + ( \cos x ) \ln (\cos x) + (\sin x ) \frac{- \sin x}{\cos x}
-	\end{align*}
-	$${f'(x) = f(x) \left[ - (\sin x) \ln(\sin x) + (\cos x) \ln (\cos x) + \frac{\cos^2 x}{\sin x} - \frac{\sin^2 x}{\cos x} \right]}$$
-\end{frame}
-%-----------------------------
-\begin{frame}[t]
-\frametitle{Hard derivatives made easier}
-
-\vspace{5mm} 
-\begin{block}{}
-Calculate the derivative of 
-	$$
-		h(x) = \sqrt[3]{\frac{\left( \sin^6 x \right) \sqrt{x^7+6x+2}}{3^x \left(x^{10}+2x\right)^{10}}}
-	$$
-\end{block}
-
-
-\end{frame}
 
 %-----------------------------
 \begin{frame}[t]
@@ -575,37 +781,6 @@ Find $y'$ if $x^y=y^x$.
 %	Inverse trig functions
 %----------------------------------------------------------------------------------------
 %-----------------------------
-\begin{frame}[t]
-\smallerfont
-\frametitle{Definition of $\arctan$}
-
-\begin{enumerate}
-	\item  Sketch the graph of $\tan$.
-	\item  Prove that $\tan$ is not one-to-one.
-	\item  Select the largest interval containing $0$ such that the restriction of $\tan$ to it is one-to-one.
-		We define $\arctan$ as the inverse of this restriction.  \quad Let $x, y \in \R$
-%	\item 
-		$$\arctan y = x \; \quad \; \iff \; \quad ???$$
-	\item	What is the domain of \DS{\arctan}? 
-		What is the range of \DS{\arctan}?
-	
-	 Sketch the graph of $\arctan$.
-	\item Compute
-		\begin{multicols}{2}
-			\begin{enumerate}
-				\item  \DS{\arctan \left( \tan \left( 1 \right) \right) }
-				\item  \DS{\arctan \left( \tan \left( 3\right) \right) }
-				\item \DS{\arctan \left( \tan \left( \frac{\pi}{2}\right) \right) }
-				\item  \DS{\arctan \left( \tan \left( -6)\right) \right) }
-				\item \DS{\tan \left( \arctan \left( 0\right) \right) }
-				\item \DS{\tan \left( \arctan \left( 10\right) \right) }
-			\end{enumerate}		
-		\end{multicols}
-\end{enumerate}
-
-
-
-\end{frame}
 
 %-----------------------------
 \begin{frame}[t]
@@ -638,36 +813,6 @@ Compute the derivatives of these functions, and simplify them as much as possibl
 \end{frame}
 
 %-----------------------------
-\begin{frame}[t]
-\frametitle{Trig-inverse-trig}
-
-\begin{block}{}
-Find simple expressions for these quantities and state the domain on which they are valid:
-	\begin{enumerate}
-	\begin{multicols}{2}
-		\item  \DS{\sin \; ( \arccos x)}
-		\item \DS{\sec \; (\arccos x)}
-		\item \DS{\sec \; ( \arctan x)}
-		\item \DS{\tan \; (\arcsec x)}
-	\end{multicols}
-	\end{enumerate}
-\vspace{-.1cm}	
-\end{block}
-
-\ \p
-
-{\smallerfont
-\emph{Hint:}  There are two standard ways to attack these problems:
-	\begin{itemize}
-		\item  Use a trig identity  \\  e.g.: a trig identity relating $\sin$ and $\cos$ for (1)
-		\item  Or draw a right triangle with side lengths $1$ and $x$ 
-			\\ e.g.: with an angle $\theta$ such that $\cos \theta = x$ for (1)
-	\end{itemize}
-If you need to take a square root, you must justify which branch ($+$ or $-$) you are choosing.
-}
-
-\end{frame}
-
 %-----------------------------
 \begin{frame}[t]
 \frametitle{$\arcsec$}
