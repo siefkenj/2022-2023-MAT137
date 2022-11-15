@@ -590,267 +590,267 @@ Calculate the derivative of
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-%----------------------------------------------------------------------------------------
-%	Functions and inverse functions
-%----------------------------------------------------------------------------------------
-%-----------------------------
-
-
-%-----------------------------
-
-\begin{frame}
-
-\frametitle{\small Finding a Restricted Domain on which a Function is Invertible}
-\vspace{-3mm}
-%\begin{minipage}{0.35\textwidth}
-\begin{center}
-\begin{tikzpicture}[scale=1]
-			\draw[->] (-2.2,0) -- (2.5,0) node[right] {$x$};
-			\draw[->] (0,-1.5) -- (0,2.2) node[above] {$y$};
-			\draw[draw= blue, very thick, scale=1,domain=-1.5:1.5,smooth,variable=\x] plot (\x,\x*\x*\x-\x) node[right] {$f$};
-			
-\node [below] at (-2,-0.2) {\footnotesize $-2$};
-\node [below] at (-1,-0.2) {\footnotesize$-1$};
-%\node [below] at (0,0) {\footnotesize$0$};
-\node [below] at (1,-0.2) {\footnotesize$1$};
-\node [below] at (2,-0.2) {\footnotesize$2$};
 %
-
-%\node [right] at (0,-2) {\footnotesize$-2$};
-\node [right] at (0,-1) {\footnotesize$-1$};
-\node [right] at (0,1) {\footnotesize$1$};
-\node [right] at (0,2) {\footnotesize$2$};
-
-			\draw(1,-0.2) -- (1,0.2);
-			\draw(2,-0.2) -- (2,0.2);
-			\draw(-1,-0.2) -- (-1,0.2);
-			\draw(-2,-0.2) -- (-2,0.2);
-
-
-		\end{tikzpicture}
-		\end{center}
-%		\end{minipage}
-%		%%%%%%%%
-%\begin{minipage}{0.6\textwidth}
-\begin{enumerate}
-\item Find the largest interval containing 0 on which $f$ is invertible.
-\item Find the largest interval containing 1 on which $f$ is invertible.
-\end{enumerate}
-
-
-\end{frame}
-
-
-%-----------------------------
-
-
-%-----------------------------
-
-%-----------------------------
-%-----------------------------
-\begin{frame}[t]
-\frametitle{Functions, inverses, and graphs }
-
-Sketch the graph of a function $g$ satisfying all the following properties:
-
-\begin{enumerate}
-	\item  The domain of $g$ is $\R$.
-	\item $g$ is continuous everywhere except at $-2$.
-	\item $g$ is differentiable everywhere except at $-2$ and $1$.
-	\item  $g$ has an inverse function.
-	\item  $g(0)=2$
-	\item $g'(0) = 2$
-	\item \DS{\left(g^{-1}\right)' (-3) = -2}.
-\end{enumerate}
-
-\end{frame}
-
-%-----------------------------
-\begin{frame}[t]
-\frametitle{Functions, inverses, and graphs - 2}
-%This appeared in a past test
-
-Draw the graph of a function $f$ satisfying all of the following:
-
-	\begin{enumerate}
-		\item The domain of $f$ is $\R$.
-		\item $f$ is differentiable everywhere.
-		\item The restriction of $f$ to \DS{[0, \infty)} is one-to-one,  \\ and its INVERSE has a vertical tangent line at $2$.
-		\item The restriction of $f$ to \DS{(- \infty,0]} is one-to-one,  \\ and its INVERSE has derivative $2$ at $2$.
-	\end{enumerate}
-
-\end{frame}
-%-----------------------------
-%-----------------------------
-
-%-----------------------------
-\begin{frame}[t]
-\frametitle{Composition of one-to-one functions -- 2}
-
-Assume for simplicity that all functions in this problem have domain $\R$.   Prove the following theorem.
-
-
-\begin{block}{Theorem B}
-Let $f$ and $g$ be functions. \\
-IF $f \circ g$ is one-to-one, \quad
-THEN $g$ is one-to-one.
-\end{block}
-
-
-\p
-Suggestion:
-	\begin{enumerate}
-		\item  Transform the ``\DS{P \implies Q}'' theorem into an equivalent 
-		``\DS{\mbox{(not Q)} \implies \mbox{(not P)} }'' theorem.  \\ You will prove that one instead.
-\p
-		\item Write the definition of the hypotheses \\ and of the conclusion.
-
-		\item Write the proof.
-	\end{enumerate}
-
-\end{frame}
-%-----------------------------
-\begin{frame}[t]
-\frametitle{Composition of one-to-one functions -- 3}
-
-Assume for simplicity that all functions in this problem have domain $\R$.
-
-\vfill
-
-Prove the following claim is FALSE with a counterexample.
-
-\vfill
-
-
-\begin{block}{Claim }
-Let $f$ and $g$ be functions. \\
-IF $f \circ g$ is one-to-one, \\
-THEN $f$ is one-to-one.
-\end{block}
-
-\vfill
-
-\end{frame}
-
-%----------------------------
-\begin{frame}[t]
-\frametitle{Increasing and one-to-one}
-
-\begin{block}{Definition}
-Let $f$ be a function with domain $D$. We say that $f$ is \emph{increasing} on $D$ when
-
-$$\forall x_1, x_2 \in D,  \quad x_1<x_2 \implies f(x_1)<f(x_2).
-$$
-\end{block}
-
-\begin{enumerate}
-\item Prove that if a function is increasing, then it is one-to-one.
-\p
-\item Use this to show that $g(x) = x^5 + 4x^3 + 2x + 1$ has an inverse.
-\item Find $(g ^{-1})'(1)$.
-\end{enumerate}
-
-
-\end{frame}
-
-%-----------------------------
-%----------------------------------------------------------------------------------------
-%	Exponentials and logarithms
-%----------------------------------------------------------------------------------------
-%-----------------------------
-%-----------------------------
-%-----------------------------
-%-----------------------------
-%-----------------------------
-
-%-----------------------------
-\begin{frame}[t]
-\frametitle{An Implicit Function}
-
-\vspace{5mm} 
-\begin{block}{}
-Find $y'$ if $x^y=y^x$.
-\end{block}
-\end{frame}
-
-
-%-----------------------------
-%----------------------------------------------------------------------------------------
-%	Inverse trig functions
-%----------------------------------------------------------------------------------------
-%-----------------------------
-
-%-----------------------------
-\begin{frame}[t]
-\frametitle{Derivative of $\arctan$}
-
-\begin{block}{}
-Obtain (and prove) a formula for the derivative of $\arctan$.
-\end{block}
-
-\
-
-\emph{Hint:}  Call \DS{f(t) = \arctan t} and differentiate
-	$$
-		\forall t \in \ldots \quad \quad \tan ( f(t)) = t
-	$$
-\end{frame}
-%-----------------------------
-\begin{frame}[t]
-\frametitle{Computations - Inverse trig functions}
-
-
-Compute the derivatives of these functions, and simplify them as much as possible:
-	\begin{enumerate}
-		\item  \DS{f(x) = \arcsin \left( x^{3/2}\right) }
-		\vfill
-		\item  \DS{ f(x)=2x^2 \arctan (x^2) - \ln (x^4+1) }
-		\vfill
-	\end{enumerate}
-
-\end{frame}
-
-%-----------------------------
-%-----------------------------
-\begin{frame}[t]
-\frametitle{$\arcsec$}
-
-
-\begin{enumerate}
-
-\item  Complete: ``We define $\arcsec$ as the inverse of 
- the restriction of $\sec$ to ..."
-
-\emph{Hint:} Sketch the graph of $\sec$.  
-
-\vfill
-
-\item What are the domain and range of $\arcsec$?  \\ Sketch its graph.
-
-\vfill
-
-\item Obtain (and prove) a formula for the derivative of $\arcsec$ in the same way you did for $\arctan$.
-
-\vfill
-
-\item Now obtain the same formula  in a different way:  use \DS{\sec x = \frac{1}{\cos x}} to write \DS{\arcsec} in terms of \DS{\arccos}.
-
-\end{enumerate}
-
-
-\end{frame}
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%%----------------------------------------------------------------------------------------
+%%	Functions and inverse functions
+%%----------------------------------------------------------------------------------------
+%%-----------------------------
+%
+%
+%%-----------------------------
+%
+%\begin{frame}
+%
+%\frametitle{\small Finding a Restricted Domain on which a Function is Invertible}
+%\vspace{-3mm}
+%%\begin{minipage}{0.35\textwidth}
+%\begin{center}
+%\begin{tikzpicture}[scale=1]
+%			\draw[->] (-2.2,0) -- (2.5,0) node[right] {$x$};
+%			\draw[->] (0,-1.5) -- (0,2.2) node[above] {$y$};
+%			\draw[draw= blue, very thick, scale=1,domain=-1.5:1.5,smooth,variable=\x] plot (\x,\x*\x*\x-\x) node[right] {$f$};
+%			
+%\node [below] at (-2,-0.2) {\footnotesize $-2$};
+%\node [below] at (-1,-0.2) {\footnotesize$-1$};
+%%\node [below] at (0,0) {\footnotesize$0$};
+%\node [below] at (1,-0.2) {\footnotesize$1$};
+%\node [below] at (2,-0.2) {\footnotesize$2$};
+%%
+%
+%%\node [right] at (0,-2) {\footnotesize$-2$};
+%\node [right] at (0,-1) {\footnotesize$-1$};
+%\node [right] at (0,1) {\footnotesize$1$};
+%\node [right] at (0,2) {\footnotesize$2$};
+%
+%			\draw(1,-0.2) -- (1,0.2);
+%			\draw(2,-0.2) -- (2,0.2);
+%			\draw(-1,-0.2) -- (-1,0.2);
+%			\draw(-2,-0.2) -- (-2,0.2);
+%
+%
+%		\end{tikzpicture}
+%		\end{center}
+%%		\end{minipage}
+%%		%%%%%%%%
+%%\begin{minipage}{0.6\textwidth}
+%\begin{enumerate}
+%\item Find the largest interval containing 0 on which $f$ is invertible.
+%\item Find the largest interval containing 1 on which $f$ is invertible.
+%\end{enumerate}
+%
+%
+%\end{frame}
+%
+%
+%%-----------------------------
+%
+%
+%%-----------------------------
+%
+%%-----------------------------
+%%-----------------------------
+%\begin{frame}[t]
+%\frametitle{Functions, inverses, and graphs }
+%
+%Sketch the graph of a function $g$ satisfying all the following properties:
+%
+%\begin{enumerate}
+%	\item  The domain of $g$ is $\R$.
+%	\item $g$ is continuous everywhere except at $-2$.
+%	\item $g$ is differentiable everywhere except at $-2$ and $1$.
+%	\item  $g$ has an inverse function.
+%	\item  $g(0)=2$
+%	\item $g'(0) = 2$
+%	\item \DS{\left(g^{-1}\right)' (-3) = -2}.
+%\end{enumerate}
+%
+%\end{frame}
+%
+%%-----------------------------
+%\begin{frame}[t]
+%\frametitle{Functions, inverses, and graphs - 2}
+%%This appeared in a past test
+%
+%Draw the graph of a function $f$ satisfying all of the following:
+%
+%	\begin{enumerate}
+%		\item The domain of $f$ is $\R$.
+%		\item $f$ is differentiable everywhere.
+%		\item The restriction of $f$ to \DS{[0, \infty)} is one-to-one,  \\ and its INVERSE has a vertical tangent line at $2$.
+%		\item The restriction of $f$ to \DS{(- \infty,0]} is one-to-one,  \\ and its INVERSE has derivative $2$ at $2$.
+%	\end{enumerate}
+%
+%\end{frame}
+%%-----------------------------
+%%-----------------------------
+%
+%%-----------------------------
+%\begin{frame}[t]
+%\frametitle{Composition of one-to-one functions -- 2}
+%
+%Assume for simplicity that all functions in this problem have domain $\R$.   Prove the following theorem.
+%
+%
+%\begin{block}{Theorem B}
+%Let $f$ and $g$ be functions. \\
+%IF $f \circ g$ is one-to-one, \quad
+%THEN $g$ is one-to-one.
+%\end{block}
+%
+%
+%\p
+%Suggestion:
+%	\begin{enumerate}
+%		\item  Transform the ``\DS{P \implies Q}'' theorem into an equivalent 
+%		``\DS{\mbox{(not Q)} \implies \mbox{(not P)} }'' theorem.  \\ You will prove that one instead.
+%\p
+%		\item Write the definition of the hypotheses \\ and of the conclusion.
+%
+%		\item Write the proof.
+%	\end{enumerate}
+%
+%\end{frame}
+%%-----------------------------
+%\begin{frame}[t]
+%\frametitle{Composition of one-to-one functions -- 3}
+%
+%Assume for simplicity that all functions in this problem have domain $\R$.
+%
+%\vfill
+%
+%Prove the following claim is FALSE with a counterexample.
+%
+%\vfill
+%
+%
+%\begin{block}{Claim }
+%Let $f$ and $g$ be functions. \\
+%IF $f \circ g$ is one-to-one, \\
+%THEN $f$ is one-to-one.
+%\end{block}
+%
+%\vfill
+%
+%\end{frame}
+%
+%%----------------------------
+%\begin{frame}[t]
+%\frametitle{Increasing and one-to-one}
+%
+%\begin{block}{Definition}
+%Let $f$ be a function with domain $D$. We say that $f$ is \emph{increasing} on $D$ when
+%
+%$$\forall x_1, x_2 \in D,  \quad x_1<x_2 \implies f(x_1)<f(x_2).
+%$$
+%\end{block}
+%
+%\begin{enumerate}
+%\item Prove that if a function is increasing, then it is one-to-one.
+%\p
+%\item Use this to show that $g(x) = x^5 + 4x^3 + 2x + 1$ has an inverse.
+%\item Find $(g ^{-1})'(1)$.
+%\end{enumerate}
+%
+%
+%\end{frame}
+%
+%%-----------------------------
+%%----------------------------------------------------------------------------------------
+%%	Exponentials and logarithms
+%%----------------------------------------------------------------------------------------
+%%-----------------------------
+%%-----------------------------
+%%-----------------------------
+%%-----------------------------
+%%-----------------------------
+%
+%%-----------------------------
+%\begin{frame}[t]
+%\frametitle{An Implicit Function}
+%
+%\vspace{5mm} 
+%\begin{block}{}
+%Find $y'$ if $x^y=y^x$.
+%\end{block}
+%\end{frame}
+%
+%
+%%-----------------------------
+%%----------------------------------------------------------------------------------------
+%%	Inverse trig functions
+%%----------------------------------------------------------------------------------------
+%%-----------------------------
+%
+%%-----------------------------
+%\begin{frame}[t]
+%\frametitle{Derivative of $\arctan$}
+%
+%\begin{block}{}
+%Obtain (and prove) a formula for the derivative of $\arctan$.
+%\end{block}
+%
+%\
+%
+%\emph{Hint:}  Call \DS{f(t) = \arctan t} and differentiate
+%	$$
+%		\forall t \in \ldots \quad \quad \tan ( f(t)) = t
+%	$$
+%\end{frame}
+%%-----------------------------
+%\begin{frame}[t]
+%\frametitle{Computations - Inverse trig functions}
+%
+%
+%Compute the derivatives of these functions, and simplify them as much as possible:
+%	\begin{enumerate}
+%		\item  \DS{f(x) = \arcsin \left( x^{3/2}\right) }
+%		\vfill
+%		\item  \DS{ f(x)=2x^2 \arctan (x^2) - \ln (x^4+1) }
+%		\vfill
+%	\end{enumerate}
+%
+%\end{frame}
+%
+%%-----------------------------
+%%-----------------------------
+%\begin{frame}[t]
+%\frametitle{$\arcsec$}
+%
+%
+%\begin{enumerate}
+%
+%\item  Complete: ``We define $\arcsec$ as the inverse of 
+% the restriction of $\sec$ to ..."
+%
+%\emph{Hint:} Sketch the graph of $\sec$.  
+%
+%\vfill
+%
+%\item What are the domain and range of $\arcsec$?  \\ Sketch its graph.
+%
+%\vfill
+%
+%\item Obtain (and prove) a formula for the derivative of $\arcsec$ in the same way you did for $\arctan$.
+%
+%\vfill
+%
+%\item Now obtain the same formula  in a different way:  use \DS{\sec x = \frac{1}{\cos x}} to write \DS{\arcsec} in terms of \DS{\arccos}.
+%
+%\end{enumerate}
+%
+%
+%\end{frame}
 %-----------------------------
 
 %------------------------------
