@@ -110,20 +110,14 @@ node[black,midway,yshift=-20pt]{finer partitions}; }
 %===================================================
 \begin{document}
 \begin{frame}
-	\frametitle{MAT137 Lecture 30 --- }
+	\frametitle{MAT137 Lecture 37 --- Sums and Sigmas}
 
 	\vfill
 	{\bf Before next class:}
 		\begin{itemize} \normalsize
-			\item {\bf Watch videos}
+			\item {\bf Watch videos 7.3, 7.4} 
 		\end{itemize}
 \end{frame}
-	%===================================================
-
-	%----------------------------------------------------------------------------------------
-	%	Sigma notation for sums
-	%----------------------------------------------------------------------------------------
-	%-----------------------------
 	\begin{frame}[t]
 		\frametitle{Warm-up: sums}
 
@@ -165,27 +159,6 @@ node[black,midway,yshift=-20pt]{finer partitions}; }
 			\item ${\displaystyle  \frac{2x^{3}}{ 4!} + \frac{3x^{4}}{5!} + \frac{4x^{5}}{6!} + \ldots + \frac{999x^{1000}}{1001!}}$
 		\end{enumerate}
 	\end{frame}
-
-	%------------------------------
-	\begin{frame}[t]
-		\smallerfont
-		\frametitle{Re-writing sums}
-
-		\begin{enumerate}
-			\item ${\displaystyle \sum_{i=1}^{100} \tan i \, - \, \sum_{i=1}^{50} \tan i \; = \; \sum_{\aaa}^{\aaa} \bbb }$
-				\vfill
-
-			\item ${\displaystyle \sum_{i=1}^{N} (2i-1)^5 \; = \; \sum_{i=0}^{N-1} \bbb }$
-				\vfill
-
-			\item ${\displaystyle  \left[ \sum_{k=1}^N x^k \right] \, + \, \left[ \sum_{k=0}^{N} k \; x^{k+1} \right] \; = \; \left[ \sum_{k=\aaa}^{\aaa} \!\!\aaa \,x^k \right] \, + \, \aaa }$
-				\vfill
-		\end{enumerate}
-
-		\emph{Hint:} Write out the sums on the left hand side first, simplify if possible,
-		then write them back into sigma notation.
-	\end{frame}
-	%------------------------------
 	\begin{frame}[t]
 		\frametitle{Telescopic sum}
 
@@ -229,50 +202,17 @@ node[black,midway,yshift=-20pt]{finer partitions}; }
 
 		{\setsize{10} Useful formulas: \begin{align*}&\sum_{j=1}^{N}j = \frac{N(N+1)}{2},&&\sum_{j=1}^{N} j^{2} = \frac{N(N+1)(2N+1)}{6},&&\sum_{j=1}^{N}j^{3} = \frac{N^{2}(N+1)^{2}}{4}\end{align*} }
 	\end{frame}
-	%------------------------------
-	\begin{frame}[t]
-		\smallerfont
-		\frametitle{Harmonic sums}
 
-		We define the $N$-th Harmonic term as the sum
-		\[
-			H_{N} \; = \; 1 + \frac{1}{2} + \frac{1}{3} + \ldots + \frac{1}{N} \; = \;
-			\sum_{i=1}^{N}\frac{1}{i}.
-		\]
+\begin{frame}
+	\frametitle{MAT137 Lecture 38 --- Suprema and Infima}
 
-		Write the following sums in terms of harmonic terms.
-
-		\begin{multicols}{2}
-			\begin{enumerate}
-				\item ${\displaystyle \sum_{i=k}^{N} \; \frac{1}{i}}$
-
-				\item ${\displaystyle \frac{12}{+} \frac{14}{+} \frac{16}{+} \ldots + \frac{1}{2N}}$
-
-				\item ${\displaystyle \sum_{i=1}^{N} \; \frac{1}{2i-1}}$
-
-				\item ${\displaystyle \sum_{i=1}^{2N} \; \frac{(-1)^{i+1}}{i}}$
-			\end{enumerate}
-		\end{multicols}
-	\end{frame}
-	%------------------------------
-	\begin{frame}[t]
-		\smallerfont
-		\frametitle{Fubini-Tonelli}
-
-		\begin{itemize}
-			\item $A_{i,k}$ is a function of 2 variables. \; For example, ${\displaystyle A_{i,k} = \frac{i}{k+i^{2}}}$.
-
-			\item Decide what to write instead of each ``\cajar{?}'' so that the
-				following identity is true:
+	\vfill
+	{\bf Before next class:}
+		\begin{itemize} \normalsize
+			\item {\bf Watch videos 7.5, 7.6}
 		\end{itemize}
+\end{frame}
 
-		{\setsize{20} \begin{equation*}\sum_{i=1}^{N}\; \sum_{k=1}^{i}A_{i, k}= \sum_{k = \majar{?}}^{\majar{?}}\; \sum_{i=\majar{?}}^{\majar{?}}A_{i,k}\end{equation*} }
-	\end{frame}
-	%-----------------------------
-	%----------------------------------------------------------------------------------------
-	%	Suprema and infima
-	%----------------------------------------------------------------------------------------
-	%-----------------------------
 	\begin{frame}[t]
 		\smallerfont
 		\frametitle{Warm up: suprema and infima}
@@ -303,6 +243,7 @@ node[black,midway,yshift=-20pt]{finer partitions}; }
 		\end{enumerate}
 	\end{frame}
 	%-----------------------------
+
 	\begin{frame}[t]
 		\smallerfont
 		\frametitle{Suprema from a graph}
@@ -318,24 +259,6 @@ node[black,midway,yshift=-20pt]{finer partitions}; }
 			\includegraphics[scale=.35]{G20}
 		\end{center}
 	\end{frame}
-	%-----------------------------
-	\begin{frame}[t]
-		\frametitle{Trig suprema}
-
-		Let $f(x) = \sin x$. \\ Find four open intervals $I_{1}$, $I_{2}$, $I_{3}$,
-		$I_{4}$ such that
-
-		\begin{enumerate}
-			\item $f$ has a supremum and an infimum on $I_{1}$.
-
-			\item $f$ has a supremum and no infimum on $I_{2}$.
-
-			\item $f$ has a maximum and a minimum on $I_{3}$.
-
-			\item $f$ has a maximum and no minimum on $I_{4}$.
-		\end{enumerate}
-	\end{frame}
-	%-----------------------------
 	\begin{frame}[t]
 		\frametitle{Empty set}
 
@@ -349,7 +272,6 @@ node[black,midway,yshift=-20pt]{finer partitions}; }
 			\item Is $\emptyset$ bounded above?
 		\end{enumerate}
 	\end{frame}
-
 	%-----------------------------
 	\begin{frame}[t]
 		\smallerfont
@@ -396,85 +318,47 @@ node[black,midway,yshift=-20pt]{finer partitions}; }
 				${\displaystyle S - \e < x \leq S }$.
 		\end{enumerate}
 	\end{frame}
-	%-----------------------------
+
+
+
+
+
+\begin{frame}
+	\frametitle{MAT137 Lecture 39 --- The Definition of the Integral}
+
+	\vfill
+	{\bf Before next class:}
+		\begin{itemize} \normalsize
+			\item {\bf Watch videos 7.7, 7.8, 7.11}
+		\end{itemize}
+\end{frame}
 	\begin{frame}[t]
-		\smallerfont
-		\frametitle{Fix these FALSE statements}
+		\frametitle{Equivalent or not}
 
+		Let $A\subseteq \mathbb R$ and let $s\in \mathbb R$.
+				\bigskip
 		\begin{enumerate}
-			\item Let $f$ and $g$ be bounded functions on $[a,b]$. Then
-				\[
-					\; \substack{\mbox{ $\sup$ of $(f+g)$} \\ \mbox{on $[a,b]$} }\; \quad =
-					\quad \; \substack{\mbox{ $\sup$ of $f$} \\ \mbox{on $[a,b]$} }\; \quad
-					+ \quad \; \substack{\mbox{ $\sup$ of $g$} \\ \mbox{on $[a,b]$} }\;
-				\]
+			\item\label{exa} $\exists x\in A$ such that $2<x$
+			\item\label{exb} $\exists x\in A$ such that $2\leq x$
 
-				\vfill
+				\bigskip
+				\begin{enumerate}
+					\item[1.] Does \textbf{(A)} imply \textbf{(B)}?
+					\item[2.] Does \textbf{(B)} imply \textbf{(A)}?
+				\end{enumerate}
+				\bigskip
 
-			\item Let $a < b < c$. Let $f$ be a bounded function on $[a,c]$. Then
-				\[
-					\; \substack{\mbox{ $\sup$ of $f$} \\ \mbox{on $[a,c]$} }\; \quad = \quad
-					\; \substack{\mbox{ $\sup$ of $f$} \\ \mbox{on $[a,b]$} }\; \quad + \quad
-					\; \substack{\mbox{ $\sup$ of $f$} \\ \mbox{on $[b,c]$} }\;
-				\]
+			\item $\forall r<s,\ \exists x\in A$ such that $r<x$.
+			\item $\forall r<s,\ \exists x\in A$ such that $r\leq x$.
+				\bigskip
+				\begin{enumerate}
+					\item[3.] Does \textbf{(C)} imply \textbf{(D)}?
+					\item[4.] Does \textbf{(D)} imply \textbf{(C)}?
+				\end{enumerate}
+				\bigskip
 
-				\vfill
-
-			\item Let $f$ be a bounded function on $[a,b]$. Let $c \in \mathbb{R}$. Then:
-				\[
-					\; \substack{\mbox{ $\sup$ of $(cf)$} \\ \mbox{on $[a,b]$} }\; \quad =
-					\quad c \; \left( \; \substack{\mbox{ $\sup$ of $f$} \\ \mbox{on $[a,b]$} }
-					\; \right)
-				\]
 		\end{enumerate}
 	\end{frame}
-	%-----------------------------
-	\begin{frame}[t]
-		\setsize{12}
-		\frametitle{True or False - Suprema and infima}
-
-		Let $A, B, C \subseteq \mathbb{R}$. Assume $C \subseteq A$. Which statements
-		are true?
-		\vspace{.1cm}
-
-		If possible, fix the false statements
-		\vspace{.2cm}
-		\begin{enumerate}
-			\item IF \;$A$ is bounded above, \; THEN \;$C$ is bounded above.
-
-			\item IF \;$C$ is bounded below, \; THEN \;$A$ is bounded below.
-				\vspace{.2cm}
-
-			\item IF \;$A$ and $C$ are bounded above, \; THEN \;$\sup C \leq \sup A$.
-
-			\item IF \;$A$ and $C$ are bounded below, \; THEN \;$\inf C \leq \inf A$.
-				\vspace{.2cm}
-
-			\item IF \;$A$ and $B$ are bounded, \;$\sup B \leq \sup A$, \;and \;$\inf A
-				\leq \inf B$,
-				\vspace{.1cm}
-
-				THEN \;$B \subseteq A$.
-				\vspace{.2cm}
-
-			\item IF \;$A$ and $B$ are bounded above,
-				\vspace{.1cm}
-
-				THEN \;${\displaystyle \sup (A \cup B) =\max \{ \sup A, \sup B \} }$.
-				\vspace{.2cm}
-
-			\item IF \;$A$ and $B$ are bounded above,
-				\vspace{.1cm}
-
-				THEN \;${\displaystyle \sup (A \cap B) =\min \{ \sup A, \sup B \} }$.
-		\end{enumerate}
-	\end{frame}
-
-	%-----------------------------
-	%----------------------------------------------------------------------------------------
-	%	The definition of definite integral
-	%----------------------------------------------------------------------------------------
-	%-----------------------------
 	\begin{frame}[t]
 		\frametitle{Warm up: partitions}
 
@@ -496,41 +380,6 @@ node[black,midway,yshift=-20pt]{finer partitions}; }
 			\item ${\displaystyle  \left\{ \frac{n}{n+1} \; : \; n \in \N \right\} \cup \{ 2 \} }$
 		\end{enumerate}
 	\end{frame}
-	%-----------------------------
-	\begin{frame}[t]
-		\smallerfont
-		\frametitle{Partitions of different intervals}
-
-		Let $a<b<c$. Which of these statements are true?
-
-		If any are false, fix them.
-		\vspace{.1cm}
-		\begin{enumerate}
-			\item IF $P$ and $Q$ are partitions of $[a,b]$,
-				\vspace{.1cm}
-
-				THEN $P \cup Q$ is a partition of $[a,b]$.
-				\vspace{.1cm}
-
-			\item IF $P$ and $Q$ are partitions of $[a,b]$,
-				\vspace{.1cm}
-
-				THEN $P \cap Q$ is a partition of $[a,b]$.
-				\vspace{.1cm}
-
-			\item IF $P$ is a partition of $[a,b]$ and $Q$ is a partition of $[b,c]$
-				\vspace{.1cm}
-
-				THEN $P \cup Q$ is a partition of $[a,c]$
-				\vspace{.1cm}
-
-			\item IF $P$ is a partition of $[a,c]$,
-				\vspace{.1cm}
-
-				THEN $P \cap [a,b]$ is a partition of $[a,b]$
-		\end{enumerate}
-	\end{frame}
-	%-----------------------------
 	\begin{frame}[t]
 		\frametitle{Warm up: lower and upper sums}
 
@@ -573,17 +422,6 @@ node[black,midway,yshift=-20pt]{finer partitions}; }
 
 		Recall: ${\displaystyle \Delta x_i = x_i - x_{i-1}}$.
 	\end{frame}
-	%------------------------------
-	\begin{frame}[t]
-		\frametitle{Easier than it looks}
-
-		Let $f$ be a bounded function on $[a,b]$. \\ Assume $f$ is not constant. \\
-		Prove that there exists a partition $P$ of $[a,b]$ such that
-		\[
-			L_{P}(f) \neq U_{P}(f).
-		\]
-	\end{frame}
-	%-----------------------------
 	\begin{frame}[t]
 		\frametitle{Joining partitions}
 
@@ -603,9 +441,9 @@ node[black,midway,yshift=-20pt]{finer partitions}; }
 	\end{frame}
 	%-----------------------------
 	\begin{frame}[t]
-		\smallerfont
 		\frametitle{A tricky question}
 
+		\smallerfont
 		Let $f$ be a bounded function on $[a,b]$. Which statement is true?
 
 		\begin{enumerate}
@@ -626,6 +464,7 @@ node[black,midway,yshift=-20pt]{finer partitions}; }
 				\]
 		\end{enumerate}
 
+		\vspace{-.5cm}
 		\begin{center}
 			\begin{tikzpicture}
 				\puntos{-1.04}{1.04} \draw[very thick, black] (-1,0.3) to (-1,-0.3) node[yshift=-8pt]{$\lifab$};
@@ -633,7 +472,89 @@ node[black,midway,yshift=-20pt]{finer partitions}; }
 			\end{tikzpicture}
 		\end{center}
 	\end{frame}
-	%-----------------------------
+
+
+
+
+
+
+
+
+
+\begin{frame}
+	\frametitle{MAT137 Lecture 40 --- Examples and Properites of the Integral}
+
+	\vfill
+	{\bf Before next class:}
+		\begin{itemize} \normalsize
+			\item {\bf Watch videos 7.9, 7.10}
+		\end{itemize}
+\end{frame}
+
+	\begin{frame}
+		\smallerfont
+		\frametitle{Properties of the integral}
+
+		Assume we know the following
+		\begin{align*}
+			 & \int_{0}^{2} f(x) dx = 3, &  & \int_{0}^{4} f(x) dx = 9, &  & \int_{0}^{4} g(x) dx = 2.
+		\end{align*}
+
+		Compute:
+		\begin{multicols}{2}
+			\begin{enumerate}
+				\item ${\displaystyle \int_0^2 f(t) dt}$
+
+				\item ${\displaystyle \int_0^2 f(x) dx}$
+
+				\item ${\displaystyle \int_0^2 f(t) dx}$
+
+				\item ${\displaystyle \int_2^0 f(x) dx}$
+
+				\item ${\displaystyle \int_2^4 f(x) dx}$
+
+				\item ${\displaystyle \int_{-2}^{0} f(x) dx}$
+
+				\item ${\displaystyle \int_0^4 \left[ f(x) - 2g(x) \right] \; dx}$
+			\end{enumerate}
+		\end{multicols}
+		\vfill
+	\end{frame}
+
+	\begin{frame}[t]
+		\smallerfont
+		\frametitle{Example: a non-continuous function}
+
+		Consider the function \;
+		${\displaystyle f(x) = \begin{cases}0 & x = 0 \\ 5 & 0 < x \leq 1\end{cases}}$,
+		\;defined on $[0,1]$.
+
+		\begin{enumerate}
+			\item Let ${\displaystyle P = \{0, 0.2, 0.5, 0.9, 1 \}}$.
+				\vspace{.1cm}
+
+				Calculate ${\displaystyle L_P(f)}$ and ${\displaystyle U_P(f)}$ for this
+				partition.
+				\vspace{.1cm}
+
+			\item Fix an arbitrary partition $P = \{x_{0}, x_{1}, \dots, x_{N}\}$ of $[
+				0,1]$. \\
+				\vspace{.1cm}
+
+				What is $U_{P}(f)$? What is ${\displaystyle L_P(f)}$? (Draw a picture!)
+				\vspace{.1cm}
+
+			\item Find a partition $P$ with exactly 3 points (2 subintervals) such that
+				${\displaystyle L_P(f) = 4.99}$.
+
+			\item What is the upper integral, $\overline{I_0^1}(f)$?
+
+			\item What is the lower integral, $\underline{I_0^1}(f)$?
+
+			\item Is $f$ integrable on $[0,1]$?
+		\end{enumerate}
+	\end{frame}
+
 	\begin{frame}[t]
 		\smallerfont
 		\frametitle{An alternative definition}
@@ -666,163 +587,67 @@ node[black,midway,yshift=-20pt]{finer partitions}; }
 
 		\vfill
 	\end{frame}
-	%------------------------------
+
+
+
+
+\begin{frame}
+	\frametitle{MAT137 Lecture 41 --- Integrals as Limits}
+
+	\vfill
+	{\bf Before next class:}
+		\begin{itemize} \normalsize
+			\item {\bf Watch videos 8.1, 8.2}
+		\end{itemize}
+\end{frame}
+
 	\begin{frame}[t]
-		\setsize{11}
-		\frametitle{The ``$\e$--characterization" of integrability}
+		\smallerfont
+		\frametitle{The norm of a partition}
 
-		\begin{block}{\setsize{11} True or False?}
-			Let $f$ be a bounded function on $[a,b]$.
+		\begin{enumerate}
+			\item Construct a partition $P$ of $[0,1]$ such that ${\displaystyle ||P|| = \frac{\pi}{10}}$.
+
+			\item Construct a sequence of partitions of $[0,1]$
+				\[
+					P_{1}, P_{2}, P_{3}, \ldots
+				\]
+				\emph{as simple as possible}, such that ${\displaystyle \lim_{n \to \infty} ||P_n|| = 0}$.
+
+			\item Construct a \emph{different} sequence of partitions of $[0,1$]
+				\[
+					Q_{1}, Q_{2}, Q_{3}, \ldots
+				\]
+				such that ${\displaystyle \lim_{n \to \infty} ||Q_n|| = 0}$.
+		\end{enumerate}
+	\end{frame}
+	\begin{frame}[t]
+		\smallerfont
+		\frametitle{Compute ${\displaystyle \int_1^2 \! x^2 dx}$ using Riemann sums}
+
+		\begin{block}{}
+			Let ${\displaystyle f(x) = x^2}$ on $[1,2]$. Let $P_{n}$ be the partition
+			that breaks $[1,2]$ into $n$ subintervals of equal length.
 			\begin{enumerate}
-				\item IF \hfill ``$\forall \varepsilon>0$, $\exists$ a partition $P$ of
-					$[a,b]$ s.t. ${\displaystyle U_P(f) - L_P(f) < \varepsilon}$",
-					\vspace{.1cm}
+				\item Write a explicit formula for $P_{n}$.
 
-					THEN \; $f$ is integrable on $[a,b]$
-					\vspace{.1cm}
+				\item What is $\Delta x_{i}$?
 
-				\item IF \quad \quad \, $f$ is integrable on $[a,b]$
-					\vspace{.1cm}
-					\\
-					\vspace{.1cm}
+				\item Write the Riemann sum ${\displaystyle S^*_{P_n} (f)}$ with sigma notation
+					\\ (choose $x^{*}_{i}$ as the right endpoint).
 
-					THEN \hfill ``$\forall \varepsilon>0$, $\exists$ a partition $P$ of $[a
-					,b]$ s.t. ${\displaystyle U_P(f) - L_P(f) < \varepsilon}$".
-					\vspace{.1cm}
+				\item Add the sum
+
+				\item Compute ${\displaystyle \lim_{n \to \infty} S^*_{P_n} (f)}$.
+
+				\item Repeat the last 3 questions when we choose $x^{*}_{i}$ as the left
+					endpoint.
 			\end{enumerate}
 		\end{block}
 
-		\vfill
-
-		\begin{center}
-			\begin{tikzpicture}
-				\puntosmas{-1.04}{1.04} \draw[very thick, black] (-1,0.3) to (-1,-0.3)
-				node[yshift=-8pt]{$\lifab$}; \draw[very thick, black] (1,0.3) to (1,-0.3)
-				node[yshift=-8pt]{$\uifab$}; \node[yshift=-8pt] at (0,-0.3) {$\leq$} ;
-			\end{tikzpicture}
-		\end{center}
-	\end{frame}
-	%------------------------------
-	\begin{frame}[t]
-		\setsize{11}
-		\frametitle{The ``$\e$--characterization" of integrability - Part 1}
-
-		\begin{block}{\setsize{11} True or False?}
-			Let $f$ be a bounded function on $[a,b]$.
-			\begin{itemize}
-				\item IF \hfill ``$\forall \varepsilon>0$, $\exists$ a partition $P$ of
-					$[a,b]$ s.t. ${\displaystyle U_P(f) - L_P(f) < \varepsilon}$",
-
-				\item THEN \; $f$ is integrable on $[a,b]$
-			\end{itemize}
-		\end{block}
-
-		\
- \emph{Hints:}
-		\begin{enumerate}
-			\item Recall the definition of ``$f$ is integrable on $[a,b]$".
-
-			\item Let $P$ be a partition. \\ Order the numbers
-				${\displaystyle U_P(f)}$, ${\displaystyle L_P(f)}$,
-				${\displaystyle \uifab}$, ${\displaystyle \lifab}$. \\ (Draw a picture of
-				these numbers in the real line.)
-		\end{enumerate}
-	\end{frame}
-	%------------------------------
-	\begin{frame}[t]
-		\setsize{11}
-		\frametitle{The ``$\e$--characterization" of integrability - Part 2}
-
-		\begin{block}{\setsize{11} True or False?}
-			Let $f$ be a bounded function on $[a,b]$.
-			\begin{itemize}
-				\item IF \quad \quad \, $f$ is integrable on $[a,b]$
-
-				\item THEN \hfill ``$\forall \varepsilon>0$, $\exists$ a partition $P$
-					of $[a,b]$ s.t. ${\displaystyle U_P(f) - L_P(f) < \varepsilon}$".
-			\end{itemize}
-		\end{block}
-
-		\
- \emph{Hints:} Assume $f$ is integrable on $[a,b]$. Let $I$ be the integral.
-		Fix $\varepsilon>0$.
-		\begin{enumerate}
-			\item Recall the definition of ``$f$ is integrable on $[a,b]$".
-
-			\item There exist a partition $P_{1}$ s.t.
-				${\displaystyle  U_{P_1}(f) < I + \frac{\varepsilon}{2}}$. Why?
-
-			\item There exist a partition $P_{2}$ s.t.
-				${\displaystyle  L_{P_2}(f) > I - \frac{\varepsilon}{2}}$. Why?
-
-			\item What can you say about ${\displaystyle U_{P_1}(f) - L_{P_2}(f)}$?
-				\vspace{.1cm}
-
-			\item Construct a partition $P$ s.t.
-				${\displaystyle L_{P_2}(f) \leq L_P(f) \leq U_P(f) \leq U_{P_1}(f)}$.
-		\end{enumerate}
-	\end{frame}
-	%------------------------------
-	\begin{frame}[t]
-		\smallerfont
-		\frametitle{Example 1: a constant function}
-
-		Consider the function \; $f(x)=2$ \; on \; $[0,4]$.
-		\vspace{.2cm}
-
-		\begin{enumerate}
-			\item Given ${\displaystyle P =\{ 0, 1, e, \pi, 4 \}}$, compute
-				${\displaystyle L_P(f)}$ and ${\displaystyle U_P(f)}$.
-
-			\item Explicitly compute \emph{all} the upper sums and \emph{all} the lower
-				sums.
-				\vspace{.2cm}
-
-			\item Compute ${\displaystyle \overline{I_0^4}(f)}$
-				\vspace{.2cm}
-
-			\item Compute ${\displaystyle \underline{I_0^4}(f)}$
-				\vspace{.2cm}
-
-			\item Is $f$ integrable on $[0,4]$?
-		\end{enumerate}
-	\end{frame}
-	%------------------------------
-	\begin{frame}[t]
-		\smallerfont
-		\frametitle{Example 2: a non-continuous function}
-
-		Consider the function \;
-		${\displaystyle f(x) = \begin{cases}0 & x = 0 \\ 5 & 0 < x \leq 1\end{cases}}$,
-		\;defined on $[0,1]$.
-
-		\begin{enumerate}
-			\item Let ${\displaystyle P = \{0, 0.2, 0.5, 0.9, 1 \}}$.
-				\vspace{.1cm}
-
-				Calculate ${\displaystyle L_P(f)}$ and ${\displaystyle U_P(f)}$ for this
-				partition.
-				\vspace{.1cm}
-
-			\item Fix an arbitrary partition $P = \{x_{0}, x_{1}, \dots, x_{N}\}$ of $[
-				0,1]$. \\
-				\vspace{.1cm}
-
-				What is $U_{P}(f)$? What is ${\displaystyle L_P(f)}$? (Draw a picture!)
-				\vspace{.1cm}
-
-			\item Find a partition $P$ with exactly 3 points (2 subintervals) such that
-				${\displaystyle L_P(f) = 4.99}$.
-
-			\item What is the upper integral, $\overline{I_0^1}(f)$?
-
-			\item What is the lower integral, $\underline{I_0^1}(f)$?
-
-			\item Is $f$ integrable on $[0,1]$?
-		\end{enumerate}
+		{\setsize{10} \emph{Helpful identities:} ${\displaystyle \quad \sum_{i=1}^N i = \frac{N(N+1)}{2}, \quad \quad \sum_{i=1}^{N} i^2 = \frac{N(N+1)(2N+1)}{6}}$ }
 	\end{frame}
 
-	%------------------------------
 	\begin{frame}[t]
 		\smallerfont
 		\frametitle{Example 3: a very non-continuous function}
@@ -853,149 +678,416 @@ node[black,midway,yshift=-20pt]{finer partitions}; }
 			\item Is $f$ integrable on $[0,1]$?
 		\end{enumerate}
 	\end{frame}
-	%-----------------------------
-	\begin{frame}[t]
-		\frametitle{Sum of non-integrable functions}
 
-		Find bounded functions $f$ and $g$ on $[0,1]$ such that
-		\begin{itemize}
-			\item $f$ is non-integrable on $[0,1]$,
-
-			\item $g$ is non-integrable on $[0,1]$,
-
-			\item $f+g$ is integrable on $[0,1]$.
-		\end{itemize}
-		or prove this is impossible.
-	\end{frame}
-	%-----------------------------
-	\begin{frame}
-		\smallerfont
-		\frametitle{Properties of the integral}
-
-		Assume we know the following
-		\begin{align*}
-			 & \int_{0}^{2} f(x) dx = 3, &  & \int_{0}^{4} f(x) dx = 9, &  & \int_{0}^{4} g(x) dx = 2.
-		\end{align*}
-
-		Compute:
-		\begin{multicols}{2}
-			\begin{enumerate}
-				\item ${\displaystyle \int_0^2 f(t) dt}$
-
-				\item ${\displaystyle \int_0^2 f(x) dx}$
-
-				\item ${\displaystyle \int_0^2 f(t) dx}$
-
-				\item ${\displaystyle \int_2^0 f(x) dx}$
-
-				\item ${\displaystyle \int_2^4 f(x) dx}$
-
-				\item ${\displaystyle \int_{-2}^{0} f(x) dx}$
-
-				\item ${\displaystyle \int_0^4 \left[ f(x) - 2g(x) \right] \; dx}$
-			\end{enumerate}
-		\end{multicols}
-		\vfill
-	\end{frame}
-	%------------------------------
 	\begin{frame}[t]
 		\smallerfont
-		\frametitle{The norm of a partition}
+		\frametitle{Fix these FALSE statements}
 
 		\begin{enumerate}
-			\item Construct a partition $P$ of $[0,1]$ such that ${\displaystyle ||P|| = \frac{\pi}{10}}$.
-
-			\item Construct a sequence of partitions of $[0,1]$
+			\item Let $f$ and $g$ be bounded functions on $[a,b]$. Then
 				\[
-					P_{1}, P_{2}, P_{3}, \ldots
+					\; \substack{\mbox{ $\sup$ of $(f+g)$} \\ \mbox{on $[a,b]$} }\; \quad =
+					\quad \; \substack{\mbox{ $\sup$ of $f$} \\ \mbox{on $[a,b]$} }\; \quad
+					+ \quad \; \substack{\mbox{ $\sup$ of $g$} \\ \mbox{on $[a,b]$} }\;
 				\]
-				\emph{as simple as possible}, such that ${\displaystyle \lim_{n \to \infty} ||P_n|| = 0}$.
 
-			\item Construct a \emph{different} sequence of partitions of $[0,1$]
+				\vfill
+
+			\item Let $a < b < c$. Let $f$ be a bounded function on $[a,c]$. Then
 				\[
-					Q_{1}, Q_{2}, Q_{3}, \ldots
+					\; \substack{\mbox{ $\sup$ of $f$} \\ \mbox{on $[a,c]$} }\; \quad = \quad
+					\; \substack{\mbox{ $\sup$ of $f$} \\ \mbox{on $[a,b]$} }\; \quad + \quad
+					\; \substack{\mbox{ $\sup$ of $f$} \\ \mbox{on $[b,c]$} }\;
 				\]
-				such that ${\displaystyle \lim_{n \to \infty} ||Q_n|| = 0}$.
+
+				\vfill
+
+			\item Let $f$ be a bounded function on $[a,b]$. Let $c \in \mathbb{R}$. Then:
+				\[
+					\; \substack{\mbox{ $\sup$ of $(cf)$} \\ \mbox{on $[a,b]$} }\; \quad =
+					\quad c \; \left( \; \substack{\mbox{ $\sup$ of $f$} \\ \mbox{on $[a,b]$} }
+					\; \right)
+				\]
 		\end{enumerate}
 	\end{frame}
-	%------------------------------
-	\begin{frame}[t]
-		\smallerfont
-		\frametitle{Compute ${\displaystyle \int_1^2 \! x^2 dx}$ using Riemann sums}
 
-		\begin{block}{}
-			Let ${\displaystyle f(x) = x^2}$ on $[1,2]$. Let $P_{n}$ be the partition
-			that breaks $[1,2]$ into $n$ subintervals of equal length.
-			\begin{enumerate}
-				\item Write a explicit formula for $P_{n}$.
 
-				\item What is $\Delta x_{i}$?
 
-				\item Write the Riemann sum ${\displaystyle S^*_{P_n} (f)}$ with sigma notation
-					\\ (choose $x^{*}_{i}$ as the right endpoint).
 
-				\item Add the sum
-
-				\item Compute ${\displaystyle \lim_{n \to \infty} S^*_{P_n} (f)}$.
-
-				\item Repeat the last 3 questions when we choose $x^{*}_{i}$ as the left
-					endpoint.
-			\end{enumerate}
-		\end{block}
-		\
-
-		{\setsize{10} \emph{Helpful identities:} ${\displaystyle \quad \sum_{i=1}^N i = \frac{N(N+1)}{2}, \quad \quad \sum_{i=1}^{N} i^2 = \frac{N(N+1)(2N+1)}{6}}$ }
-	\end{frame}
-	%------------------------------
-	\begin{frame}[t]
-		\frametitle{Riemann sums backwards}
-
-		Interpret the following limits as integrals:
-		\begin{enumerate}
-			\begin{multicols}{2}
-			\item ${\displaystyle \lim_{n \to \infty} \sum_{i=1}^n \frac{1n}{\sin} \frac{i}{n}}$
-				\item ${\displaystyle \lim_{n \to \infty} \sum_{i=1}^n \frac{n+i}{n^{2}}}$
-			\end{multicols}
-		\end{enumerate}
-		\
- {\setsize{10} \emph{Hint:} Let $f$ be a continuous function on $[0,1]$. Write a formula for ${\displaystyle \int_0^1 f(x) dx}$ as a limit of Riemann sums, making the simplest choices you can. }
-	\end{frame}
-	%------------------------------
-	\begin{frame}[t]
-		\smallerfont
-		\frametitle{The Mean Value Theorem for integrals}
-
-		Prove the following theorem.
-
-		\begin{block}{\smallerfont Theorem}
-			Let $a < b$. Let $f$ be a continuous function on $[a,b]$. \\ There exists $c
-			\in [a,b]$ such that
-			\vspace{-.5cm}
-			\[
-				f(c) \; = \; \frac{1}{b-a}\int_{a}^{b} f(t) dt
-			\]
-		\end{block}
-
-		\p
-
-		\emph{Hints:}
-		\begin{enumerate}
-			\item Compute $L_{P}(f)$ and $U_{P}(f)$ for the partition ${\displaystyle P=\{a,b\}}$.
-
-			\item Use that ${\displaystyle L_P(f) \leq \int_a^bf(t)dt \leq U_P(f)}$ to
-				prove that
-				\vspace{-.6cm}
-				\
-				\[
-					??? \; \leq \; \frac{1}{b-a}\int_{a}^{b} f(t) dt \; \leq \; \; ???
-				\]
-				\vspace{-.6cm}
-
-			\item Use EVT and IVT.
-		\end{enumerate}
-	\end{frame}
-	%-----------------------------
-	%-----------------------------
+%	%===================================================
+%
+%	%----------------------------------------------------------------------------------------
+%	%	Sigma notation for sums
+%	%----------------------------------------------------------------------------------------
+%	%-----------------------------
+%	%------------------------------
+%	\begin{frame}[t]
+%		\smallerfont
+%		\frametitle{Re-writing sums}
+%
+%		\begin{enumerate}
+%			\item ${\displaystyle \sum_{i=1}^{100} \tan i \, - \, \sum_{i=1}^{50} \tan i \; = \; \sum_{\aaa}^{\aaa} \bbb }$
+%				\vfill
+%
+%			\item ${\displaystyle \sum_{i=1}^{N} (2i-1)^5 \; = \; \sum_{i=0}^{N-1} \bbb }$
+%				\vfill
+%
+%			\item ${\displaystyle  \left[ \sum_{k=1}^N x^k \right] \, + \, \left[ \sum_{k=0}^{N} k \; x^{k+1} \right] \; = \; \left[ \sum_{k=\aaa}^{\aaa} \!\!\aaa \,x^k \right] \, + \, \aaa }$
+%				\vfill
+%		\end{enumerate}
+%
+%		\emph{Hint:} Write out the sums on the left hand side first, simplify if possible,
+%		then write them back into sigma notation.
+%	\end{frame}
+%	%------------------------------
+%	%------------------------------
+%	\begin{frame}[t]
+%		\smallerfont
+%		\frametitle{Harmonic sums}
+%
+%		We define the $N$-th Harmonic term as the sum
+%		\[
+%			H_{N} \; = \; 1 + \frac{1}{2} + \frac{1}{3} + \ldots + \frac{1}{N} \; = \;
+%			\sum_{i=1}^{N}\frac{1}{i}.
+%		\]
+%
+%		Write the following sums in terms of harmonic terms.
+%
+%		\begin{multicols}{2}
+%			\begin{enumerate}
+%				\item ${\displaystyle \sum_{i=k}^{N} \; \frac{1}{i}}$
+%
+%				\item ${\displaystyle \frac{12}{+} \frac{14}{+} \frac{16}{+} \ldots + \frac{1}{2N}}$
+%
+%				\item ${\displaystyle \sum_{i=1}^{N} \; \frac{1}{2i-1}}$
+%
+%				\item ${\displaystyle \sum_{i=1}^{2N} \; \frac{(-1)^{i+1}}{i}}$
+%			\end{enumerate}
+%		\end{multicols}
+%	\end{frame}
+%	%------------------------------
+%	\begin{frame}[t]
+%		\smallerfont
+%		\frametitle{Fubini-Tonelli}
+%
+%		\begin{itemize}
+%			\item $A_{i,k}$ is a function of 2 variables. \; For example, ${\displaystyle A_{i,k} = \frac{i}{k+i^{2}}}$.
+%
+%			\item Decide what to write instead of each ``\cajar{?}'' so that the
+%				following identity is true:
+%		\end{itemize}
+%
+%		{\setsize{20} \begin{equation*}\sum_{i=1}^{N}\; \sum_{k=1}^{i}A_{i, k}= \sum_{k = \majar{?}}^{\majar{?}}\; \sum_{i=\majar{?}}^{\majar{?}}A_{i,k}\end{equation*} }
+%	\end{frame}
+%	%-----------------------------
+%	%----------------------------------------------------------------------------------------
+%	%	Suprema and infima
+%	%----------------------------------------------------------------------------------------
+%	%-----------------------------
+%	%-----------------------------
+%	\begin{frame}[t]
+%		\frametitle{Trig suprema}
+%
+%		Let $f(x) = \sin x$. \\ Find four open intervals $I_{1}$, $I_{2}$, $I_{3}$,
+%		$I_{4}$ such that
+%
+%		\begin{enumerate}
+%			\item $f$ has a supremum and an infimum on $I_{1}$.
+%
+%			\item $f$ has a supremum and no infimum on $I_{2}$.
+%
+%			\item $f$ has a maximum and a minimum on $I_{3}$.
+%
+%			\item $f$ has a maximum and no minimum on $I_{4}$.
+%		\end{enumerate}
+%	\end{frame}
+%	%-----------------------------
+%	%-----------------------------
+%	%-----------------------------
+%	\begin{frame}[t]
+%		\setsize{12}
+%		\frametitle{True or False - Suprema and infima}
+%
+%		Let $A, B, C \subseteq \mathbb{R}$. Assume $C \subseteq A$. Which statements
+%		are true?
+%		\vspace{.1cm}
+%
+%		If possible, fix the false statements
+%		\vspace{.2cm}
+%		\begin{enumerate}
+%			\item IF \;$A$ is bounded above, \; THEN \;$C$ is bounded above.
+%
+%			\item IF \;$C$ is bounded below, \; THEN \;$A$ is bounded below.
+%				\vspace{.2cm}
+%
+%			\item IF \;$A$ and $C$ are bounded above, \; THEN \;$\sup C \leq \sup A$.
+%
+%			\item IF \;$A$ and $C$ are bounded below, \; THEN \;$\inf C \leq \inf A$.
+%				\vspace{.2cm}
+%
+%			\item IF \;$A$ and $B$ are bounded, \;$\sup B \leq \sup A$, \;and \;$\inf A
+%				\leq \inf B$,
+%				\vspace{.1cm}
+%
+%				THEN \;$B \subseteq A$.
+%				\vspace{.2cm}
+%
+%			\item IF \;$A$ and $B$ are bounded above,
+%				\vspace{.1cm}
+%
+%				THEN \;${\displaystyle \sup (A \cup B) =\max \{ \sup A, \sup B \} }$.
+%				\vspace{.2cm}
+%
+%			\item IF \;$A$ and $B$ are bounded above,
+%				\vspace{.1cm}
+%
+%				THEN \;${\displaystyle \sup (A \cap B) =\min \{ \sup A, \sup B \} }$.
+%		\end{enumerate}
+%	\end{frame}
+%
+%	%-----------------------------
+%	%----------------------------------------------------------------------------------------
+%	%	The definition of definite integral
+%	%----------------------------------------------------------------------------------------
+%	%-----------------------------
+%	%-----------------------------
+%	\begin{frame}[t]
+%		\smallerfont
+%		\frametitle{Partitions of different intervals}
+%
+%		Let $a<b<c$. Which of these statements are true?
+%
+%		If any are false, fix them.
+%		\vspace{.1cm}
+%		\begin{enumerate}
+%			\item IF $P$ and $Q$ are partitions of $[a,b]$,
+%				\vspace{.1cm}
+%
+%				THEN $P \cup Q$ is a partition of $[a,b]$.
+%				\vspace{.1cm}
+%
+%			\item IF $P$ and $Q$ are partitions of $[a,b]$,
+%				\vspace{.1cm}
+%
+%				THEN $P \cap Q$ is a partition of $[a,b]$.
+%				\vspace{.1cm}
+%
+%			\item IF $P$ is a partition of $[a,b]$ and $Q$ is a partition of $[b,c]$
+%				\vspace{.1cm}
+%
+%				THEN $P \cup Q$ is a partition of $[a,c]$
+%				\vspace{.1cm}
+%
+%			\item IF $P$ is a partition of $[a,c]$,
+%				\vspace{.1cm}
+%
+%				THEN $P \cap [a,b]$ is a partition of $[a,b]$
+%		\end{enumerate}
+%	\end{frame}
+%	%-----------------------------
+%	%------------------------------
+%	\begin{frame}[t]
+%		\frametitle{Easier than it looks}
+%
+%		Let $f$ be a bounded function on $[a,b]$. \\ Assume $f$ is not constant. \\
+%		Prove that there exists a partition $P$ of $[a,b]$ such that
+%		\[
+%			L_{P}(f) \neq U_{P}(f).
+%		\]
+%	\end{frame}
+%	%-----------------------------
+%	%-----------------------------
+%	%------------------------------
+%	\begin{frame}[t]
+%		\setsize{11}
+%		\frametitle{The ``$\e$--characterization" of integrability}
+%
+%		\begin{block}{\setsize{11} True or False?}
+%			Let $f$ be a bounded function on $[a,b]$.
+%			\begin{enumerate}
+%				\item IF \hfill ``$\forall \varepsilon>0$, $\exists$ a partition $P$ of
+%					$[a,b]$ s.t. ${\displaystyle U_P(f) - L_P(f) < \varepsilon}$",
+%					\vspace{.1cm}
+%
+%					THEN \; $f$ is integrable on $[a,b]$
+%					\vspace{.1cm}
+%
+%				\item IF \quad \quad \, $f$ is integrable on $[a,b]$
+%					\vspace{.1cm}
+%					\\
+%					\vspace{.1cm}
+%
+%					THEN \hfill ``$\forall \varepsilon>0$, $\exists$ a partition $P$ of $[a
+%					,b]$ s.t. ${\displaystyle U_P(f) - L_P(f) < \varepsilon}$".
+%					\vspace{.1cm}
+%			\end{enumerate}
+%		\end{block}
+%
+%		\vfill
+%
+%		\begin{center}
+%			\begin{tikzpicture}
+%				\puntosmas{-1.04}{1.04} \draw[very thick, black] (-1,0.3) to (-1,-0.3)
+%				node[yshift=-8pt]{$\lifab$}; \draw[very thick, black] (1,0.3) to (1,-0.3)
+%				node[yshift=-8pt]{$\uifab$}; \node[yshift=-8pt] at (0,-0.3) {$\leq$} ;
+%			\end{tikzpicture}
+%		\end{center}
+%	\end{frame}
+%	%------------------------------
+%	\begin{frame}[t]
+%		\setsize{11}
+%		\frametitle{The ``$\e$--characterization" of integrability - Part 1}
+%
+%		\begin{block}{\setsize{11} True or False?}
+%			Let $f$ be a bounded function on $[a,b]$.
+%			\begin{itemize}
+%				\item IF \hfill ``$\forall \varepsilon>0$, $\exists$ a partition $P$ of
+%					$[a,b]$ s.t. ${\displaystyle U_P(f) - L_P(f) < \varepsilon}$",
+%
+%				\item THEN \; $f$ is integrable on $[a,b]$
+%			\end{itemize}
+%		\end{block}
+%
+%		\
+% \emph{Hints:}
+%		\begin{enumerate}
+%			\item Recall the definition of ``$f$ is integrable on $[a,b]$".
+%
+%			\item Let $P$ be a partition. \\ Order the numbers
+%				${\displaystyle U_P(f)}$, ${\displaystyle L_P(f)}$,
+%				${\displaystyle \uifab}$, ${\displaystyle \lifab}$. \\ (Draw a picture of
+%				these numbers in the real line.)
+%		\end{enumerate}
+%	\end{frame}
+%	%------------------------------
+%	\begin{frame}[t]
+%		\setsize{11}
+%		\frametitle{The ``$\e$--characterization" of integrability - Part 2}
+%
+%		\begin{block}{\setsize{11} True or False?}
+%			Let $f$ be a bounded function on $[a,b]$.
+%			\begin{itemize}
+%				\item IF \quad \quad \, $f$ is integrable on $[a,b]$
+%
+%				\item THEN \hfill ``$\forall \varepsilon>0$, $\exists$ a partition $P$
+%					of $[a,b]$ s.t. ${\displaystyle U_P(f) - L_P(f) < \varepsilon}$".
+%			\end{itemize}
+%		\end{block}
+%
+%		\
+% \emph{Hints:} Assume $f$ is integrable on $[a,b]$. Let $I$ be the integral.
+%		Fix $\varepsilon>0$.
+%		\begin{enumerate}
+%			\item Recall the definition of ``$f$ is integrable on $[a,b]$".
+%
+%			\item There exist a partition $P_{1}$ s.t.
+%				${\displaystyle  U_{P_1}(f) < I + \frac{\varepsilon}{2}}$. Why?
+%
+%			\item There exist a partition $P_{2}$ s.t.
+%				${\displaystyle  L_{P_2}(f) > I - \frac{\varepsilon}{2}}$. Why?
+%
+%			\item What can you say about ${\displaystyle U_{P_1}(f) - L_{P_2}(f)}$?
+%				\vspace{.1cm}
+%
+%			\item Construct a partition $P$ s.t.
+%				${\displaystyle L_{P_2}(f) \leq L_P(f) \leq U_P(f) \leq U_{P_1}(f)}$.
+%		\end{enumerate}
+%	\end{frame}
+%	%------------------------------
+%	\begin{frame}[t]
+%		\smallerfont
+%		\frametitle{Example 1: a constant function}
+%
+%		Consider the function \; $f(x)=2$ \; on \; $[0,4]$.
+%		\vspace{.2cm}
+%
+%		\begin{enumerate}
+%			\item Given ${\displaystyle P =\{ 0, 1, e, \pi, 4 \}}$, compute
+%				${\displaystyle L_P(f)}$ and ${\displaystyle U_P(f)}$.
+%
+%			\item Explicitly compute \emph{all} the upper sums and \emph{all} the lower
+%				sums.
+%				\vspace{.2cm}
+%
+%			\item Compute ${\displaystyle \overline{I_0^4}(f)}$
+%				\vspace{.2cm}
+%
+%			\item Compute ${\displaystyle \underline{I_0^4}(f)}$
+%				\vspace{.2cm}
+%
+%			\item Is $f$ integrable on $[0,4]$?
+%		\end{enumerate}
+%	\end{frame}
+%	%------------------------------
+%
+%	%------------------------------
+%	%-----------------------------
+%	\begin{frame}[t]
+%		\frametitle{Sum of non-integrable functions}
+%
+%		Find bounded functions $f$ and $g$ on $[0,1]$ such that
+%		\begin{itemize}
+%			\item $f$ is non-integrable on $[0,1]$,
+%
+%			\item $g$ is non-integrable on $[0,1]$,
+%
+%			\item $f+g$ is integrable on $[0,1]$.
+%		\end{itemize}
+%		or prove this is impossible.
+%	\end{frame}
+%	%-----------------------------
+%	%------------------------------
+%	%------------------------------
+%	%------------------------------
+%	\begin{frame}[t]
+%		\frametitle{Riemann sums backwards}
+%
+%		Interpret the following limits as integrals:
+%		\begin{enumerate}
+%			\begin{multicols}{2}
+%			\item ${\displaystyle \lim_{n \to \infty} \sum_{i=1}^n \frac{1n}{\sin} \frac{i}{n}}$
+%				\item ${\displaystyle \lim_{n \to \infty} \sum_{i=1}^n \frac{n+i}{n^{2}}}$
+%			\end{multicols}
+%		\end{enumerate}
+%		\
+% {\setsize{10} \emph{Hint:} Let $f$ be a continuous function on $[0,1]$. Write a formula for ${\displaystyle \int_0^1 f(x) dx}$ as a limit of Riemann sums, making the simplest choices you can. }
+%	\end{frame}
+%	%------------------------------
+%	\begin{frame}[t]
+%		\smallerfont
+%		\frametitle{The Mean Value Theorem for integrals}
+%
+%		Prove the following theorem.
+%
+%		\begin{block}{\smallerfont Theorem}
+%			Let $a < b$. Let $f$ be a continuous function on $[a,b]$. \\ There exists $c
+%			\in [a,b]$ such that
+%			\vspace{-.5cm}
+%			\[
+%				f(c) \; = \; \frac{1}{b-a}\int_{a}^{b} f(t) dt
+%			\]
+%		\end{block}
+%
+%		\p
+%
+%		\emph{Hints:}
+%		\begin{enumerate}
+%			\item Compute $L_{P}(f)$ and $U_{P}(f)$ for the partition ${\displaystyle P=\{a,b\}}$.
+%
+%			\item Use that ${\displaystyle L_P(f) \leq \int_a^bf(t)dt \leq U_P(f)}$ to
+%				prove that
+%				\vspace{-.6cm}
+%				\
+%				\[
+%					??? \; \leq \; \frac{1}{b-a}\int_{a}^{b} f(t) dt \; \leq \; \; ???
+%				\]
+%				\vspace{-.6cm}
+%
+%			\item Use EVT and IVT.
+%		\end{enumerate}
+%	\end{frame}
+%	%-----------------------------
+%	%-----------------------------
 \end{document}
 %-----------------------------
 %-----------------------------
