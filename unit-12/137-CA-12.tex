@@ -78,19 +78,14 @@
 %===================================================
 \begin{document}
 \begin{frame}
-	\frametitle{MAT137 Lecture 41 --- }
+	\frametitle{MAT137 Lecture 55 --- Improper Integrals}
 
 	\vfill
 	{\bf Before next class:}
 		\begin{itemize} \normalsize
-			\item {\bf Watch videos}
+			\item {\bf Watch videos 12.7, 12.8 }
 		\end{itemize}
 \end{frame}
-	%===================================================
-	%----------------------------------------------------------------------------------------
-	%	Definition of improper integral
-	%----------------------------------------------------------------------------------------
-	%------------------------------
 	\begin{frame}[t]
 		\frametitle{Recall the definitions}
 
@@ -114,8 +109,6 @@
 				\vfill
 		\end{enumerate}
 	\end{frame}
-
-	%------------------------------
 	\begin{frame}[t]
 		\frametitle{Computation}
 
@@ -146,45 +139,7 @@
 				\vfill
 		\end{enumerate}
 	\end{frame}
-	%------------------------------
-	\begin{frame}[t]
-		\frametitle{Quick review}
 
-		For which values of ${\displaystyle p \in \R}$ is each of the following
-		improper integrals convergent?
-
-		\begin{enumerate}
-			\item ${\displaystyle \int_1^{\infty} \frac{1}{x^{p}} \, dx }$
-
-				\vfill
-
-			\item ${\displaystyle \int_0^1 \frac{1}{x^{p}} \, dx }$
-
-				\vfill
-
-			\item ${\displaystyle \int_0^{\infty} \frac{1}{x^{p}} \, dx }$
-		\end{enumerate}
-	\end{frame}
-	%------------------------------
-	\begin{frame}[t]
-		\frametitle{Examples}
-
-		\begin{enumerate}
-			\item Let $f$ be continuous on $[a, \infty)$. Let
-				${\displaystyle  A = \int_a^{\infty} f(x) dx }$
-
-				Then $A$ may be ${\displaystyle  \begin{cases}\mbox{ convergent (a number) } \\ \mbox{ divergent } \begin{cases}\mbox{ to } \infty \\ \mbox{ to } - \infty \\ \mbox{ ``oscillating"}\end{cases}\end{cases} }$
-
-				\
- Give one example of each of the four results.
-				\vfill
-				\p
-
-			\item Now do the same thing for ``type 2" improper integrals.
-		\end{enumerate}
-		\vfill
-	\end{frame}
-	%------------------------------
 	\begin{frame}[t]
 		\smallerfont
 		\frametitle{Positive functions}
@@ -210,97 +165,36 @@
 				\boxed{\mbox{Which of the four options are still possible? }}
 		\end{itemize}
 	\end{frame}
-	%------------------------------
-	\begin{frame}[t]
-		\frametitle{A ``simple" integral}
 
-		What is ${\displaystyle \int_{-1}^{1} \frac{1}{x} \, dx}$ \; ? \p
+\begin{frame}
+	\frametitle{MAT137 Lecture 56 --- The Basic Comparison Test}
+
+	\vfill
+	{\bf Before next class:}
+		\begin{itemize} \normalsize
+			\item {\bf Watch videos 12.9, 12.10 }
+		\end{itemize}
+\end{frame}
+
+	\begin{frame}[t]
+		\frametitle{Quick review}
+
+		For which values of ${\displaystyle p \in \R}$ is each of the following
+		improper integrals convergent?
 
 		\begin{enumerate}
-			\vfill
+			\item ${\displaystyle \int_1^{\infty} \frac{1}{x^{p}} \, dx }$
 
-			\item ${\displaystyle \int_{-1}^{1} \frac{1}{x} \, dx \; = \; \left( \ln |x| \right) \Big\vert_{-1}^{1} \; = \; \ln|1| - \ln|-1| = 0}$
 				\vfill
 
-			\item ${\displaystyle \int_{-1}^{1} \frac{1}{x} \, dx = 0}$ \; because ${\displaystyle f(x) = \frac{1}{x}}$
-				is an odd function.
+			\item ${\displaystyle \int_0^1 \frac{1}{x^{p}} \, dx }$
+
 				\vfill
 
-			\item ${\displaystyle \int_{-1}^{1} \frac{1}{x} \, dx}$ is divergent.
-				\vfill
+			\item ${\displaystyle \int_0^{\infty} \frac{1}{x^{p}} \, dx }$
 		\end{enumerate}
 	\end{frame}
-	%------------------------------
-	\begin{frame}[t]
-		\frametitle{What is wrong with this computation?}
 
-		\[
-			\begin{aligned}
-				\int_{-1}^{1}\frac{1}{x}\, dx \; & = \; \lim_{\e \to 0^+}\left[ \int_{-1}^{-\e}\frac{1}{x}\, dx \; + \; \int_{\e}^{1}\frac{1}{x}\, dx \, \right]                                            \\
-				\;                               & = \; \lim_{\e \to 0^+}\left[ \left. \phantom{\frac{1}{1}}\ln|x| \right\vert_{-1}^{-\e}\; + \left. \phantom{\frac{1}{1}}\ln|x| \right\vert_{\e}^{1}\; \right] \\
-				\;                               & = \; \lim_{\e \to 0^+}\left[ \, \ln|-\e| - \ln |\e| \, \right] \phantom{\int}                                                                            \\
-				\;                               & = \; \lim_{\e \to 0^+}\left[ \, 0 \, \right] \; = \; 0 \phantom{\int}
-			\end{aligned}
-		\]
-	\end{frame}
-	%------------------------------
-	\begin{frame}[t]
-		\smallerfont
-		\frametitle{Probability}
-
-		\smallerfont
-		\vspace{-2mm}
-
-		A nonnegative function $f$ defined on $(-\infty,\infty)$ is called a {\bf probability density function }
-		if
-		\vspace{-2mm}
-		\[
-			\int_{-\infty}^{\infty}f(x)\, dx=1.
-		\]
-		The \emph{mean} of a probability density function is defined as
-		\vspace{-2mm}
-		\[
-			\mu=\int_{-\infty}^{\infty}x \, f(x)\, dx.
-		\]
-		Let
-		${\displaystyle f(x) = \begin{cases}Ce^{-kx}&\mbox{ if }x\geq 0 \\ 0&\mbox{ if }x <0\end{cases} }$
-		\begin{enumerate}
-			\item For $k>0$, find a constant $C$ such that the function $f$ is a
-				probability density function.
-
-			\item Calculate the mean $\mu$.
-		\end{enumerate}
-	\end{frame}
-	%------------------------------
-	\begin{frame}[t]
-		\smallerfont
-		\frametitle{Collection of antiderivatives}
-
-		Let ${\displaystyle f}$ be a positive, continuous function with domain $\R$.
-		\\ We know two ways to describe a collection of antiderivatives:
-		\begin{enumerate}
-			\item ${\displaystyle G(x) + C}$ for $C \in \R$, where $G$ is any one
-				antiderivative.
-
-			\item The collection of functions ${\displaystyle F_a}$ for ${\displaystyle a \in \R}$,
-				where
-				\[
-					F_{a}(x) = \int_{a}^{x} f(t) dt
-				\]
-		\end{enumerate}
-
-		\p These two collections are not always the same. Why not? Are they the same
-		for some functions $f$? When are they the same?
-
-		\vspace{2.5cm}
-		\hfill \emph{Hint:} \quad
-		\href{https://tinyurl.com/137antiderivatives}{\beamergotobutton{https://tinyurl.com/137antiderivatives}}
-	\end{frame}
-	%------------------------------
-	%----------------------------------------------------------------------------------------
-	%	Comparison tests
-	%----------------------------------------------------------------------------------------
-	%------------------------------
 	\begin{frame}[t]
 		\smallerfont
 		\frametitle{A simple BCT application}
@@ -321,7 +215,7 @@
 		\
  Try both. What can you conclude from each one of them?
 	\end{frame}
-	%------------------------------
+
 	\begin{frame}[t]
 		\setsize{11}
 		\frametitle{True or False - Comparisons}
@@ -344,7 +238,7 @@
 				THEN ${\displaystyle \azul{\int_a^{\infty} f(x) dx} = \infty}$.
 		\end{enumerate}
 	\end{frame}
-	%------------------------------
+
 	\begin{frame}[t]
 		\setsize{11}
 		\frametitle{True or False - Comparisons II}
@@ -390,30 +284,7 @@
 				THEN ${\displaystyle \azul{\int_a^{\infty} f(x) dx} = \infty}$.
 		\end{enumerate}
 	\end{frame}
-	%------------------------------
-	\begin{frame}[t]
-		\smallerfont
-		\frametitle{What can you conclude?}
 
-		Let $a \in \R$. Let $f$ be a continuous, {\bf positive} function on
-		$[a, \infty)$. \\ In each of the following cases, what can you conclude
-		about ${\displaystyle \int_a^{\infty} f(x) dx}$? \; Is it convergent,
-		divergent, or we do not know?
-
-		\begin{enumerate}
-			\item ${\displaystyle \forall b \geq a, \; \exists M \in \R \; \mbox{ s.t. } \; \quad \int_a^b f(x)\,dx \; \leq \; M}$.
-
-			\item ${\displaystyle \exists M \in \R \; \mbox{ s.t. } \; \forall b \geq a, \; \quad \int_a^b f(x)\, dx \; \leq \; M}$.
-				\vspace{.3cm}
-
-			\item ${\displaystyle \exists M >0 \; \mbox{ s.t. } \; \quad \forall x \geq a, \; f(x) \leq M}$.
-				\vspace{.3cm}
-
-			\item ${\displaystyle \exists M >0 \; \mbox{ s.t. } \; \quad \forall x \geq a, \; f(x) \geq M}$.
-		\end{enumerate}
-	\end{frame}
-
-	%------------------------------
 	\begin{frame}[t]
 		\frametitle{BCT calculations}
 
@@ -435,7 +306,23 @@
 			\end{multicols}
 		\end{enumerate}
 	\end{frame}
-	%------------------------------
+
+
+
+
+
+
+\begin{frame}
+	\frametitle{MAT137 Lecture 57 --- The Limit Comparison Test}
+
+	\vfill
+	{\bf Before next class:}
+		\begin{itemize} \normalsize
+			\item {\bf Watch videos 13,2, 13.3, 13.4 }
+		\end{itemize}
+\end{frame}
+
+
 	\begin{frame}[t]
 		\frametitle{Rapid questions: convergent or divergent?}
 
@@ -462,7 +349,28 @@
 			\end{multicols}
 		\end{enumerate}
 	\end{frame}
-	%------------------------------
+
+
+	\begin{frame}[t]
+		\frametitle{A ``simple" integral}
+
+		What is ${\displaystyle \int_{-1}^{1} \frac{1}{x} \, dx}$ \; ? \p
+
+		\begin{enumerate}
+			\vfill
+
+			\item ${\displaystyle \int_{-1}^{1} \frac{1}{x} \, dx \; = \; \left( \ln |x| \right) \Big\vert_{-1}^{1} \; = \; \ln|1| - \ln|-1| = 0}$
+				\vfill
+
+			\item ${\displaystyle \int_{-1}^{1} \frac{1}{x} \, dx = 0}$ \; because ${\displaystyle f(x) = \frac{1}{x}}$
+				is an odd function.
+				\vfill
+
+			\item ${\displaystyle \int_{-1}^{1} \frac{1}{x} \, dx}$ is divergent.
+				\vfill
+		\end{enumerate}
+	\end{frame}
+
 	\begin{frame}[t]
 		\smallerfont
 		\frametitle{Slow questions: convergent or divergent?}
@@ -486,139 +394,279 @@
 			\end{multicols}
 		\end{enumerate}
 	\end{frame}
-	%------------------------------
-	\begin{frame}[t]
-		\frametitle{A harder calculation}
 
-		For which values of $a>0$ is the integral
+	\begin{frame}[t]
+		\frametitle{What is wrong with this computation?}
+
 		\[
-			\int_{0}^{\infty}\frac{\arctan x}{x^{a}}\, dx
+			\begin{aligned}
+				\int_{-1}^{1}\frac{1}{x}\, dx \; & = \; \lim_{\e \to 0^+}\left[ \int_{-1}^{-\e}\frac{1}{x}\, dx \; + \; \int_{\e}^{1}\frac{1}{x}\, dx \, \right]                                            \\
+				\;                               & = \; \lim_{\e \to 0^+}\left[ \left. \phantom{\frac{1}{1}}\ln|x| \right\vert_{-1}^{-\e}\; + \left. \phantom{\frac{1}{1}}\ln|x| \right\vert_{\e}^{1}\; \right] \\
+				\;                               & = \; \lim_{\e \to 0^+}\left[ \, \ln|-\e| - \ln |\e| \, \right] \phantom{\int}                                                                            \\
+				\;                               & = \; \lim_{\e \to 0^+}\left[ \, 0 \, \right] \; = \; 0 \phantom{\int}
+			\end{aligned}
 		\]
-		convergent?
 	\end{frame}
-	%------------------------------
-	\begin{frame}[t]
-		\setsize{12}
-		\frametitle{A variation on LCT}
 
-		This is the theorem you have learned:
-		\begin{block}{\smallerfont Theorem (Limit-Comparison Test)}
-			Let ${\displaystyle a \in \R}$. Let $f$ and $g$ be positive, continuous functions
-			on ${\displaystyle [a, \infty)}$.
-			\begin{itemize}
-				\item IF the limit \; ${\displaystyle  L = \lim_{x \to \infty} \frac{f(x)}{g(x)} }$
-					\; exists and \; ${\displaystyle L>0}$
 
-				\item THEN ${\displaystyle  \int_a^{\infty} \! \! f(x) dx}$ \; and \; ${\displaystyle  \int_a^{\infty} \! \! g(x) dx }$
-					\\ are both convergent or both divergent.
-			\end{itemize}
-		\end{block}
 
-		\p
-		\vspace{.2cm}
-		{\bf What if we change the hypotheses to $L=0$?}
-		\begin{enumerate}
-			\item Write down the new theorem (different conclusion).
 
-			\item Prove it.
-		\end{enumerate}
 
-		\p
-		\vspace{.2cm}
-		\emph{Hint:} If ${\displaystyle \lim_{x \to \infty} \frac{f(x)}{g(x)}=0 }$,
-		what is larger $f(x)$ or $g(x)$?
-	\end{frame}
-	%------------------------------
-	\begin{frame}[t]
-		\setsize{12}
-		\frametitle{A variation on LCT - 2}
 
-		This is the theorem you have learned:
-		\begin{block}{\smallerfont Theorem (Limit-Comparison Test)}
-			Let ${\displaystyle a \in \R}$. Let $f$ and $g$ be positive, continuous functions
-			on ${\displaystyle [a, \infty)}$.
-			\begin{itemize}
-				\item IF the limit \; ${\displaystyle  L = \lim_{x \to \infty} \frac{f(x)}{g(x)} }$
-					\; exists and \; ${\displaystyle L>0}$
 
-				\item THEN ${\displaystyle  \int_a^{\infty} \! \! f(x) dx}$ \; and \; ${\displaystyle  \int_a^{\infty} \! \! g(x) dx }$
-					\\ are both convergent or both divergent.
-			\end{itemize}
-		\end{block}
 
-		\vspace{.2cm}
-		{\bf What if we change the hypotheses to $L=\infty$?}
-		\begin{enumerate}
-			\item Write down the new theorem (different conclusion).
 
-			\item Prove it.
-		\end{enumerate}
-	\end{frame}
-	%------------------------------
-	\begin{frame}[t]
-		\setsize{12}
-		\frametitle{Absolute Convergence}
-		\vspace{-.3cm}
 
-		\begin{block}{\setsize{12} Definition}
-			The integral ${\displaystyle \int_a^\infty f(x)\, dx}$ is called \textbf{absolutely
-			convergent} when ${\displaystyle \int_a^\infty |f(x)|\, dx}$ converges.
-		\end{block}
 
-		Prove that
-		\begin{itemize}
-			\item IF an improper integral is absolutely convergent
-
-			\item THEN it is convergent
-		\end{itemize}
-
-		\vspace{.5cm}
-
-		\textit{Hint:} Consider the functions
-		\[
-			f_{+}(x) =
-			\begin{cases}
-				f(x) & \mbox{ if } f(x) \geq 0 \\
-				0    & \mbox{ if } f(x) \leq 0
-			\end{cases}
-			\quad \quad f_{-}(x) =
-			\begin{cases}
-				0      & \mbox{ if }f(x) \geq 0 \\
-				|f(x)| & \mbox{ if }f(x) \leq 0
-			\end{cases}
-		\]
-		Write $f(x)$ and $|f(x)|$ in terms of $f_{+}(x)$ and $f_{-}(x)$. Use BCT.
-	\end{frame}
-	%------------------------------
-	\begin{frame}[t]
-		\setsize{12}
-		\frametitle{Dirichlet integral}
-
-		Let ${\displaystyle f(x) = \begin{cases}\frac{\sin x}{x} & \mbox{ if } x \neq 0 \\ 1 & \mbox{ if } x = 0\end{cases} }$
-		\vspace{.1cm}
-
-		\begin{enumerate}
-			\item Is \; ${\displaystyle \int_0^1 \! f(x) \, dx}$ \; an inproper integral?
-
-			\item Show that \; ${\displaystyle \int_1^{\infty} \frac{\cos x}{x^{2}} \, dx}$
-				\;is absolutely convergent.
-				\vspace{.1cm}
-
-				\emph{Hint:} Use BCT.
-
-			\item The same argument is inconclusive for ${\displaystyle \int_1^{\infty} \! \! f(x) \, dx}$.
-				Why?
-
-			\item Show that \; ${\displaystyle \int_1^{\infty} \! \! f(x) dx}$ \; is convergent
-				\vspace{.1cm}
-
-				\emph{Hint:} Use the definition of improper integral, not comparison
-				tests. Use integration by parts with $u=\frac{1}{x}$ and $dv= \sin x \,dx$.
-				\vspace{.1cm}
-		\end{enumerate}
-
-		{\setsize{10} \emph{Note:} It is possible to prove that \; ${\displaystyle \int_1^{\infty} \! \! \frac{\sin x}{x} \, dx}$ is not absolutely convergent. }
-	\end{frame}
+%	%===================================================
+%	%----------------------------------------------------------------------------------------
+%	%	Definition of improper integral
+%	%----------------------------------------------------------------------------------------
+%	%------------------------------
+%
+%	%------------------------------
+%	%------------------------------
+%	%------------------------------
+%	\begin{frame}[t]
+%		\frametitle{Examples}
+%
+%		\begin{enumerate}
+%			\item Let $f$ be continuous on $[a, \infty)$. Let
+%				${\displaystyle  A = \int_a^{\infty} f(x) dx }$
+%
+%				Then $A$ may be ${\displaystyle  \begin{cases}\mbox{ convergent (a number) } \\ \mbox{ divergent } \begin{cases}\mbox{ to } \infty \\ \mbox{ to } - \infty \\ \mbox{ ``oscillating"}\end{cases}\end{cases} }$
+%
+%				\
+% Give one example of each of the four results.
+%				\vfill
+%				\p
+%
+%			\item Now do the same thing for ``type 2" improper integrals.
+%		\end{enumerate}
+%		\vfill
+%	\end{frame}
+%	%------------------------------
+%	%------------------------------
+%	%------------------------------
+%	%------------------------------
+%	\begin{frame}[t]
+%		\smallerfont
+%		\frametitle{Probability}
+%
+%		\smallerfont
+%		\vspace{-2mm}
+%
+%		A nonnegative function $f$ defined on $(-\infty,\infty)$ is called a {\bf probability density function }
+%		if
+%		\vspace{-2mm}
+%		\[
+%			\int_{-\infty}^{\infty}f(x)\, dx=1.
+%		\]
+%		The \emph{mean} of a probability density function is defined as
+%		\vspace{-2mm}
+%		\[
+%			\mu=\int_{-\infty}^{\infty}x \, f(x)\, dx.
+%		\]
+%		Let
+%		${\displaystyle f(x) = \begin{cases}Ce^{-kx}&\mbox{ if }x\geq 0 \\ 0&\mbox{ if }x <0\end{cases} }$
+%		\begin{enumerate}
+%			\item For $k>0$, find a constant $C$ such that the function $f$ is a
+%				probability density function.
+%
+%			\item Calculate the mean $\mu$.
+%		\end{enumerate}
+%	\end{frame}
+%	%------------------------------
+%	\begin{frame}[t]
+%		\smallerfont
+%		\frametitle{Collection of antiderivatives}
+%
+%		Let ${\displaystyle f}$ be a positive, continuous function with domain $\R$.
+%		\\ We know two ways to describe a collection of antiderivatives:
+%		\begin{enumerate}
+%			\item ${\displaystyle G(x) + C}$ for $C \in \R$, where $G$ is any one
+%				antiderivative.
+%
+%			\item The collection of functions ${\displaystyle F_a}$ for ${\displaystyle a \in \R}$,
+%				where
+%				\[
+%					F_{a}(x) = \int_{a}^{x} f(t) dt
+%				\]
+%		\end{enumerate}
+%
+%		\p These two collections are not always the same. Why not? Are they the same
+%		for some functions $f$? When are they the same?
+%
+%		\vspace{2.5cm}
+%		\hfill \emph{Hint:} \quad
+%		\href{https://tinyurl.com/137antiderivatives}{\beamergotobutton{https://tinyurl.com/137antiderivatives}}
+%	\end{frame}
+%	%------------------------------
+%	%----------------------------------------------------------------------------------------
+%	%	Comparison tests
+%	%----------------------------------------------------------------------------------------
+%	%------------------------------
+%	%------------------------------
+%	%------------------------------
+%	%------------------------------
+%	\begin{frame}[t]
+%		\smallerfont
+%		\frametitle{What can you conclude?}
+%
+%		Let $a \in \R$. Let $f$ be a continuous, {\bf positive} function on
+%		$[a, \infty)$. \\ In each of the following cases, what can you conclude
+%		about ${\displaystyle \int_a^{\infty} f(x) dx}$? \; Is it convergent,
+%		divergent, or we do not know?
+%
+%		\begin{enumerate}
+%			\item ${\displaystyle \forall b \geq a, \; \exists M \in \R \; \mbox{ s.t. } \; \quad \int_a^b f(x)\,dx \; \leq \; M}$.
+%
+%			\item ${\displaystyle \exists M \in \R \; \mbox{ s.t. } \; \forall b \geq a, \; \quad \int_a^b f(x)\, dx \; \leq \; M}$.
+%				\vspace{.3cm}
+%
+%			\item ${\displaystyle \exists M >0 \; \mbox{ s.t. } \; \quad \forall x \geq a, \; f(x) \leq M}$.
+%				\vspace{.3cm}
+%
+%			\item ${\displaystyle \exists M >0 \; \mbox{ s.t. } \; \quad \forall x \geq a, \; f(x) \geq M}$.
+%		\end{enumerate}
+%	\end{frame}
+%
+%	%------------------------------
+%	%------------------------------
+%	%------------------------------
+%	%------------------------------
+%	\begin{frame}[t]
+%		\frametitle{A harder calculation}
+%
+%		For which values of $a>0$ is the integral
+%		\[
+%			\int_{0}^{\infty}\frac{\arctan x}{x^{a}}\, dx
+%		\]
+%		convergent?
+%	\end{frame}
+%	%------------------------------
+%	\begin{frame}[t]
+%		\setsize{12}
+%		\frametitle{A variation on LCT}
+%
+%		This is the theorem you have learned:
+%		\begin{block}{\smallerfont Theorem (Limit-Comparison Test)}
+%			Let ${\displaystyle a \in \R}$. Let $f$ and $g$ be positive, continuous functions
+%			on ${\displaystyle [a, \infty)}$.
+%			\begin{itemize}
+%				\item IF the limit \; ${\displaystyle  L = \lim_{x \to \infty} \frac{f(x)}{g(x)} }$
+%					\; exists and \; ${\displaystyle L>0}$
+%
+%				\item THEN ${\displaystyle  \int_a^{\infty} \! \! f(x) dx}$ \; and \; ${\displaystyle  \int_a^{\infty} \! \! g(x) dx }$
+%					\\ are both convergent or both divergent.
+%			\end{itemize}
+%		\end{block}
+%
+%		\p
+%		\vspace{.2cm}
+%		{\bf What if we change the hypotheses to $L=0$?}
+%		\begin{enumerate}
+%			\item Write down the new theorem (different conclusion).
+%
+%			\item Prove it.
+%		\end{enumerate}
+%
+%		\p
+%		\vspace{.2cm}
+%		\emph{Hint:} If ${\displaystyle \lim_{x \to \infty} \frac{f(x)}{g(x)}=0 }$,
+%		what is larger $f(x)$ or $g(x)$?
+%	\end{frame}
+%	%------------------------------
+%	\begin{frame}[t]
+%		\setsize{12}
+%		\frametitle{A variation on LCT - 2}
+%
+%		This is the theorem you have learned:
+%		\begin{block}{\smallerfont Theorem (Limit-Comparison Test)}
+%			Let ${\displaystyle a \in \R}$. Let $f$ and $g$ be positive, continuous functions
+%			on ${\displaystyle [a, \infty)}$.
+%			\begin{itemize}
+%				\item IF the limit \; ${\displaystyle  L = \lim_{x \to \infty} \frac{f(x)}{g(x)} }$
+%					\; exists and \; ${\displaystyle L>0}$
+%
+%				\item THEN ${\displaystyle  \int_a^{\infty} \! \! f(x) dx}$ \; and \; ${\displaystyle  \int_a^{\infty} \! \! g(x) dx }$
+%					\\ are both convergent or both divergent.
+%			\end{itemize}
+%		\end{block}
+%
+%		\vspace{.2cm}
+%		{\bf What if we change the hypotheses to $L=\infty$?}
+%		\begin{enumerate}
+%			\item Write down the new theorem (different conclusion).
+%
+%			\item Prove it.
+%		\end{enumerate}
+%	\end{frame}
+%	%------------------------------
+%	\begin{frame}[t]
+%		\setsize{12}
+%		\frametitle{Absolute Convergence}
+%		\vspace{-.3cm}
+%
+%		\begin{block}{\setsize{12} Definition}
+%			The integral ${\displaystyle \int_a^\infty f(x)\, dx}$ is called \textbf{absolutely
+%			convergent} when ${\displaystyle \int_a^\infty |f(x)|\, dx}$ converges.
+%		\end{block}
+%
+%		Prove that
+%		\begin{itemize}
+%			\item IF an improper integral is absolutely convergent
+%
+%			\item THEN it is convergent
+%		\end{itemize}
+%
+%		\vspace{.5cm}
+%
+%		\textit{Hint:} Consider the functions
+%		\[
+%			f_{+}(x) =
+%			\begin{cases}
+%				f(x) & \mbox{ if } f(x) \geq 0 \\
+%				0    & \mbox{ if } f(x) \leq 0
+%			\end{cases}
+%			\quad \quad f_{-}(x) =
+%			\begin{cases}
+%				0      & \mbox{ if }f(x) \geq 0 \\
+%				|f(x)| & \mbox{ if }f(x) \leq 0
+%			\end{cases}
+%		\]
+%		Write $f(x)$ and $|f(x)|$ in terms of $f_{+}(x)$ and $f_{-}(x)$. Use BCT.
+%	\end{frame}
+%	%------------------------------
+%	\begin{frame}[t]
+%		\setsize{12}
+%		\frametitle{Dirichlet integral}
+%
+%		Let ${\displaystyle f(x) = \begin{cases}\frac{\sin x}{x} & \mbox{ if } x \neq 0 \\ 1 & \mbox{ if } x = 0\end{cases} }$
+%		\vspace{.1cm}
+%
+%		\begin{enumerate}
+%			\item Is \; ${\displaystyle \int_0^1 \! f(x) \, dx}$ \; an inproper integral?
+%
+%			\item Show that \; ${\displaystyle \int_1^{\infty} \frac{\cos x}{x^{2}} \, dx}$
+%				\;is absolutely convergent.
+%				\vspace{.1cm}
+%
+%				\emph{Hint:} Use BCT.
+%
+%			\item The same argument is inconclusive for ${\displaystyle \int_1^{\infty} \! \! f(x) \, dx}$.
+%				Why?
+%
+%			\item Show that \; ${\displaystyle \int_1^{\infty} \! \! f(x) dx}$ \; is convergent
+%				\vspace{.1cm}
+%
+%				\emph{Hint:} Use the definition of improper integral, not comparison
+%				tests. Use integration by parts with $u=\frac{1}{x}$ and $dv= \sin x \,dx$.
+%				\vspace{.1cm}
+%		\end{enumerate}
+%
+%		{\setsize{10} \emph{Note:} It is possible to prove that \; ${\displaystyle \int_1^{\infty} \! \! \frac{\sin x}{x} \, dx}$ is not absolutely convergent. }
+%	\end{frame}
 
 	%-----------------------------
 \end{document}
